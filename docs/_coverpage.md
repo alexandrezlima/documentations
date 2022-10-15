@@ -2,13 +2,12 @@
 
 ![logo](_media/icon.svg)
 
-# docsify <small>3.5</small>
+# Meu Projeto <small>3.5</small>
 
-> A magical documentation site generator.
+> A capa de uma documentação.
 
-- Simple and lightweight
-- No statically built html files
-- Multiple themes
+- Subtítulo 1
+- Subtítulo 2
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](#docsify)
+[GitHub](https://github.com/alexandrezlima/documentations/)
+[Get Started](#documentations)
