@@ -1,3 +1,6 @@
+<!-- _sidebar.md -->
+
+
 - Getting started
 
   - [Quick start](quickstart.md "Este é um exemplo de título/tag gerado quando clicar neste item.")
