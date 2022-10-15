@@ -1,6 +1,6 @@
 - Getting started
 
-  - [Quick start](quickstart.md "Este é um exemplo de título/tag gerado quando clicar neste item.")
+  - [Quick start](readme.md "Este é um exemplo de título/tag gerado quando clicar neste item.")
   - [Writing more pages](more-pages.md)
   - [Custom navbar](custom-navbar.md)
   - [Cover page](cover.md)
