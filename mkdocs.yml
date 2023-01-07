@@ -1,11 +1,11 @@
 site_name: Documentations
-site_url: https://alexandrezlima.github.io/documentations/
-
+site_url: https://example.com/
 
 nav:
-    - Home: index.md
-    - Lock-on: LockOn.md
+  - Home: index.md
+  - Lock-on: lockon.md
 
-theme: 
-  name: readthedocs
-  prev_next_buttons_location: bottom
+
+theme:
+    name: material
+    prev_next_buttons_location: none
