@@ -7,5 +7,5 @@ nav:
 
 
 theme:
-    name: readthedocs
+    name: material
     prev_next_buttons_location: none
