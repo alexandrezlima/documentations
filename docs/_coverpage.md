@@ -2,7 +2,7 @@
 
 ![logo](_media/icon.png)
 
-# Meu Projeto <small>3.5</small>
+# Documentations <small>1.0</small>
 
 > A capa de uma documentação.
 
