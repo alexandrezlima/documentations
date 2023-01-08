@@ -1,4 +1,4 @@
-site_name: Documentations
+site_name: Documentation
 site_url: https://example.com/
 
 nav:
@@ -8,11 +8,13 @@ nav:
 
 theme:
     name: material
+
     features:
     - content.code.copy
     - content.code.annotate
+    - toc.follow
+    - content.tooltips
 
-    prev_next_buttons_location: none
     palette:
       primary: black
 
@@ -28,9 +30,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-hide:
-  - navigation
-  - toc
+
   
 markdown_extensions:
   - admonition
@@ -51,7 +51,6 @@ markdown_extensions:
   - attr_list
   - tables
   - footnotes
-  - attr_list
   - md_in_html
   - def_list
   - pymdownx.tasklist:
@@ -60,5 +59,7 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - abbr
-  - attr_list
   - pymdownx.snippets
+
+extra_css:
+  - stylesheets/extra.css
