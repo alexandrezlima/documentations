@@ -8,6 +8,10 @@ nav:
 
 theme:
     name: material
+    features:
+    - content.code.copy
+    - content.code.annotate
+
     prev_next_buttons_location: none
     palette:
       primary: black
@@ -23,3 +27,38 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+
+hide:
+  - navigation
+  - toc
+  
+markdown_extensions:
+  - admonition
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - tables
+  - footnotes
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - abbr
+  - attr_list
+  - pymdownx.snippets
