@@ -29,7 +29,7 @@ This project was influenced by the Souls series, especially Bloodborne.
 
 </div>
 
-Built to be precise and highly customizable, this system has math at its core. With a quick and easy installation, you can use it in the most varied projects. 
+Built to be precise and highly customizable, this system has math at its core. With a quick and easy installation, you can use it in the most varied projects. Made using blueprints only.
 
 ## Unreal library
 First of all, download and add it to your project. You can find it in your [Unreal Engine Library](https://www.unrealengine.com/marketplace/en-US/product/lock-on-targeting-system).
@@ -64,7 +64,7 @@ Open your character blueprint and go to the components panel (normally at the to
 
     We'll take a look on the `BPC Lock On Debug` later.
 
-This component is the LTS core. It contains several useful functions that you can check in details in the [{==#Functions==}](#functions) section.
+This component is the LTS core. It contains several useful functions that you can check in details in the [{==#functions==}](#functions) section.
 
 #### Lock-on setup
 Now let's setup the action keys. Drag and drop the lock-on component from your components panel into your event graph.
@@ -81,6 +81,7 @@ We'll call it `lock-on reference` from now on. Using this reference, call the fu
 <figcaption>LockOn Toggle function</figcaption>
 </figure>
 
+##### Switch targets setup
 To setup the targeting switch, go to your camera movement nodes, [if you have one](#lock-on-setup "If not, check the tip below."). Connect the boolean returned by the function `isLockedOn` of the `lock-on reference` to a `branch` node. In the `false` output, connect your current logic flow. In the `true` output, connect the corresponding `Swap Target` function of the `lock-on reference`: `Yaw` for left/right movement and `Pitch` for up/down movement. You should have something like this:
 
 <div class="grid" markdown>
@@ -103,7 +104,10 @@ Below you can use `copy to clipboard` note and paste the functions mentioned rig
     === ":octicons-file-code-16: `Swap Target Pitch`"
         --8<-- "docs/codes/lock-on/swap-target-pitch.txt"
 
-???+ tip "Tip: how to free the movement axes"
+    === ":octicons-file-code-16: `isLockedOn`"
+        --8<-- "docs/codes/lock-on/locked-on.txt"
+
+??? tip "Tip: how to free the movement axes"
     If you want to free the movement of one or both axis, you can use the functions `Filter Yaw Axis` and `Filter Pitch Axis` and mark the option(s) `Free Yaw Axis` or/and `Filter Pitch Axis` in the `BPC_LockOn` details panel to do it. [Here is a demonstrative video](https://youtu.be/fi-yxiadYgI). Below you can check the setup in the tabs.
 
     === ":material-axis: Free Axis options"
@@ -135,16 +139,30 @@ Below you can use `copy to clipboard` note and paste the functions mentioned rig
             --8<-- "docs/codes/lock-on/swap-target-example.txt"
 
 
-Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
-{ .annotate }
+If you do not want to use the mouse or/and gamepad to switch targets, but still can be able to switch them, you can use the function `Swap Target Manually` using the `lock-on reference`. This function requires as parameter a coordinate as following:
 
-1.  :man_raising_hand: I'm an annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be expressed in Markdown.
+<figure markdown>
+![Swap Target Manually](assets/lockon-assets/manually-swap.png){ align='left' width=500 }
+![Coordinate system](assets/lockon-assets/coordinate.png){ align='right' width=290 }
+<figcaption>Swap Target Manually and coordinate system</figcaption>
+</figure>
 
+??? abstract "Copy-paste"
+    === ":octicons-file-code-16: `Swap Target Manually`"
+        --8<-- "docs/codes/lock-on/swap-manually.txt"
 
+The `X` and `Y` axes have the range `[-1, 1]`. For the `X` axis, -1 means left and +1 means right. For the `Y` axis, -1 means backwards and +1 means forwards. You can combine them to create a direction.
+
+##### Quick notes
+You can customize the lock-on component by clicking on the BPC_LockOn component and going to the details panel. There are several customization options, which will be discussed in the [{==#variables==}](#variables) section.
 
 !!! warning "Collision detection"
-    Make sure to choose the object collision type of your targets on the lock-on component variable [].
+    Before going further, please make sure to check the object collision types detection, on the `lock-on component` details panel. Here you choose what kind of `objects` will be considered as possible target.
+
+    <figure markdown>
+    ![Collision detection](assets/lockon-assets/Colision-type.png)
+    <figcaption>Detected collision type</figcaption>
+    </figure>
 
 
 !!! Note "Variables and functions tooltips"
@@ -152,9 +170,50 @@ Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
 
 
 ### Adding target component
+This component goes to any actor you want to be able to lock-on. The only requirement is that this target must have at least one component with collision, otherwise the target will not be detected by the lock-on system.
 
 !!! warning "Component object collision type"
-    Make sure the component you have chosen has some type of collision present on the lock-on component. Otherwise this socket will not be detected!
+    Make sure that at least one component of the actor has as `Object Type` some type of collision present in the lock-on component. Otherwise this target will not be detected!
+
+    <figure markdown>
+    ![Object type](assets/lockon-assets/target-object-type.png)
+    <figcaption>Object type in at least one component collision</figcaption>
+    </figure>
+
+    In this example, the object type is `WorldDynamic`, which is included in the array `Target Collision Type Filter` of the `lock-on component`. If it was `WorldStatic`, for example, you have two options: or to change the `object type` to something present in the `Target Collision Type Filter`, or to include `WorldStatic` in the `Target Collision Type Filter` array. You can find the collision going to details panel after clicking in one component inside the actor blueprint.
+
+To add the `Target Component`, open the actor you want to be able to lock-on, go to the components panel. Click `Add Component` and search for "Target". Add the `BPC Target` component.
+
+##### Choosing sockets to lock-on
+After adding the `Target Component`, you need to choose the component(s) and socket(s) you want to lock-on on this actor. To do that, click on the `Target Component` and check the `details` panel. Search the variable `Mesh and Sockets` and add the component name you want to lock-on.
+
+!!! danger "Attention"
+    If this component is `inherited`, you need to use the component name which is enclosed in parentheses. For example, if I have a pawn and I want to add to lock-on the pawn `skeletal mesh`, I'll use its name enclosed in parentheses, because it is `inherited`, as showed below:
+    <figure markdown>
+    ![Component Inherited](assets/lockon-assets/target-inheritance.png)
+    <figcaption>Inherited components are indicated as `(inherited)`</figcaption>
+    </figure>
+    In this example, I'll use `CharacterMesh0` as the component name. After that, you can add a socket present in this component. In my example, `spine_02`. If your component doesn't have sockets, you can leave it as "None" and edit the offset. Vector at the right side of the socket name is the offset in relation to the chosen socket.
+    <figure markdown>
+    ![Component, socket and offset](assets/lockon-assets/target-1.png)
+    <figcaption>Chosen component, socket and offset</figcaption>
+    </figure>
+    If the component is not inherited, as the example below, you can use its normal name:
+    <figure markdown>
+    ![Target Component](assets/lockon-assets/target-2.png){ align=left }
+    ![Component, socket and offset](assets/lockon-assets/target-3.png){ align=right width=600 }
+    <figcaption>Chosen component not inherited, socket and offset</figcaption>
+    </figure>
+
+Notice that you can add more than one component, and for each component you can add multiple sockets. Thais means you can have targets with multiple lock-on points.
+
+That's all for the `Target Component`. You can check some extra details in the [{==#variables==}](#variables) section, such as `bShowReticle` and `bIsTarget` variables.
+
+!!! success "Setup finished"
+    With these two components properly configured, you can use the Lock-on Targeting System V4.
+    
+    In the next sections, you'll see some details about the components and customization, but they're optional, not required to use the tool.
+
 
 
 ### Customization
@@ -179,6 +238,9 @@ Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
 ## Functions
 
 ## Variables
+
+=== ":octicons-file-code-16: `Swap Target Manually`"
+--8<-- "docs/codes/lock-on/lock-on-variables-table.txt"
 
 ## Questions and Review
 
