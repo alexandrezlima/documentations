@@ -8,7 +8,7 @@ hide:
 # Lock-on Targeting System V4
 
 ## Introduction
-This project has been mainly influenced by souls series, specially Bloodborne.
+This project was influenced by the Souls series, especially Bloodborne.
 
 <div class="grid" markdown>
 
