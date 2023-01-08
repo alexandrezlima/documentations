@@ -13,19 +13,19 @@ This project has been mainly influenced by souls series, specially Bloodborne.
 <div class="grid" markdown>
 
 === "Bloodborne"
-    ![Bloordborne - Cleric Beast](docs/assets/cleric-beast.jpg)
+    ![Bloordborne - Cleric Beast](assets/cleric-beast.jpg)
 
 === "Demon's Souls"
-    ![Demon's Souls - Old King Allant](docs/assets/old-king-allant.jpg)
+    ![Demon's Souls - Old King Allant](assets/old-king-allant.jpg)
 
 === "Dark Souls"
-    ![Dark Souls - Taurus Demon](docs/assets/taurus-demon.jpg)
+    ![Dark Souls - Taurus Demon](assets/taurus-demon.jpg)
 
 === "Elden Ring"
-    ![Elden Ring - Random enemy](docs/assets/elden-ring.jpg)
+    ![Elden Ring - Random enemy](assets/elden-ring.jpg)
 
 === "Sekiro"
-    ![Elden Ring - Random enemy](docs/assets/sekiro.png)
+    ![Elden Ring - Random enemy](assets/sekiro.png)
 
 </div>
 
@@ -35,7 +35,7 @@ Built to be precise and highly customizable, this system has math at its core. W
 First of all, download and add it to your project. You can find it in your [Unreal Engine Library](https://www.unrealengine.com/marketplace/en-US/product/lock-on-targeting-system).
 
 <figure markdown>
-  ![Unreal Engine Library](docs/assets/uelib.png){ width="300" }
+  ![Unreal Engine Library](assets/uelib.png){ width="300" }
   <figcaption>Unreal Engine Library</figcaption>
 </figure>
 
