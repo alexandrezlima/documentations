@@ -19,13 +19,13 @@ This project was influenced by the Souls series, especially Bloodborne.
     ![Demon's Souls - Old King Allant](assets/old-king-allant.jpg)
 
 === "Dark Souls"
-    ![Dark Souls - Taurus Demon](assets/taurus-demon.jpg)
+    ![Dark Souls - Taurus Demon](assets/dark-souls.jpg)
 
 === "Elden Ring"
     ![Elden Ring - Random enemy](assets/elden-ring.jpg)
 
 === "Sekiro"
-    ![Elden Ring - Random enemy](assets/sekiro.png)
+    ![Elden Ring - Random enemy](assets/sekiro.jpg)
 
 </div>
 
