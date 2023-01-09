@@ -421,7 +421,4 @@ You can find the variables descriptions below. They have a tooltip in the projec
 
 `2020/05:` version 1.0 released.
 
-## Review
-First of all, thanks for your interest in Lock-on Targeting System.
-
 
