@@ -31,7 +31,21 @@ This project was influenced by the Souls series, especially Bloodborne.
 
 Built to be precise and highly customizable, this system has math at its core. With a quick and easy installation, you can use it in the most varied projects. Made using blueprints only.
 
-## Unreal library
+## Supported versions
+Version 4.0 was launched for Unreal Engine 4.26 to 5.1. So you still have access to previous versions (all of them are compatible with 4.26-5.1), being version 3.0 available in 4.24-4.25 and version 2.0 available in 4.17-4.23. You can check the documentation for previous versions in the [{==#previous-versions==}](#previous-versions) section.
+
+This new version brings a lot of new content, including a new input system (now you can switch targets in any direction), multitargeting system, simple softlock, native support for splitscreen projects and much more. Check it in the [{==#update log==}](#update-log) section.
+
+### Supported projects
+* Third and first person games
+* Top/down games
+* Fixed camera games
+* Splitscreen games
+* Network games
+
+## Getting started
+
+### Unreal library
 First of all, download and add it to your project. You can find it in your [Unreal Engine Library](https://www.unrealengine.com/marketplace/en-US/product/lock-on-targeting-system).
 
 <figure markdown>
@@ -39,8 +53,7 @@ First of all, download and add it to your project. You can find it in your [Unre
   <figcaption>Unreal Engine Library</figcaption>
 </figure>
 
-##Getting started
-
+### Setup
 You can check out [this video](https://youtu.be/pr8rlD5Ygtc) to watch the LTS setup, or follow the steps below.
 The LTS V4 uses two main components: the lock-on component and the target component. They were separated into _two_ for optimization and practicality purposes, so that only the necessary variables are used in the target. The main steps you'll check below are, in summary:
 
@@ -184,6 +197,16 @@ This component goes to any actor you want to be able to lock-on. The only requir
 
 To add the `Target Component`, open the actor you want to be able to lock-on, go to the components panel. Click `Add Component` and search for "Target". Add the `BPC Target` component.
 
+<figure markdown>
+![Target Component](assets/lockon-assets/bpc-target.png)
+<figcaption>Target component</figcaption>
+</figure>
+
+!!! info
+
+    We'll take a look on the `BPC Reticle Override` later.
+
+
 ##### Choosing sockets to lock-on
 After adding the `Target Component`, you need to choose the component(s) and socket(s) you want to lock-on on this actor. To do that, click on the `Target Component` and check the `details` panel. Search the variable `Mesh and Sockets` and add the component name you want to lock-on.
 
@@ -205,6 +228,9 @@ After adding the `Target Component`, you need to choose the component(s) and soc
     <figcaption>Chosen component not inherited, socket and offset</figcaption>
     </figure>
 
+    ??? tip "Tip: how do I find sockets in a skeletal mesh?"
+        You can find sockets by opening the skeleton of the skeletal mesh. You can copy the bone name of the skeleton you want to lock-on and use it as the socket name.
+
 Notice that you can add more than one component, and for each component you can add multiple sockets. Thais means you can have targets with multiple lock-on points.
 
 That's all for the `Target Component`. You can check some extra details in the [{==#variables==}](#variables) section, such as `bShowReticle` and `bIsTarget` variables.
@@ -217,65 +243,82 @@ That's all for the `Target Component`. You can check some extra details in the [
 
 
 ### Customization
+Under construction.
 
-### Lock-on component
+#### Lock-on component
+Under construction.
 
-### Target component
+#### Target component
+Under construction.
 
 ## Extra components
+Under construction.
 
 ### Debug component
+Under construction.
 
 ### Reticle override component
+Under construction.
+
+## Useful functions
+Under construction.
+### Lock-on component
+Under construction.
+
+### Target component
+Under construction.
+
+## Functions
+You can find the functions descriptions below. They have a tooltip description and comments inside it (to check in the project, just hover over the function or open it!).
+
+??? abstract "Functions descriptions"
+    === ":material-table: `BPC_LockOn component`"
+        --8<-- "docs/codes/lock-on/lock-on-functions.txt"
+    === ":material-table: `BPC_Target component`"
+        --8<-- "docs/codes/lock-on/target-functions.txt"
+    === ":material-table: `BPC_LockOnDebug component`"
+        This component doesn't have functions.
+    === ":material-table: `BPC_TargetReticleOverride component`"
+        --8<-- "docs/codes/lock-on/reticle-functions.txt"
+
+
+## Variables
+You can find the variables descriptions below. They have a tooltip in the project (to check there, just hover over the variable!).
+
+??? abstract "Variables descriptions"
+    === ":material-table: `BPC_LockOn component`"
+        --8<-- "docs/codes/lock-on/lock-on-variables-table.txt"
+    === ":material-table: `BPC_Target component`"
+        --8<-- "docs/codes/lock-on/target-variables-table.txt"
+    === ":material-table: `BPC_LockOnDebug component`"
+        --8<-- "docs/codes/lock-on/debug-variables-table.txt"
+    === ":material-table: `BPC_TargetReticleOverride component`"
+        --8<-- "docs/codes/lock-on/target-reticle-variables-table.txt"
+
+## Previous versions
+* [Version 3.0 documentation | :material-unreal: 4.24-4.25](https://sites.google.com/view/lockontargetingsystem)
+* [Version 2.0 documentation | :material-unreal: 4.17-4.23](https://sites.google.com/view/lockontargetingsystem#h.zba6c1gskubb)
 
 
 ## Update log
+**`2023/01:` version 4.0 released.**
+??? info "4.0 news"
+    * New input system, switch targets in any direction
+    * Use the target component in any actor with collision
+    * Multitargeting in one or more meshes and sockets
+    * Target preview option
+    * Softlock (call the `softlock` function)
+    * Several useful functions
+    * Performance improved
+    * Easier to use
+    * First/third person support
+    * Splitscreen support
+    * Top/down games support
+    * Network support
 
-## Previous versions
+`2021/09:` version 3.0 released.
 
-## Commands
+`2020/09:` version 2.0 released.
 
-## Functions
+`2020/05:` version 1.0 released.
 
-## Variables
-
-=== ":octicons-file-code-16: `Swap Target Manually`"
---8<-- "docs/codes/lock-on/lock-on-variables-table.txt"
-
-## Questions and Review
-
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-!!! warning "Phasellus posuere in sem ut cursus"
-    
-    Referências em: https://squidfunk.github.io/mkdocs-material/reference/admonitions/
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
-
-#bloco expandido: usar ??? em vez de !!!, com um + na frente do ??? fica automaticamente expandido
-???+ note "Phasellus posuere in sem ut cursus"
-    
-    Referências em: https://squidfunk.github.io/mkdocs-material/reference/admonitions/
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
-
-
-<figure markdown>
-  ![Image title](https://dummyimage.com/600x400/){ width="300" }
-  <figcaption>Image caption</figcaption>
-</figure>
-
-![Image title](https://dummyimage.com/600x400/eee/aaa){ align=left, width="400" }

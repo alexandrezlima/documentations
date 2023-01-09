@@ -2,9 +2,7 @@ site_name: Documentation
 site_url: https://example.com/
 
 nav:
-  - Home: index.md
-  - Lock-on: lockon.md
-
+  #- Home: index.md
 
 theme:
     name: material
