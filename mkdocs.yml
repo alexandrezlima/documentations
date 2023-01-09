@@ -1,8 +1,8 @@
 site_name: Documentation
-site_url: https://example.com/
+site_url: https://alexandrezlima.github.io/documentations
 
 nav:
-  - Home: index.md
+  #- Home: index.md
 
 theme:
     name: material

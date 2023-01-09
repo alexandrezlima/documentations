@@ -394,6 +394,9 @@ You can find the variables descriptions below. They have a tooltip in the projec
     === ":material-table: `BPC_TargetReticleOverride component`"
         --8<-- "docs/codes/lock-on/target-reticle-variables-table.txt"
 
+## Integration with external projects
+LTS is very flexible. It can be used in many types of projects. One of the most popular project, the Advanced Locomotion System, is fully compatible with LTS. You can check how to integrate both in this video (coming very soon).
+
 ## Previous versions
 * [Version 3.0 documentation | :material-unreal: 4.24-4.25](https://sites.google.com/view/lockontargetingsystem)
 * [Version 2.0 documentation | :material-unreal: 4.17-4.23](https://sites.google.com/view/lockontargetingsystem#h.zba6c1gskubb)
