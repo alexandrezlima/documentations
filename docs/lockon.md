@@ -253,32 +253,92 @@ That's all for the `Target Component`. You can check some extra details in the [
 
 
 ### Customization
-Under construction.
+LTS is a highly customizable tool. Each component has several exposed variables that you can edit in the details panel after clicking over the component on your character (`BPC_LockOn`) and target (`BPC_Target`). You can check each variable description in the [{==#variables==}](#variables) section. The next two subsections you'll see some cool variables to tweak.
 
 #### Lock-on component
-Under construction.
+
+* `Search Target Method`: The search method defines the way that the targets will be searched. `Centered` means that the closest targets to the center of the screen are best targets; meanwhile `Nearest` will prioritize the closest targets. 
+
+    ??? image "Search Target Method"
+        === ":material-target: `Search Centered`"
+            <figure markdown>
+            ![Lock-on centered](assets/lockon-assets/lockon-centered.gif)
+            <figcaption>Centered option</figcaption>
+            </figure>
+        === ":material-map-marker-distance: `Search Closest`"
+            <figure markdown>
+            ![Lock-on closest](assets/lockon-assets/lockon-closest.gif)
+            <figcaption>Closest option</figcaption>
+            </figure>
+
+* `Search Target Direction`: this variable defines where the targeting search starts and ends, meaning it can start at the camera-to-forward, or start at the character-to-forward. `Use Camera Direction` is recommended for third/first person games; `Use Character Direction` is recommended for top/down and fixed camera games.
+
+    ??? image "Search Target Direction"
+        === ":octicons-device-camera-video-16: `Use Camera Direction`"
+            <figure markdown>
+            ![Camera-forward](assets/lockon-assets/camera-forward.png){ width=500}
+            <figcaption>The `search sphere` starts at `camera` and use its forward direction</figcaption>
+            </figure>
+        === ":material-human-male: `Use Character Direction`"
+            <figure markdown>
+            ![Character-forward](assets/lockon-assets/character-forward.png){ width=500}
+            <figcaption>The `search sphere` starts at `char` and use its forward direction</figcaption>
+            </figure>
+
+* `bRotatePlayerAtTarget`: If true, rotates the player to face the target. You have three rotation options in the `PlayerRotationType` variable: `UseControllerDesiredRotation` (recommended for third/first person games), `RotateOnTargetDirection` (recommended for top/down and fixed camera games) and `RotateOnCameraDirection` (similar to the first option, but it has corrections regarding the camera offset, which means it will corretly face the target no matter the camera/spring arm offset).
+
+* `bRotateCamera`: If true, uses the control rotation to rotate the camera (make sure the boolean `Use Pawn Control Rotation` is true on the `spring arm component`, if you have one). You can set an offset using the variable `Camera Rotation Offset`, where `X` will add an offset in the horizontal direction, and `Y` will add an offset in the vertical direction. The variable `Camera Pitch Rotation Clamp` will clamp the pitch rotation (make sure it is in a range `[-90, 90]`).
+
+* `bShowLockOnPreview`: If true, shows a preview reticle on the best target. It is updated each `PreviewUpdateTimer` (variable) seconds (by default, it updates each 0.1s). This reticle was influenced by Nier: Automata. Its reticle is defined by the variable `Lock on Preview Widget`.
+
+    ??? image "Target Preview"
+        <figure markdown>
+        ![Lock-on Preview](assets/lockon-assets/lockon-preview.gif){ width=800}
+        <figcaption>Lock-on Preview</figcaption>
+        </figure>
+
 
 #### Target component
-Under construction.
+* `bIsTarget`: If true, the owner of this component will be considered as a target. Otherwise it will be ignored. You can use the function `SetIsTarget` in the actor to set the boolean variable in runtime (with replication).
+
+* `bShowReticle`: If true, the targeting reticle will appear when locked-on. Otherwise it will be hidden.
 
 ## Extra components
-Under construction.
+LTS V4 has two extra components. They were made in extra components so as not to consume unnecessary memory in the main components: the debug and reticle override components.
 
 ### Debug component
-Under construction.
+A simple component made to check the lock-on status and to change some settings in runtime. To use it, just add the `BPC Lock on Debug` component to your character (the one that has the `LockOn` component).
+
+??? image "Lock-on debug component"
+    === ":material-code-tags-check: `Debug component`"
+        <figure markdown>
+        ![Lock-on debug](assets/lockon-assets/lock-on-debug.png){ width=326.3 align=left}
+        ![Lock-on debug](assets/lockon-assets/lock-on-debug-settings.png){ width=275 align=left }
+        <figcaption>Lock-on debug component</figcaption>
+        </figure>
+    === ":material-widgets: `Debug Widget`"
+        <figure markdown>
+        ![Lock-on Preview](assets/lockon-assets/lock-on-debug-widget.png)
+        <figcaption>Lock-on debug widget</figcaption>
+        </figure>
+    === ":material-axis-arrow: `World debug`"
+        <figure markdown>
+        ![Lock-on Preview](assets/lockon-assets/lock-on-debug-world.png)
+        <figcaption>Lock-on debug in world</figcaption>
+        </figure>
 
 ### Reticle override component
-Under construction.
+This component is used in the target actor. It overrides the targeting reticle when locking-on the actor that owns this component. So you can, for example, create a custom reticle for a boss: when the player lockes it, the custom reticle will be shown.
 
-## Useful functions
-Under construction.
-### Lock-on component
-Under construction.
+??? image "Override reticle example"
+    In the example below, the orange target has the `BPC_ReticleOverride` component.
+    <figure markdown>
+    ![Lock-on debug](assets/lockon-assets/reticle-1.png){ width=398.5 align=left}
+    ![Lock-on debug](assets/lockon-assets/reticle-2.png){ width=320 align=left }
+    <figcaption>Normal reticle vs overwritten reticle</figcaption>
+    </figure>
 
-### Target component
-Under construction.
-
-## Functions
+## Functions and dispatchers
 You can find the functions descriptions below. They have a tooltip description and comments inside it (to check in the project, just hover over the function or open it!).
 
 ??? abstract "Functions descriptions"
@@ -290,6 +350,35 @@ You can find the functions descriptions below. They have a tooltip description a
         This component doesn't have functions.
     === ":material-table: `BPC_TargetReticleOverride component`"
         --8<-- "docs/codes/lock-on/reticle-functions.txt"
+
+??? tip "How can I bind the lock-on status to my animations?"
+    You can use the function `isLockedOnREPLICATED` on your blueprint animation. This function returns a boolean to inform if the player has some target locked-on. So, for example, you can use this information to change the current movement animation on your AnimGraph/State Machine. Below you can see how to get the lock-on status information (the example shows a cast to `ThirdPersonCharacter`, which should be changed to your own pawn type).
+    <figure markdown>
+    ![Getting the lock-on info](assets/lockon-assets/animation.png)
+    <figcaption>Getting the lock-on info</figcaption>
+    </figure>
+
+The `BPC_LockOn` and `BPC_Target` components have also event dispatchers. They can be useful for various reasons. For example, you can use the `LockedOn` event to change your camera style to a combat style. There are a lot of possibilities. The images below show the event dispatchers. You can find them by clicking over the component and going on the details panel. The events are down below this panel with a green `+` symbol.
+
+??? image "Event dispatchers"
+    === ":material-function: `BPC_LockOn`"
+        <figure markdown>
+        ![Dispatchers](assets/lockon-assets/lock-on-dispatcher-2.png){ align=right }
+        <figcaption>Dispatchers on details panel</figcaption>
+        </figure>
+        <figure markdown>
+        ![Dispatchers](assets/lockon-assets/lock-on-dispatcher-1.png){ align=left }
+        <figcaption>Dispatchers called</figcaption>
+        </figure>
+    === ":material-function: `BPC_Target`"
+        <figure markdown>
+        ![Dispatchers](assets/lockon-assets/target-dispatcher-2.png){ align=right }
+        <figcaption>Dispatchers on details panel</figcaption>
+        </figure>
+        <figure markdown>
+        ![Dispatchers](assets/lockon-assets/target-dispatcher-1.png){ align=left }
+        <figcaption>Dispatchers called</figcaption>
+        </figure>
 
 
 ## Variables
@@ -334,3 +423,5 @@ You can find the variables descriptions below. They have a tooltip in the projec
 
 ## Review
 First of all, thanks for your interest in Lock-on Targeting System.
+
+
