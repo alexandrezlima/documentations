@@ -233,6 +233,16 @@ After adding the `Target Component`, you need to choose the component(s) and soc
 
 Notice that you can add more than one component, and for each component you can add multiple sockets. Thais means you can have targets with multiple lock-on points.
 
+??? tip "Tip: how to inform the system that a target is not a target anymore?"
+    If you destroy the target (for example, an enemy's death, where its death event has a "destroy actor" at the end), nothing needs to be done. The component will be destroyed with the actor.
+
+    For any other case (like death event, but not destroying the target or a target that becomes a friend), you just need to call the function `SetIsTarget` on the target blueprint, using the `Target Component` reference, where the `bIsTarget` parameter is `false`. If you want to turn it a target again, call the same function but with `bIsTarget` as `true`.
+
+    <figure markdown>
+    ![Is target function](assets/lockon-assets/is-target.png)
+    <figcaption>SetIsTarget function</figcaption>
+    </figure>
+
 That's all for the `Target Component`. You can check some extra details in the [{==#variables==}](#variables) section, such as `bShowReticle` and `bIsTarget` variables.
 
 !!! success "Setup finished"
@@ -322,3 +332,5 @@ You can find the variables descriptions below. They have a tooltip in the projec
 
 `2020/05:` version 1.0 released.
 
+## Review
+First of all, thanks for your interest in Lock-on Targeting System.
