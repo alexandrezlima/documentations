@@ -151,6 +151,8 @@ Below you can use `copy to clipboard` note and paste the functions mentioned rig
         === ":octicons-file-code-16: `Swap Target: mouse and gamepad example`"
             --8<-- "docs/codes/lock-on/swap-target-example.txt"
 
+    Also, I recommend that you change the variable `Search Target Direction` value to `Use Character Direction` (more details in [{==#customization==}](#customization))
+
 
 If you do not want to use the mouse or/and gamepad to switch targets, but still can be able to switch them, you can use the function `Swap Target Manually` using the `lock-on reference`. This function requires as parameter a coordinate as following:
 
