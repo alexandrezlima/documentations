@@ -210,7 +210,7 @@ To add the `Target Component`, open the actor you want to be able to lock-on, go
 ##### Choosing sockets to lock-on
 After adding the `Target Component`, you need to choose the component(s) and socket(s) you want to lock-on on this actor. To do that, click on the `Target Component` and check the `details` panel. Search the variable `Mesh and Sockets` and add the component name you want to lock-on.
 
-!!! danger "Attention"
+!!! danger "Be careful"
     If this component is `inherited`, you need to use the component name which is enclosed in parentheses. For example, if I have a pawn and I want to add to lock-on the pawn `skeletal mesh`, I'll use its name enclosed in parentheses, because it is `inherited`, as showed below:
     <figure markdown>
     ![Component Inherited](assets/lockon-assets/target-inheritance.png)
@@ -351,7 +351,7 @@ You can find the functions descriptions below. They have a tooltip description a
     === ":material-table: `BPC_TargetReticleOverride component`"
         --8<-- "docs/codes/lock-on/reticle-functions.txt"
 
-??? tip "How can I bind the lock-on status to my animations?"
+??? tip "Tip: How can I bind the lock-on status to my animations?"
     You can use the function `isLockedOnREPLICATED` on your blueprint animation. This function returns a boolean to inform if the player has some target locked-on. So, for example, you can use this information to change the current movement animation on your AnimGraph/State Machine. Below you can see how to get the lock-on status information (the example shows a cast to `ThirdPersonCharacter`, which should be changed to your own pawn type).
     <figure markdown>
     ![Getting the lock-on info](assets/lockon-assets/animation.png)
@@ -395,7 +395,7 @@ You can find the variables descriptions below. They have a tooltip in the projec
         --8<-- "docs/codes/lock-on/target-reticle-variables-table.txt"
 
 ## Integration with external projects
-LTS is very flexible. It can be used in many types of projects. One of the most popular project, the Advanced Locomotion System, is fully compatible with LTS. You can check how to integrate both in this video (coming very soon).
+LTS is very flexible. It can be used in many types of projects. One of the most popular project, the Advanced Locomotion System, is fully compatible with LTS. You can check how to integrate both in [this video](https://www.youtube.com/playlist?list=PLHdESzTufIOS8v6lpmFAojAq0arxGNomT).
 
 ## Previous versions
 * [Version 3.0 documentation | :material-unreal: 4.24-4.25](https://sites.google.com/view/lockontargetingsystem)
