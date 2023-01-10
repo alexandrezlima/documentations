@@ -276,6 +276,7 @@ LTS is a highly customizable tool. Each component has several exposed variables 
 * `Search Target Direction`: this variable defines where the targeting search starts and ends, meaning it can start at the camera-to-forward, or start at the character-to-forward. `Use Camera Direction` is recommended for third/first person games; `Use Character Direction` is recommended for top/down and fixed camera games.
 
     ??? image "Search Target Direction"
+        If you mark the variable `bConsiderOffscreenTargets` as `true`, the search sphere above will be centered at the characters' position or camera's position.
         === ":octicons-device-camera-video-16: `Use Camera Direction`"
             <figure markdown>
             ![Camera-forward](assets/lockon-assets/camera-forward.png){ width=500}
@@ -286,7 +287,6 @@ LTS is a highly customizable tool. Each component has several exposed variables 
             ![Character-forward](assets/lockon-assets/character-forward.png){ width=500}
             <figcaption>The `search sphere` starts at `char` and use its forward direction</figcaption>
             </figure>
-        If you mark the variable `bConsiderOffscreenTargets` as `true`, the search sphere above will be centered at the characters' position or camera's position.
 
 * `bRotatePlayerAtTarget`: If true, rotates the player to face the target. You have three rotation options in the `PlayerRotationType` variable: `UseControllerDesiredRotation` (recommended for third/first person games), `RotateOnTargetDirection` (recommended for top/down and fixed camera games) and `RotateOnCameraDirection` (similar to the first option, but it has corrections regarding the camera offset, which means it will corretly face the target no matter the camera/spring arm offset).
 
