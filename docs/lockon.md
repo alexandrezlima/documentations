@@ -276,7 +276,7 @@ LTS is a highly customizable tool. Each component has several exposed variables 
 * `Search Target Direction`: this variable defines where the targeting search starts and ends, meaning it can start at the camera-to-forward, or start at the character-to-forward. `Use Camera Direction` is recommended for third/first person games; `Use Character Direction` is recommended for top/down and fixed camera games.
 
     ??? image "Search Target Direction"
-        If you mark the variable `bConsiderOffscreenTargets` as `true`, the search sphere above will be centered at the characters' position or camera's position.
+        If you mark the variable `bConsiderOffscreenTargets` as `true`, the search sphere below will be centered at the characters' position or camera's position.
         === ":octicons-device-camera-video-16: `Use Camera Direction`"
             <figure markdown>
             ![Camera-forward](assets/lockon-assets/camera-forward.png){ width=500}
