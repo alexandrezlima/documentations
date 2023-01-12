@@ -446,7 +446,7 @@ LTS is very flexible. It can be used in many types of projects. One of the most 
     Yes, you can. [Here is a video](https://youtu.be/zYj4zVBlftE?list=PLHdESzTufIOS8v6lpmFAojAq0arxGNomT) showing how you can do that. The basic ideia is to mark the variable `SearchTargetBaseDirection` of the `BPC_LockOn` component as `UseCharacterDirection`. 
 
 ??? question "My game is a platform game. Can I use this asset to lock-on?"
-    Yes, you can. The setup process is similar to the question above, but in this case, mark the variable `bRotateCamera` as false.
+    Yes, you can. The setup process is similar to the question above, but in this case, mark the variable `bRotateCamera` as false. Also, if you want to lock-on targets behind your player, mark the variable `bConsiderOffscreenTargets` as true in the `LockOn` component reference.
 
 ??? question "My game is a splitscreen project. Can I use this asset to lock-on?"
     Yes, you can. This system includes native support for splitscreen projects.
@@ -454,4 +454,5 @@ LTS is very flexible. It can be used in many types of projects. One of the most 
 ??? question "My game is online. Can I used this asset to lock-on?"
     Yes, you can. This asset works with network games.
 
-
+??? question "How can I lock-on targets behind my character?"
+    Mark the variable `bConsiderOffscreenTargets` as true in the `LockOn` component reference.
