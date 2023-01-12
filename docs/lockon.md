@@ -440,10 +440,13 @@ LTS is very flexible. It can be used in many types of projects. One of the most 
     3.  Make sure that at least one of the collisions object types in the components of the target are included in the `BPC_LockOn` component, as showed in the [{==#Choosing sockets to lock-on==}](#choosing-sockets-to-lock-on) section.
 
 ??? question "My game is a first person game. Can I use this asset to lock-on?"
-    Yes, you can use this asset to lock-on in a first person project. The setup process is identical to the third person, showed in this documentation ([{==#Getting Started==}](#getting-started)) and in the [tutorial video](https://youtu.be/pr8rlD5Ygtc). I just recommend that you mark the variable `bRotateCharacterAtTarget` as false, because your first person project probably already does that.
+    Yes, you can. The setup process is identical to the third person, showed in this documentation ([{==#Getting Started==}](#getting-started)) and in the [tutorial video](https://youtu.be/pr8rlD5Ygtc). I just recommend that you mark the variable `bRotateCharacterAtTarget` as false, because your first person project probably already does that.
 
 ??? question "My game is a top down project or fixed camera project. Can I use this asset to lock-on?"
     Yes, you can. [Here is a video](https://youtu.be/zYj4zVBlftE?list=PLHdESzTufIOS8v6lpmFAojAq0arxGNomT) showing how you can do that. The basic ideia is to mark the variable `SearchTargetBaseDirection` of the `BPC_LockOn` component as `UseCharacterDirection`. 
+
+??? question "My game is a platform game. Can I use this asset to lock-on?"
+    Yes, you can. The setup process is similar to the question above, but in this case, mark the variable `bRotateCamera` as false.
 
 ??? question "My game is a splitscreen project. Can I use this asset to lock-on?"
     Yes, you can. This system includes native support for splitscreen projects.
