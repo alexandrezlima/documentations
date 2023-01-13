@@ -1,6 +1,8 @@
 ---
 hide:
     - navigation
+
+title: Lock-on Targeting System
 ---
 *[LTS]: Lock-on Targeting System
 
