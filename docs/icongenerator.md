@@ -197,28 +197,6 @@ Notice that the toggle is still there, so you can also mark it as true to load a
 
 !!! info "Both methods support animation sequences and anim montages."
 
-### Background and foreground
-You can add your own custom background/foreground textures and/or remove the starter textures. To do this, open the `DT_Backgrounds` for backgrounds and `DT_Foregrounds` for foregrounds, both located in `Content → Icon Generator → Data Tables`.
-
-<figure markdown>
-![Background and Foreground 1](assets/icongenerator-assets/icon-generator-back-fore-1.png){ width=500 }
-<figcaption>Background and foreground data tables</figcaption>
-</figure>
-
-The content chosen in the `DT_Backgrounds` data table will appear inside the backgrounds box (if you mark the toggle `transparent background` as `false` and select the `background type` as `Texture`, otherwise it will be hidden).
-
-<figure markdown>
-![Background and Foreground 2](assets/icongenerator-assets/icon-generator-back-fore-2.png){ width=250 }
-<figcaption>Background textures</figcaption>
-</figure>
-
-The content chosen in the `DT_Foregrounds` data table will appear inside the foregrounds box (if you mark the toggle `show foreground` as `true`, otherwise it will be hidden).
-
-<figure markdown>
-![Background and Foreground 3](assets/icongenerator-assets/icon-generator-back-fore-3.png){ width=250 }
-<figcaption>Foreground textures</figcaption>
-</figure>
-
 ### Export vs Import
 Both located on the left panel of the Icon Generator, their names can cause confusion.
 
@@ -259,6 +237,28 @@ But the importing function has a limitation. Only `power of two` icons can be cr
 	* 	$...$
 
 	So these are valid power of two sizes, defined by $2s$ x $2t$, where $s$ and $t$ are positive integer numbers.
+
+### Background and foreground
+You can add your own custom background/foreground textures and/or remove the starter textures. To do this, open the `DT_Backgrounds` for backgrounds and `DT_Foregrounds` for foregrounds, both located in `Content → Icon Generator → Data Tables`.
+
+<figure markdown>
+![Background and Foreground 1](assets/icongenerator-assets/icon-generator-back-fore-1.png){ width=500 }
+<figcaption>Background and foreground data tables</figcaption>
+</figure>
+
+The content chosen in the `DT_Backgrounds` data table will appear inside the backgrounds box (if you mark the toggle `transparent background` as `false` and select the `background type` as `Texture`, otherwise it will be hidden).
+
+<figure markdown>
+![Background and Foreground 2](assets/icongenerator-assets/icon-generator-back-fore-2.png){ width=250 }
+<figcaption>Background textures</figcaption>
+</figure>
+
+The content chosen in the `DT_Foregrounds` data table will appear inside the foregrounds box (if you mark the toggle `show foreground` as `true`, otherwise it will be hidden).
+
+<figure markdown>
+![Background and Foreground 3](assets/icongenerator-assets/icon-generator-back-fore-3.png){ width=250 }
+<figcaption>Foreground textures</figcaption>
+</figure>
 
 ### Update log
 * Update 1.05
