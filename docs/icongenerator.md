@@ -260,6 +260,21 @@ The content chosen in the `DT_Foregrounds` data table will appear inside the for
 <figcaption>Foreground textures</figcaption>
 </figure>
 
+### Controls
+Icon Generator has some input controls:
+
+| 	`Key`     			| `Action/Description`
+|	----------------:	| :----------------
+|	Left mouse button 	| Click and hold over the object. Move the mouse to rotate.
+|	Right mouse button	| Click and hold over the object. Move the mouse to move the camera position.
+|	W, A, S and D 		| Press one of them to move the camera position.
+|	Mouse scroll 		| Zoom in/out (camera movement in the object direction).
+|	X 					| Creates the icon of the current object (shortcut).
+|	R 					| Resets the camera position (shortcut).
+|	T 					| Resets the object rotation (shortcut).
+
+
+
 ### Update log
 * Update 1.05
 
