@@ -458,3 +458,6 @@ LTS is very flexible. It can be used in many types of projects. One of the most 
 
 ??? question "How can I lock-on targets behind my character?"
     Mark the variable `bConsiderOffscreenTargets` as true in the `LockOn` component reference.
+
+??? question "I have multiple characters, and I need to possess more than one during the gameplay. How can I enable the lock-on performer on all of them?"
+    You can add the `BPC_LockOn` component on all of them. But to have the lock-on settings working properly, you'll need to make quick mod in order to have the `LockOn point` being owned by all characters. You can [check here how to do this](https://youtu.be/kjpmZ8-u7JA). Also, I recommend calling the `Unlock` function before your possessing event, to avoid errors with player controller checking on non-possessed pawns.
