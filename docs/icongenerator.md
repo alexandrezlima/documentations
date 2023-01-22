@@ -52,7 +52,7 @@ To change between them, click in the blueprint in the level (the one with a red 
 <figcaption>Load Method</figcaption>
 </figure>
 
-If you just want to see all of your meshes without further reading, select the load method `Load all` and hit play (this method still loads blueprints actors from a data table, the autosearch includes static meshes and skeletal meshes only). But if you want to know how each option works, let’s check it below (please, make sure to read the [{==#washed-colors==}](#washed-colors) section).
+If you just want to see all of your meshes without further reading, select the load method `Load all` and hit play (this method still loads blueprints actors from a data table, the autosearch includes static meshes and skeletal meshes only). But if you want to know how each option works, let’s check it below (please, make sure to read the [{==#washed-colors==}](#washed-colors-correction) section).
 
 
 #### Loading method: data tables
@@ -260,6 +260,38 @@ The content chosen in the `DT_Foregrounds` data table will appear inside the for
 <figcaption>Foreground textures</figcaption>
 </figure>
 
+### Bulk icons
+Icon Generator has a button to bulk icons. This bulk creates icons for each object you have of the current object type selected. You have the option to start the bulk from the current object (toggle `Start bulk from current`).
+
+You may notice that some assets can take a few seconds to be fully loaded (material and LOD), depending on your machine and the object complexity. Some cases, objects do not have enough time to render properly before the icon generation occurs (the time between the current object and the next, when the icon is created). The object is loaded only when called to appear in the screen (resulting in a optmized application, once you don't need to wait several minutes to start using it or to have a list of all objects).
+
+If you need more time for each icon (to wait it load properly), it is possible to increase this "wait" time in the bulk export (of course, increasing it will result in more time to complete the bulk for all). To increase it, you can follow [this tutorial](https://youtu.be/vVP19zncg6U?list=PLHdESzTufIORQ6LbFutzgkbN-bDREGU8M) video or the steps below.
+
+Open the `UI_ObjectRender` widget, located at `Content → IconGenerator → Widgets`.
+
+<figure markdown>
+![Bulk Export - 1](assets/icongenerator-assets/icon-generator-bulk1.png)
+<figcaption>Bulk export delay per object - part I</figcaption>
+</figure>
+
+At the top right corner, click on `Graph` to open the widget blueprint. Then, in the variables panel, open the section `EDITABLE`. Here you'll see some variables to customize. For this section, the importants are `BulkDelayPerMesh` and `BulkDelayPerBlueprint`. Increase these variables values to have more time for each object be properly loaded based on your machine. The greater this value, the greater will be the total time to bulk all (this time x total objects to bulk).
+
+<figure markdown>
+![Bulk Export - 2](assets/icongenerator-assets/icon-generator-bulk2.png)
+<figcaption>Bulk export delay per object - part II</figcaption>
+</figure>
+
+### Post process and filters
+You can add or remove post process and filters from Icon Generator. To do this, follow the steps below or [this video](https://youtu.be/L-wfRZ8wK5k?list=PLHdESzTufIORQ6LbFutzgkbN-bDREGU8M) (for post process) and/or [this video](https://youtu.be/g9oqq1dLi6Q?list=PLHdESzTufIORQ6LbFutzgkbN-bDREGU8M) (for filters -- LUTs).
+
+Open the `UI_ObjectRender` widget, located at `Content → IconGenerator → Widgets`. At the top right corner, click on `Graph` to open the widget blueprint. Then, in the variables panel, open the section `EDITABLE`. Here you'll see some variables to customize. For this section, the importants are `PostProcessMaterialsMap` and `LUTsMap`. Click in one of them to start the customization. You'll see a map variable, where the left side is the name that will appear at right side panel of the Icon Generator (each name must be unique). And the right side of the map is a LUT or a Post Process, depending on the selected variable. You can add your own post process materials or LUTs here (or delete them).
+
+<figure markdown>
+![PP and Luts](assets/icongenerator-assets/icon-generator-PPLuts.png)
+<figcaption>Post process materials and LUTs</figcaption>
+</figure>
+
+
 ### Controls
 Icon Generator has some input controls:
 
@@ -366,6 +398,9 @@ Icon Generator has some input controls:
 	* 	$...$
 
 	So these are valid power of two sizes, defined by $2s$ x $2t$, where $s$ and $t$ are positive integer numbers.
+
+??? question "How can I increase the bulk delay per object? The current time is not enough to load the textures on my machine."
+	You can increase the float variable `bulk delay per mesh` of the `UI_ObjectRender` widget. Take a look at the [{==#bulk-icons==}](#bulk-icons) section for more details about increasing the bulk delay.
 
 
 ??? question "I get an error when spawning my blueprint and closing the icon generator level."
