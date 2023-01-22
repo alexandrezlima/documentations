@@ -151,7 +151,7 @@ After the sRGB fix, the texture appearance will look as it should in the widget 
 <figcaption>Image viewer (sRGB as true) vs widget viewer</figcaption>
 </figure>
 
-!!! tip "Tip: If you have more than one texture, you don’t apply sRGB one by one." 
+!!! tip "Tip: If you have more than one texture, you don’t need to apply sRGB one by one." 
 	It is possible to do it with all textures at once. Select all textures you want to apply the sRGB, right click over one of them, go to `Asset Actions`, then `Bulk Edit via Property Matrix`.
 
 	<figure markdown>
