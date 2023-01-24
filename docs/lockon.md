@@ -235,7 +235,7 @@ After adding the `Target Component`, you need to choose the component(s) and soc
     ??? tip "Tip: how do I find sockets in a skeletal mesh?"
         You can find sockets by opening the skeleton of the skeletal mesh. You can copy the bone name of the skeleton you want to lock-on and use it as the socket name.
 
-Notice that you can add more than one component, and for each component you can add multiple sockets. Thais means you can have targets with multiple lock-on points.
+Notice that you can add more than one component, and for each component you can add multiple sockets. This means you can have targets with multiple lock-on points.
 
 ??? tip "Tip: how to inform the system that a target is not a target anymore?"
     If you destroy the target (for example, an enemy's death, where its death event has a "destroy actor" at the end), nothing needs to be done. The component will be destroyed with the actor.
