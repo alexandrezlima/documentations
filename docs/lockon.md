@@ -48,7 +48,7 @@ This new version brings a lot of new content, including a new input system (now 
 ## Getting started
 
 ### Unreal library
-First of all, download and add it to your project. You can find it in your [Unreal Engine Library](https://www.unrealengine.com/marketplace/en-US/product/lock-on-targeting-system).
+First of all, download and add it to your project. You can find it in your [Unreal Engine Library](https://www.unrealengine.com/marketplace/en-US/product/lock-on-targeting-system). If you're updating it from version 3.0, make sure to restart your computer. If possible, make a backup of your configs folder.
 
 <figure markdown>
   ![Unreal Engine Library](assets/lockon-assets/uelib.png){ width="300" }
