@@ -466,6 +466,6 @@ LTS is very flexible. It can be used in many types of projects. One of the most 
     Yes, you can add more conditions to filter the targets capture. You can do it by adding more conditions into the last `branch` of the function `Get Targets` located on the `BPC_LockOn` component. Below you can see an example, adding an extra condition to capture targets within a range of 10 degrees in relation to the camera forward vector direction.
 
     <figure markdown>
-    ![Filterint targets](assets/lockon-assets/filter.png)
+    ![Filtering targets](assets/lockon-assets/filter.png)
     <figcaption>Example of extra condition to filter possible targets</figcaption>
     </figure>
