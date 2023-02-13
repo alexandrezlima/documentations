@@ -461,3 +461,11 @@ LTS is very flexible. It can be used in many types of projects. One of the most 
 
 ??? question "I have multiple characters, and I need to possess more than one during the gameplay. How can I enable the lock-on performer on all of them?"
     You can add the `BPC_LockOn` component on all of them. But to have the lock-on settings working properly, you'll need to make quick mod in order to have the `LockOn point` being owned by all characters. You can [check here how to do this](https://youtu.be/kjpmZ8-u7JA). Also, I recommend calling the `Unlock` function before your possessing event, to avoid errors with player controller checking on non-possessed pawns.
+
+??? question "Is there a way to consider targets within an angle? Or can I add more conditions to filter the possible target?"
+    Yes, you can add more conditions to filter the targets capture. You can do it by adding more conditions into the last `branch` of the function `Get Targets` located on the `BPC_LockOn` component. Below you can see an example, adding an extra condition to capture targets within a range of 10 degrees in relation to the camera forward vector direction.
+
+        <figure markdown>
+        ![Filterint targets](assets/lockon-assets/filter.png)
+        <figcaption>Example of extra condition to filter possible targets</figcaption>
+        </figure>
