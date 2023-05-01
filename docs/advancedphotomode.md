@@ -130,14 +130,87 @@ Feel free to copy-paste the events above from the clipboard shortcut below.
 
 And that's all, you can now hit play and use the photo mode! Alternatively, you can use `action mappings` to setup the input events, as you can see in [this video](https://youtu.be/mdZZVLplxGQ?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak).
 
+
+## Functions, variables and details
+**Under construction**. This section will be updated with functions, variables and details about the Advanced Photo Mode asset. For now, you have the tutorials playlist ([here](https://youtu.be/mdZZVLplxGQ?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak)) and the functions/variables descriptions within the asset.
+
 ## Update log
-Under construction
+**`2023/05:` version 5.0 released.**
+???+ info "5.0 news"
+    * Redesigned usage mode. Now it's extremely easy to use, with only two steps.
+    * Works with camera components and cine cameras, automatically identifying which camera you are using.
+    * Automatically identifies which post-process your camera is immersed in.
+    * New free camera (now an actor instead of a pawn, removing the need for possession and, therefore, drastically reducing the chance of errors generated in projects that depend on the pawn reference). Another positive consequence is that having an actor instead of possessing another pawn makes it work in multiplayer games.
+    * Autofocus with double-click. Now it's possible to focus on any point on the screen by double-clicking the mouse. This feature is exclusive for mouse use.
+    * Better logo positioning. Now the logo positions itself correctly regardless of the screen size.
+    * Better borders and inclusion of frames.
+    * Addition of the "Sharpness" slider in place of the "Blue Correction" slider.
+    * Now all texts in Advanced Photo Mode can be translated using Unreal Engine's standard translation tool.
+    * Custom motion blur added: now it's possible to use a custom motion blur system (you need to set Custom Depth to "enabled with stencil" in Project Settings and mark "bAllowCustomMotionBlur" as true in the photo mode component). Motion blur may not work properly on nanite meshes.
+    * Added screenshot method via render target as an alternative to "highresscreenshot". Highresscreenshot is still the default method.
+    *Sliders redesigned and with new functions.
+
+`2022/01:` version 4.0 released.
+??? info "4.0 news"
+    *   EPIC GAMES LIBRARY CHANGES
+        *   The distribution method has been changed to "Asset Pack." Now, you can import the Advanced Photo Mode directly from your library using the "add to project" button, instead of creating a new project and migrating the content.
+    *   VISUAL CHANGES
+        *   A new visual has been added.
+    *   CODE CHANGES
+        *   An extra option has been added to pause the game in the Photo Mode component variables menu. Now, you can select the pause game method:
+        *   PAUSE GAME USING "SET GAME PAUSED" FUNCTION: This option pauses the game completely. The image may show some small dots in the Unreal Engine 5 if you're testing in the viewport mode. These dots disappear in the packaged game. This is caused by a bug in the Unreal Engine viewport, which will hopefully be fixed soon by the UE team.
+        *   PAUSE GAME USING "GLOBAL TIME DILATION": This option looks a bit better in the viewport, but you'll get a very similar quality in the output photo. This mode doesn't pause background audio but has better compatibility with assets that don't handle paused games (an unusual case).
+        *   Changes have been made to the screenshot+thumbnail code. There is no usage of delay nodes, and the photo and thumbnail are now generated quickly. The camera doesn't move after taking the screenshot.
+        *   A "character rotation" toggle has been added. When enabled, the character will rotate towards the camera direction.
+    *   The logo code has been reworked and correctly fits the screen size. We recommend using logos with a size of 256x256. You no longer need to cut one pixel column/row on each side.
+    *   Instead of editing the player's camera, we're now editing the post process volume. Don't worry if your level does not have one or more, as the code can handle these situations.
+    *   The "Aperture" slider has been changed to a "Selector" slider type, which includes the most common camera apertures.
+    *   You can now change the slider values by scrolling the mouse wheel when hovering over the slider or selector.
+    *   An option has been added to focus on the slider when hovering over it. This option is marked as false by default in the Photo Mode component.
+    *   The free camera code has been reworked. It now uses the "spectator character" type and default controls (so Q and E keys allow you to move up and down).
+    *   The option to "rotate around character when reaching the maximum distance" in the Free Camera has been removed. Now, you can choose whether you want a maximum distance or not in the Photo Mode component, and you can choose the maximum distance. The free camera will stop when reaching the maximum distance, but the camera will move if the input was in a direction that reduces this distance.
+    *   Interpolation has been added to the Camera Rotation, FOV, Camera Distance, and camera movement (WASD). This ensures that the movement/value changes are smooth.
+    *   An option has been added to autosize the Photo Mode UI box. You can find it in the Photo Mode component.
+
+`2021/09:` version 3.0 released.
+
+`2020/10:` version 2.0 released.
+
+`2020/08:` version 1.0 released.
 
 ## Questions and answers
 ??? question "I'm using the Advanced Locomotion System (ALS/ALSV3/ALSV4). Do you have any tutorial integrating both systems?"
-    Under construction
+    Yes! You can check [this video](https://www.youtube.com/watch?v=8xkNH03DxDU) to integrate your ALS project (with the ALS default camera) with Advanced Photo Mode. If you are not using the default ALS camera, but a spring arm + camera component, follow the default tutorial, [this video](https://youtu.be/mdZZVLplxGQ?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak).
 
 ??? question "Do the icons in this project have any kind of copyright? And what about the font style?"
     The icons in this project do not have any copyright, they were made by me using the GIMP tool. So if you have the Advanced Photo Mode, feel free to use them in commercial or personal projects, even if you do not use the Advanced Photo Mode directly!
     
     Regarding the font, it is called "Liberation Sans", it is public domain font (you can use for both commercial and personal projects), and you can find it at [this link](https://www.dafont.com/pt/liberation-sans.font). Check out [this video](TROCAR) in case you want to change the Advanced Photo Mode font style.
+
+??? question "Does this asset work with ESRPG?"
+    Yes, it does. The setup tutorial is the default one, [this video](https://youtu.be/mdZZVLplxGQ?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak).
+
+??? question "I'm using UE5 and there are some black dots on the screen while using the photo mode. How can I fix this?"
+    Try changing the pause game method to "Use Global Time Dilation", like in [this video](https://youtu.be/vKCUiM70K1Y?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak).
+
+??? question "I’m using UE5 and it looks like it lacks definition at the edges (such as no anti aliasing). How can I fix this?"
+    That doesn’t happen in the UE4 but it can happen in the UE5 because the variable “screen percentage” was removed in UE5. However, it can happen only in the editor (the image looks great in the packaged game) depending on the AA solution in your project. If you need to use it in the editor and want a better image quality, change the pause game method to "Use Global Time Dilation", like in [this video](https://youtu.be/vKCUiM70K1Y?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak).
+
+??? question "I’m using UE5 and its default sky blueprint. When I open the photo mode, the sky looks broken when I move the camera. How can I fix this?"
+    Try changing the pause game method to "Use Global Time Dilation", like in [this video](https://youtu.be/vKCUiM70K1Y?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak).
+
+??? question "I’m using Ultra Dynamic Sky. When I open the photo mode, the sky looks broken when I move the camera. How can I fix this?"
+    Try changing the pause game method to "Use Global Time Dilation", like in [this video](https://youtu.be/vKCUiM70K1Y?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak).
+
+??? question "Does this asset work with AMD FSR or DLSS?"
+    Yes, it does. Make sure the pause game method is "Use Global Time Dilation" (like in [this video](https://youtu.be/vKCUiM70K1Y?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak)), because FSR and DLSS requires temporal data, something that cannot be done with pause game method "set game paused", but can be done with global time dilation by not pausing the game completely.
+
+??? question "Does this asset works with pawns?"
+    Yes, with V5 you can use this asset with pawns and characters.
+
+??? question "I migrated my project from UE4 to UE5 (including the Advanced Photo Mode), and I get a red error trying to open it."
+    Advanced Photo Mode has its own UE5 version, but you don’t need to re-download and start from scratch. [This video](https://youtu.be/YFemQ6Ea0xc), from V4, shows how you can fix it (in V5, you just need to adjust the errors in the photo mode widget).
+
+??? question "Do you have more assets?"
+    Yes! Take a look [here](https://www.unrealengine.com/marketplace/en-US/profile/AleeZL).
+
