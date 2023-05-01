@@ -130,13 +130,12 @@ Feel free to copy-paste the events above from the clipboard shortcut below.
 
 And that's all, you can now hit play and use the photo mode! Alternatively, you can use `action mappings` to setup the input events, as you can see in [this video](https://youtu.be/mdZZVLplxGQ?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak).
 
-####Adding
-
 ## Update log
+Under construction
 
 ## Questions and answers
 ??? question "I'm using the Advanced Locomotion System (ALS/ALSV3/ALSV4). Do you have any tutorial integrating both systems?"
-    Yes. You can check [this video](TROCAR) to setup the Advanced Photo Mode in a ALSV4 project, or you can use the [base tutorial](TROCAR) to use the Advanced Photo Mode with ALSV3.
+    Under construction
 
 ??? question "Do the icons in this project have any kind of copyright? And what about the font style?"
     The icons in this project do not have any copyright, they were made by me using the GIMP tool. So if you have the Advanced Photo Mode, feel free to use them in commercial or personal projects, even if you do not use the Advanced Photo Mode directly!
