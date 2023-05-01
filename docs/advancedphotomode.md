@@ -148,7 +148,7 @@ And that's all, you can now hit play and use the photo mode! Alternatively, you 
     * Now all texts in Advanced Photo Mode can be translated using Unreal Engine's standard translation tool.
     * Custom motion blur added: now it's possible to use a custom motion blur system (you need to set Custom Depth to "enabled with stencil" in Project Settings and mark "bAllowCustomMotionBlur" as true in the photo mode component). Motion blur may not work properly on nanite meshes.
     * Added screenshot method via render target as an alternative to "highresscreenshot". Highresscreenshot is still the default method.
-    *Sliders redesigned and with new functions.
+    * Sliders redesigned and with new functions.
 
 `2022/01:` version 4.0 released.
 ??? info "4.0 news"
