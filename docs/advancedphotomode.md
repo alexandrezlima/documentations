@@ -211,6 +211,13 @@ And that's all, you can now hit play and use the photo mode! Alternatively, you 
 ??? question "I migrated my project from UE4 to UE5 (including the Advanced Photo Mode), and I get a red error trying to open it."
     Advanced Photo Mode has its own UE5 version, but you don’t need to re-download and start from scratch. [This video](https://youtu.be/YFemQ6Ea0xc), from V4, shows how you can fix it (in V5, you just need to adjust the errors in the photo mode widget).
 
+??? question "The custom motion blur is not working on my project."
+    If you're using UE5.1, this version doesn't support custom depth with stencil in nanite meshes, such as the default skeleton mannequin. If you are not using UE5.1, make sure to enable the custom depth field.
+
+??? question "Why don't you use the default motion blur in Unreal Engine?"
+    The standard motion blur from Unreal, although it works well within the game, unfortunately does not show up in the final photo. That's why the custom motion blur was implemented. It's far from perfect, but it is able to simulate some motion blur in the output photo.
+
+
 ??? question "Do you have more assets?"
     Yes! Take a look [here](https://www.unrealengine.com/marketplace/en-US/profile/AleeZL).
 
