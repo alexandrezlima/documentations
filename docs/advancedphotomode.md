@@ -10,7 +10,7 @@ title: Advanced Photo Mode
 # Advanced Photo Mode
 
 ## Introduction
-A photo mode in a game is a feature that allows players to capture and customize screenshots of their gameplay experiences. By enabling players to pause the game and manipulate the camera angle, depth of field, filters, and other settings, photo mode offers an opportunity for players to share and celebrate their favorite moments in a game with their friends, family, and online communities.
+A photo mode in a game is a feature that allows players to capture and customize screenshots of their gameplay experiences. By allowing players to pause the game and manipulate the camera angle, depth of field, filters, and other settings, photo mode offers an opportunity for players to share and celebrate their favorite moments in a game with their friends, family, and online communities.
 
 Implementing a photo mode in a game can provide several benefits for developers. First and foremost, it can increase player engagement and satisfaction, as it encourages players to spend more time exploring and appreciating the game world. Moreover, photo mode can serve as a powerful marketing tool, as players are likely to share their stunning in-game shots on social media platforms, generating buzz and interest in the game.
 
@@ -216,6 +216,9 @@ And that's all, you can now hit play and use the photo mode! Alternatively, you 
 
 ??? question "Why don't you use the default motion blur in Unreal Engine?"
     The standard motion blur from Unreal, although it works well within the game, unfortunately does not show up in the final photo. That's why the custom motion blur was implemented. It's far from perfect, but it is able to simulate some motion blur in the output photo.
+
+??? question "Some sliders doesn't affect my scene, why?"
+    Check if there is any post process in your scene that has a priority greater than 9999. If so, lower this value to a smaller one. Alternatively, increase the priority of the post process volume contained in `BP_CustomPostProcess`.
 
 
 ??? question "Do you have more assets?"

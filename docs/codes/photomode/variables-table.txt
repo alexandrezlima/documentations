@@ -1,0 +1,8 @@
+| `Variable`     | `Description`                                                                                                                   |
+|----------------|---------------------------------------------------------------------------------------------------------------------------------|
+| bIsTarget      | If true, the owner of this component can be locked-on. Can be changed at runtime (call "SetIsTarget" function for replication). |
+| bShowReticle   | If true, shows the lock-on widget reticle when locked-on.                                                                       |
+| MeshAndSockets | Map of components and sockets that the player will be able to lock-on.                                                          |
+| bIsMultiTarget | Tells if the owner of this component is multitarget. This variable is set automatically based on the total sockets.             |
+| CurrentSocket  | Saves the current socket the player is locked-on.                                                                               |
+| SocketsData    | Saves all socket informations.                                                                                                  |
