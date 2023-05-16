@@ -213,7 +213,7 @@ Alternatively, you can set a path of your choice in the `output file path` field
 This functions allows you to create icons in any size. Power of two is **not** a requirement.
 
 ##### Import
-The import function is used to create an `.uasset` texture file that will appear in your content folder, and you'll be able to see it inside the editor. You can imagine it as a shortcut of exporting an icon and then importing it manually to the project (as we normally do with textures). Make sure to apply the sRGB fix (#Washed-colors-correction), otherwise the icon create will not be saved.
+The import function is used to create an `.uasset` texture file that will appear in your content folder, and you'll be able to see it inside the editor. You can imagine it as a shortcut of exporting an icon and then importing it manually to the project (as we normally do with textures). Make sure to apply the sRGB fix ([{==#washed-colors-correction==}](#washed-colors-correction) section), otherwise the icon create will not be saved.
 
 <figure markdown>
 ![Import](assets/icongenerator-assets/icon-generator-import.png){ width=350 }
