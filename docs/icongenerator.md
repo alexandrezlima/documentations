@@ -121,7 +121,7 @@ Then, right below the load method, there is the array `Specific Folders`. Here y
 	</figure>
 
 ### Washed colors correction
-If you’re using the `import icon to the project` option (the one who automatically imports the texture to your project), the icon generated will look just fine when you open it, but it can show a washed color when inside widgets:
+If you’re using the `import icon to the project` option (the one where automatically imports the texture to your project), the icon generated will look just fine when you open it, but it can show a washed color when inside widgets:
 
 <figure markdown>
 ![Washed colors 1](assets/icongenerator-assets/icon-generator-washed-1.png){ width=200 align=left }
@@ -143,7 +143,7 @@ It is noticeable that the widget viewer shows an icon with a washed color. There
 	</figure>
 
 
-After the sRGB fix, the texture appearance will look as it should in the widget viewer.
+After the sRGB fix, the texture appearance will look as it should in the widget viewer and you'll be able to save it.
 
 <figure markdown>
 ![Washed colors 5](assets/icongenerator-assets/icon-generator-washed-5.png){ width=200 align=left }
@@ -213,7 +213,7 @@ Alternatively, you can set a path of your choice in the `output file path` field
 This functions allows you to create icons in any size. Power of two is **not** a requirement.
 
 ##### Import
-The import function is used to create an `.uasset` texture file that will appear in your content folder, and you'll be able to see it inside the editor. You can imagine it as a shortcut of exporting an icon and then importing it manually to the project (as we normally do with textures).
+The import function is used to create an `.uasset` texture file that will appear in your content folder, and you'll be able to see it inside the editor. You can imagine it as a shortcut of exporting an icon and then importing it manually to the project (as we normally do with textures). Make sure to apply the sRGB fix (#Washed-colors-correction), otherwise the icon create will not be saved.
 
 <figure markdown>
 ![Import](assets/icongenerator-assets/icon-generator-import.png){ width=350 }
