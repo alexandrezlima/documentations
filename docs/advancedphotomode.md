@@ -185,7 +185,7 @@ And that's all, you can now hit play and use the photo mode! Alternatively, you 
 ??? question "Do the icons in this project have any kind of copyright? And what about the font style?"
     The icons in this project do not have any copyright, they were made by me using the GIMP tool. So if you have the Advanced Photo Mode, feel free to use them in commercial or personal projects, even if you do not use the Advanced Photo Mode directly!
     
-    Regarding the font, it is called "Liberation Sans", it is public domain font (you can use for both commercial and personal projects), and you can find it at [this link](https://www.dafont.com/pt/liberation-sans.font). Check out [this video](TROCAR) in case you want to change the Advanced Photo Mode font style.
+    Regarding the font, it is called "Liberation Sans", and it is a public domain font (you can use for both commercial and personal projects), and you can find it at [this link](https://www.dafont.com/pt/liberation-sans.font).
 
 ??? question "Does this asset work with ESRPG?"
     Yes, it does. The setup tutorial is the default one, [this video](https://youtu.be/mdZZVLplxGQ?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak).
