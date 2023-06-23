@@ -353,6 +353,9 @@ Icon Generator has some input controls:
 ??? question "Does this asset support Post Process?"
 	Yes, it does, for both transparent or non-transparent backgrounds. Some post process variables are exposed using sliders (like saturation, contrast, gamma, post process materials, LUTs etc), but you can also edit the post process manually as you want editing the post process volume in the level.
 
+??? question "I'm using the `Import textures to the project` function/toggle, and my last icons are disappearing after closing the editor. Why?"
+	You'll be able to save the imported textures only if you edit the texture in some way, like the sRGB fix. Note that after creating the icon, there is no prompt to save it when you try to close the editor. But if you apply the sRGB fix shown at the [{==#washed-colors-correction==}](#washed-colors-correction) section, you'll be able to save the file and only then an `.uasset` will be generated, as shown in [this video](https://youtu.be/JTk2sbedDZ0).
+
 ??? question "I’m using UE5.1 and the objects looks transparent in the viewport  and the icon comes out totally black. How do I fix this?"
 	Unreal Engine 5.1 included the alpha composite in the “cinematic” setting to be properly rendered (which is a regression compared to previous versions of the engine, the issues was reported to the epic team). And we need to use alpha composite.
 	
