@@ -203,7 +203,7 @@ Both located on the left panel of the Icon Generator, their names can cause conf
 ##### Export
 The export function is used to create and export an external image file (.png, .jpg, .TGA etc). The file will not appear on the editor content folder. If you're using the default path (which is `Your Project → Saved → Icons`), you need to navigate to this folder to see the icon.
 
-Alternatively, you can set a path of your choice in the `output file path` field.
+Alternatively, you can set a path of your choice in the `output file path` field (note that this field requires an absolute path, as example: `C:\User\Documents\MyExampleFolder`).
 
 <figure markdown>
 ![Export](assets/icongenerator-assets/icon-generator-export.png){ width=350 }
@@ -237,6 +237,8 @@ But the importing function has a limitation. Only `power of two` icons can be cr
 	* 	$...$
 
 	So these are valid power of two sizes, defined by $2s$ x $2t$, where $s$ and $t$ are positive integer numbers.
+
+You can also choose a path to save your icons in the `Local Folder Path` textbox, but note that in this case you have to choose a `relative path`, as example: `Content/MyRandomFolder/MyIcons`.
 
 ### Background and foreground
 You can add your own custom background/foreground textures and/or remove the starter textures. To do this, open the `DT_Backgrounds` for backgrounds and `DT_Foregrounds` for foregrounds, both located in `Content → Icon Generator → Data Tables`.
