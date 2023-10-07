@@ -387,6 +387,12 @@ Icon Generator has some input controls:
 	<figcaption>Custom size toggle</figcaption>
 	</figure>
 
+??? question "I’m trying to export my texture using the Export toggle option, but the texture is not being generated (it says “done” but I can’t find it)."
+	For an odd reason some projects do not allow you to generate a new folder within the Project/Saved folder. By default the Icon Generator saves your exported icons within the Project/Saved/Icons folder (it creates a new folder within Project/Saved).
+
+	If you're getting this issue, I recommend that you change the default output path in the `Output file path` field. As example, you can set the value as `C:\Users\YourUser\Downloads\ExampleFolder`. Any valid path can be used to export icons!
+
+
 ??? question "I’m trying to import my texture using the Import toggle option, but the texture is not being generated (it says “done” but I can’t find it)."
 	Only `power of two` can be imported using the `Import toggle` (unfortunately I can’t change this, it is an internal function of the Unreal Engine).
 
