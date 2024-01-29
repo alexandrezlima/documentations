@@ -1,0 +1,41 @@
+| `Variable`                  | `Description`                                                                                  | `Default value` |
+|-----------------------------|------------------------------------------------------------------------------------------------|-----------------|
+| bInvertedYawRotation        | If true, inverts the yaw (left/right) rotation.                                                | FALSE           |
+| YawRotationSpeed            | The greater this value, the faster the speed of the rotation in the yaw (left/right) axis.     | 75.0            |
+| bInvertedPitchRotation      | If true, inverts the pitch (up/down) rotation.                                                 | FALSE           |
+| PitchRotationSpeed          | The greater this value, the faster the speed of the rotation in the pitch (up/down) axis.      | 75.0            |
+| bEnableCameraRotationLag    | If true, enables the rotation lag (smooth rotation).                                           | TRUE            |
+| CameraRotationLagSpeed      | The greater this value, the greater is the rotation speed (less smoothness).                   | 10.0            |
+| bAutoYawRotation            | | |
+| | | |
+| | | |
+| bInvertedPanX               | If true, inverts the pan movement in the X axis.                                               | FALSE           |
+| bInvertedPanY               | If true, inverts the pan movement in the Y axis (Y axis in 2D space or Z axis in 3D space).    | FALSE           |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
