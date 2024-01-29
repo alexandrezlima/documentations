@@ -12,7 +12,7 @@ title: Orbit Camera
 ##### Last mod.: 2024-01
 
 ## Introduction
-This asset enables the visualization of objects through orbital movement. You have the flexibility to choose the behavior: orbit under click location, around the object's center, or around its original pivot. The asset provides a range of variables for customization. Try the web demo at this [link](https://google.com) or download the Windows version for free at [this link](https://google.com).
+This asset enables the visualization of objects through orbital movement. You have the flexibility to choose the behavior: orbit under click location, around the object's center, or around its original pivot. The asset provides a range of variables for customization. Try the web demo at this [link](https://alexandrezlima.github.io/orbitcamerademo/) or download the Windows version for free at [this link](https://google.com).
 
 ## Getting started
 ### Unreal library
@@ -24,14 +24,14 @@ First of all, download and add it to your project. You can find it in your [Unre
 </figure>
 
 ### Setup
-After adding the asset to your project, open the `M_IconSetup` map. It can be found in: `Content → Icon Generator → Maps`.
+After adding the asset to your project, you can test it by opening the `L_Showcase` map. It can be found at: `Content → OrbitCamera → Demo → Maps`.
 
 <figure markdown>
-![Unreal Engine Library](assets/icongenerator-assets/icon-generator-map.png)
-<figcaption>Icon Generator map</figcaption>
+![Unreal Engine Library](assets/orbitcamera-assets/orbit-camera-map.png)
+<figcaption>Orbit Camera map</figcaption>
 </figure>
 
-Once in the map level, you’ll need to choose the load method. You have three options:
+Once in the map level, you can hit play and try out 4 cameras in the level. They're all the same camera class with different settings (you can customize these settings by clicking over the camera and checking the details panel).
 
 1.  Load assets using data tables;
 2.  Load all assets in the project (via folder scanning);

@@ -6,7 +6,7 @@
 | PitchRotationSpeed          | The greater this value, the faster the speed of the rotation in the pitch (up/down) axis.      | 75.0            |
 | bEnableCameraRotationLag    | If true, enables the rotation lag (smooth rotation).                                           | TRUE            |
 | CameraRotationLagSpeed      | The greater this value, the greater is the rotation speed (less smoothness).                   | 10.0            |
-| bAutoYawRotation            | | |
+| bAutoYawRotation            | If true, will start an auto rotation on the yaw axis (left/right) using the "AutoYawRotationRate" variable's value as rotation rate. | FALSE |
 | | | |
 | | | |
 | bInvertedPanX               | If true, inverts the pan movement in the X axis.                                               | FALSE           |
