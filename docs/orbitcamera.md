@@ -70,12 +70,18 @@ With this menu you can change the settings at runtime and check how it impacts i
 This asset can be used with touch devices. You'll need, however, setup some keys and settings as follows:
 
 #### 1. Enabling gestures
+To use gestures like pinch, we need to enable the gesture recognizer in the project settings. To do this, click on `Edit → Project Settings` at the top bar. Search `gesture` and mark `EnableGestureRecognizer` as `True`.
 
-#### 2. Touch settings in BP_OrbitCamera
+<figure markdown>
+![Gestures](assets/orbitcamera-assets/gestures.png)
+<figcaption>Project settings: gestures</figcaption>
+</figure>
 
-#### 3. Zoom: pinch setup
+#### 2. Touch in BP_OrbitCamera
+Open the `BP_OrbitCamera`. In the variables panel, mark `bUseTouch` as `True`. This ensures that the touch input will be used in the trace channels events.
 
-#### 4. Rotation
+#### 3. Using touch
+With these two settings, you will be able to use touch on supported devices such as mobiles. Using a two-finger pinch motion, you can zoom in and out. With two taps on the screen, you can focus on an object or a point. You can rotate either by swiping a finger on the screen or using the right analog stick. Finally, you can move the camera (pan) using the left analog stick.
 
 ### Screenshots and album
 
