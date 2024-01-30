@@ -86,7 +86,7 @@ To select the starting actor for a specific orbit camera, click over the orbit c
 </figure>
 
 ### Touch setup
-This asset can be used with touch devices. You'll need, however, setup some keys and settings as follows:
+This asset can be used with touch devices. You'll need, however, enable some booleans settings as follows:
 
 #### 1. Enabling gestures
 To use gestures like pinch, we need to enable the gesture recognizer in the project settings. To do this, click on `Edit → Project Settings` at the top bar. Search `gesture` and mark `EnableGestureRecognizer` as `True`.
@@ -100,10 +100,16 @@ To use gestures like pinch, we need to enable the gesture recognizer in the proj
 Open the `BP_OrbitCamera`. In the variables panel, mark `bUseTouch` as `True`. This ensures that the touch input will be used in the trace channels events.
 
 #### 3. Using touch
-With these two settings, you will be able to use touch on supported devices such as mobiles. Using a two-finger **pinch** motion, you can zoom in and out. With **two taps** on the screen, you can focus on an object or a point. You can rotate either by **swiping** a finger on the screen or using the **right analog stick**. Finally, you can move the camera (pan) using the **left analog stick**.
+With these two settings, you will be able to use touch on supported devices such as mobiles. Using a two-finger **pinch** motion, you can zoom in and out. With **two taps** on the screen, you can focus on an object or a point (depending on the orbit mode you've selected). You can rotate either by **swiping** a finger on the screen or using the **right analog stick**. Finally, you can move the camera (pan) using the **left analog stick**.
+
+<figure markdown>
+![Mobile test](assets/orbitcamera-assets/mobiletest.png){ width=350 }
+<figcaption>Mobile test</figcaption>
+</figure>
+
 
 ### Screenshots and album
-You can take screenshots using the `P` key or the `Screenshot` button at the bottom center of the screen. You can check all the photos taken in the album by pressing `G` or the `Album` buttom at the bottom center of the screen.
+You can take screenshots using the `P` key or the `Screenshot` button at the bottom center of the screen. You can check all the photos taken in the album by pressing `G` or the `Album` button at the bottom center of the screen.
 
 It is possible to customize it as well by editing the `W_ScreenshotAndAlbum` widget or editing the keys in the `BP_OrbitCamera` blueprint (at `Content → OrbitCamera → Blueprints` folder).
 
