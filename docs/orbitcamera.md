@@ -16,7 +16,7 @@ This asset enables the visualization of objects through orbital movement. You ha
 
 ## Getting started
 ### Unreal library
-First of all, download and add it to your project. You can find it in your [Unreal Engine Library](https://google.com).
+First of all, download and add it to your project. You can find it in your `Unreal Engine Library`.
 
 <figure markdown>
 ![Unreal Engine Library](assets/icongenerator-assets/icon-generator-download.png){ width="250" }
