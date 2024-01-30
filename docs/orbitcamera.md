@@ -12,7 +12,7 @@ title: Orbit Camera
 ##### Last mod.: 2024-01
 
 ## Introduction
-This asset enables the visualization of objects through orbital movement. You have the flexibility to choose the behavior: orbit under click location, around the object's center, or around its original pivot. The asset provides a range of variables for customization. Try the web demo at this [link](https://alexandrezlima.github.io/orbitcamerademo/) or download the Windows version for free at [this link](https://drive.google.com/file/d/15wPyf7BoVktPu3DqqN-iDd5KeHNA2Etk/view?usp=sharing).
+This asset enables the visualization of objects through orbital movement. You have the flexibility to choose the behavior: orbit under click location, around the object's center, or around its original pivot. The asset provides a range of variables for customization. Try the web demo at this [link](https://alexandrezlima.github.io/orbitcamerademo/) or download the Windows version for free at [this link](https://drive.google.com/file/d/1VqFKOF9S8F1EqYrwe4Jgqu0m4yUJFgNC/view?usp=sharing).
 
 ## Getting started
 ### Unreal library
@@ -84,6 +84,17 @@ Open the `BP_OrbitCamera`. In the variables panel, mark `bUseTouch` as `True`. T
 With these two settings, you will be able to use touch on supported devices such as mobiles. Using a two-finger pinch motion, you can zoom in and out. With two taps on the screen, you can focus on an object or a point. You can rotate either by swiping a finger on the screen or using the right analog stick. Finally, you can move the camera (pan) using the left analog stick.
 
 ### Screenshots and album
+You can take screenshots using the `P` key or the `Screenshot` button at the bottom center of the screen. You can check all the photos taken in the album by pressing `G` or the `Album` buttom at the bottom center of the screen.
+
+It is possible to customize it as well by editing the `W_ScreenshotAndAlbum` widget or editing the keys in the `BP_OrbitCamera` blueprint (at `Content → OrbitCamera → Blueprints` folder).
+
+You can edit both screenshot path and resolution. To edit the path, make sure to mark `bCustomScreenshotPath` variable as `True`. Then, you can set the custom path in two ways: 
+	1) call the function `SetScreenshotPath` (for example in the begin play node) and pass your path as a parameter; 
+	or
+	2) set the `CustomScreenshotPath` string variable with your custom path.
+
+To edit the resolution open the `GetScreenshotResolution` function in the `BP_OrbitCamera` blueprint and edit the resolution return. By default, the screenshot resolution is the same as your application window size.
+
 
 ### Variables
 You can find the variables descriptions below. All the variables have a tooltip in the project (to check there, just hover over the variable!).
