@@ -40,19 +40,14 @@ You may want to customize the orbit camera settings. The process to edit it is v
 <figcaption>Orbit camera settings</figcaption>
 </figure>
 
-Each variable has a tooltip with a description that tells you what it does (hover the mouse cursor over the variable). If you want to test most of the variables at runtime, make sure to mark the variable `bEnableDebugMenu` as `True` and a menu will show up after you hit `play`.
+Each variable has a tooltip with a description that tells you what it does (hover the mouse cursor over the variable). If you want to test most of the variables at runtime, make sure to mark the variable `bEnableDebugMenu` as `True` and a menu will show up after you hit play.
 
 <figure markdown>
-![Orbit camera customizations](assets/orbitcamera-assets/orbit-camera-debug.png)
-<figcaption>Orbit camera settings</figcaption>
+![Debug menu](assets/orbitcamera-assets/orbit-camera-debug.png)
+<figcaption>Debug menu</figcaption>
 </figure>
 
 With this menu you can change the settings at runtime and check how it impacts in the camera behavior. Take your time and tweak it!
-
-#### Orbit mode
-
-
-
 
 ??? info "Testing the demo level"
 	After adding the asset to your project, you can test it by opening the `L_Showcase` map. It can be found at: `Content → OrbitCamera → Demo → Maps`.
@@ -68,6 +63,8 @@ With this menu you can change the settings at runtime and check how it impacts i
 	![Orbit camera customizations](assets/orbitcamera-assets/settings.png)
 	<figcaption>Orbit camera settings</figcaption>
 	</figure>
+
+#### Orbit mode
 
 
 ### Screenshots and album
@@ -89,6 +86,8 @@ The orbit camera has some input controls:
 |	Middle mouse button	| Double click. Set the focus under the mouse position in the world.
 |	Middle mouse button	| Triple click. Remove the focus and set it to the default focus.
 |	R 					| Resets the camera position (shortcut).
+|	P 					| Takes a screenshot and saves it in the album.
+|	G 					| Opens the album.
 
 All the keys are customizable, you can change it to your own controls and adapt it to use with touch devices (for this case, check the touch section).
 
