@@ -23,21 +23,6 @@ First of all, download and add it to your project. You can find it in your [Unre
 <figcaption>Unreal Engine Library</figcaption>
 </figure>
 
-### Setup
-After adding the asset to your project, you can test it by opening the `L_Showcase` map. It can be found at: `Content → OrbitCamera → Demo → Maps`.
-
-<figure markdown>
-![Unreal Engine Library](assets/orbitcamera-assets/orbit-camera-map.png)
-<figcaption>Orbit Camera map</figcaption>
-</figure>
-
-Once in the map level, you can hit play and try out 4 cameras in the level. They're all the same camera class with different settings (you can customize these settings by clicking over the camera and checking the details panel).
-
-<figure markdown>
-![Orbit camera customizations](assets/orbitcamera-assets/settings.png)
-<figcaption>Orbit camera settings</figcaption>
-</figure>
-
 ### How to use
 The orbit camera is a pawn class. That means it is controlled by a controller (any controller, you can use even the default controller, no need to setup it!).
 
@@ -47,6 +32,22 @@ Go to the `Content → OrbitCamera → Blueprints → BP_OrbitCamera`, drag and 
 ![Drag and drop](assets/orbitcamera-assets/orbit-camera-usage.png)
 <figcaption>Drag and drop the `BP_OrbitCamera`</figcaption>
 </figure>
+
+
+??? info "Testing the demo level"
+	After adding the asset to your project, you can test it by opening the `L_Showcase` map. It can be found at: `Content → OrbitCamera → Demo → Maps`.
+
+	<figure markdown>
+	![Unreal Engine Library](assets/orbitcamera-assets/orbit-camera-map.png)
+	<figcaption>Orbit Camera map</figcaption>
+	</figure>
+
+	Once in the map level, you can hit play and try out 4 cameras in the level. They're all the same camera class with different settings (you can customize these settings by clicking over the camera and checking the details panel).
+
+	<figure markdown>
+	![Orbit camera customizations](assets/orbitcamera-assets/settings.png)
+	<figcaption>Orbit camera settings</figcaption>
+	</figure>
 
 
 ### Screenshots and album
@@ -73,56 +74,15 @@ All the keys are customizable, you can change it to your own controls and adapt 
 
 
 ### Update log
-* Update 1.05
-
-	???+ info "Update 1.05 changes"
-		*	Added foreground option;
-		*	Autosearch for animations (it searches animations for each skeleton without impact on performance or memory usage);
-		*	Ambient occlusion support;
-		*	Controls for the main light;
-		*	Version is now showed at the bottom right corner.
-
-* Update 1.04
-
-	??? info "Update 1.04 changes"
-		Added “move camera” using the mouse right button. Keys WASD keep working for the same function.
-
-* Update 1.03
-
-	??? info "Update 1.03 changes"
-		* Orthographic camera option; 
-		* Improved pixel effect;
-		* Silhouette option;
-		* Improved item placement on screen; 
-		* New background approach (using material instead of a world object);
-		* Performance optimization;
-		* Option to apply (or not) pixel effect on background;
-		* Background no more reflecting on the object;
-		* General adjustments on UI.
-
-* Update 1.02
-
-	??? info "Update 1.02 changes"
-		Added a box to change the mesh materials (works with static meshes and skeletal meshes). You can check a preview [here](https://youtu.be/-2eUb7gFzxA).
-
-* Update 1.01
-
-	??? info "Update 1.01 changes"
-		Added a searchable box. You can see how it works [here](https://youtu.be/DEGmrB_e8pk).
+**`2024/02:` version 1.0 launch.**
 
 ### Questions and Answers
 
 ??? question "I would like to try this asset. Do you have any demo available?"
 	Yes! You can try this asset directly in your browser at this [link](https://alexandrezlima.github.io/orbitcamerademo/) or you can download the Windows version at [this link](https://drive.google.com/file/d/15wPyf7BoVktPu3DqqN-iDd5KeHNA2Etk/view?usp=sharing). This demo brings a debug menu where you can test a lot of customization options at runtime that are available in the asset. The web demo version doesn't supoport high resolution screenshots and the blur effects are reduced compared to the desktop version.
 
-??? question "Does this asset support Post Process?"
-	Yes, it does, for both transparent or non-transparent backgrounds. Some post process variables are exposed using sliders (like saturation, contrast, gamma, post process materials, LUTs etc), but you can also edit the post process manually as you want editing the post process volume in the level.
-
-??? question "I'm using the `Import textures to the project` function/toggle, and my last icons are disappearing after closing the editor. Why?"
-	You'll be able to save the imported textures only if you edit the texture in some way, like the sRGB fix. Note that after creating the icon, there is no prompt to save it when you try to close the editor. But if you apply the sRGB fix shown at the [{==#washed-colors-correction==}](#washed-colors-correction) section, you'll be able to save the file and only then an `.uasset` will be generated, as shown in [this video](https://youtu.be/JTk2sbedDZ0).
-
-??? question "I’m using UE5.1 and the objects looks transparent in the viewport  and the icon comes out totally black. How do I fix this?"
-	Unreal Engine 5.1 included the alpha composite in the “cinematic” setting to be properly rendered (which is a regression compared to previous versions of the engine, the issues was reported to the epic team). And we need to use alpha composite.
+??? question "Can I have more than one camera in my level?"
+	Yes, you can have multiple orbit cameras in your level. For example, you can setup multiple cameras to view different points of an object. You can limit the movement and rotation of each camera individually.
 	
 	That means you need to set the scalability option `Effects` to `Cinematic`. [Here is a video showing how you can do it](https://youtu.be/JbM5bPsHho4). If you downloded Icon Generator from your Unreal Engine library after 2023-06-01, the asset code changes this scalability setting automatically (and brings the original value back to default after closing the level).
 
