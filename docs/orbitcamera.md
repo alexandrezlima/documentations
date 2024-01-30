@@ -63,7 +63,7 @@ With this menu you can change the settings at runtime and check how it impacts i
 #### Orbit mode
 The main option in this asset is the orbit mode, found in the `OrbitMode` variable in the `BP_OrbitCamera` blueprint. You have four options: `OnClickedLocation`, `OnObjectCenter`, `OnObjectPivot`, `OnStartLocationOnly`.
 
-* `OnClickedLocation`: the camera will orbit the clicked (or touch, check the [{==#Touch-setup==}](#Touch) section) point. Surfaces are recognized if they have a collision response corresponding to the type specified in the `OrbitLocationTraceChannel` variable. By default, this channel is set to `Visibility`. In the demo map, for example, the floor is marked to ignore `Visibility` trace channels and the objects in the level are marked to block this channel.
+* `OnClickedLocation`: the camera will orbit the clicked (or touch, check the [{==#Touch==}](#Touch-setup) section) point. Surfaces are recognized if they have a collision response corresponding to the type specified in the `OrbitLocationTraceChannel` variable. By default, this channel is set to `Visibility`. In the demo map, for example, the floor is marked to ignore `Visibility` trace channels and the objects in the level are marked to block this channel.
 
 * `OnObjectCenter`: the camera will orbit the object's center. Imagine a box in which your object fits perfectly in terms of height, width, and length. The center of the object will be the center of this imaginary box. You can visualize this imaginary box by toggling the 'bDebugFocusedObject' variable to `True`, either in the variables panel or directly in the debug menu widget.
 <figure markdown>
