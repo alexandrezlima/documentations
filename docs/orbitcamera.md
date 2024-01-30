@@ -79,6 +79,7 @@ The main option in this asset is the orbit mode, found in the `OrbitMode` variab
 #### Starting mode
 The starting mode can help you align the camera initially. This variable (`StartingMode`, available in `BP_OrbitCamera`) can be combined with the `StartingActor` variable (available in the same blueprint) to focus on the center or pivot of a specific object.
 
+To select the starting actor for a specific orbit camera, click over the orbit camera in the level, go to the details panel, select the starting mode and pick the starting actor as follows.
 <figure markdown>
 ![Starting mode](assets/orbitcamera-assets/startingmode.png)
 <figcaption>Starting mode: set the starting mode (1); click over the picker (2); select the object to focus (3).</figcaption>
