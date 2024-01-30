@@ -64,15 +64,16 @@ With this menu you can change the settings at runtime and check how it impacts i
 The main option in this asset is the orbit mode, found in the `OrbitMode` variable in the `BP_OrbitCamera` blueprint. You have four options: `OnClickedLocation`, `OnObjectCenter`, `OnObjectPivot`, `OnStartLocationOnly`.
 
 * `OnClickedLocation`: the camera will orbit the clicked (or touch, check the [{==#Touch-setup==}](#Touch) section) point. Surfaces are recognized if they have a collision response corresponding to the type specified in the `OrbitLocationTraceChannel` variable. By default, this channel is set to `Visibility`. In the demo map, for example, the floor is marked to ignore `Visibility` trace channels and the objects in the level are marked to block this channel.
-* `OnObjectCenter`: the camera will orbit the object center. Imagine a box in which your object fits perfectly in terms of height, width, and length. The center of the object will be the center of this imaginary box. You can visualize this imaginary box by toggling the 'bDebugFocusedObject' variable to `True`, either in the variables panel or directly in the debug menu widget.
 
+* `OnObjectCenter`: the camera will orbit the object's center. Imagine a box in which your object fits perfectly in terms of height, width, and length. The center of the object will be the center of this imaginary box. You can visualize this imaginary box by toggling the 'bDebugFocusedObject' variable to `True`, either in the variables panel or directly in the debug menu widget.
 <figure markdown>
-![Debugging object bounds](assets/orbitcamera-assets/objectcenter.png)
+![Debugging object bounds](assets/orbitcamera-assets/objectcenter.png){ width=300 }
 <figcaption>Debugging object bounds</figcaption>
 </figure>
 
 
-* `OnObjectPivot`:
+* `OnObjectPivot`: The camera will orbit around the object's pivot. Note that the pivot may coincide with the center of the object or not.
+
 * `OnStartLocationOnly`.
 
 ### Touch setup
