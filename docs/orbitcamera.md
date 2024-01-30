@@ -63,8 +63,15 @@ With this menu you can change the settings at runtime and check how it impacts i
 #### Orbit mode
 The main option in this asset is the orbit mode, found in the `OrbitMode` variable in the `BP_OrbitCamera` blueprint. You have four options: `OnClickedLocation`, `OnObjectCenter`, `OnObjectPivot`, `OnStartLocationOnly`.
 
-* `OnClickedLocation`:
-* `OnObjectCenter`:
+* `OnClickedLocation`: the camera will orbit the clicked (or touch, check the [{==#Touch-setup==}](#Touch) section) point. Surfaces are recognized if they have a collision response corresponding to the type specified in the `OrbitLocationTraceChannel` variable. By default, this channel is set to `Visibility`. In the demo map, for example, the floor is marked to ignore `Visibility` trace channels and the objects in the level are marked to block this channel.
+* `OnObjectCenter`: the camera will orbit the object center. Imagine a box in which your object fits perfectly in terms of height, width, and length. The center of the object will be the center of this imaginary box. You can visualize this imaginary box by toggling the 'bDebugFocusedObject' variable to `True`, either in the variables panel or directly in the debug menu widget.
+
+<figure markdown>
+![Debugging object bounds](assets/orbitcamera-assets/objectcenter.png)
+<figcaption>Debugging object bounds</figcaption>
+</figure>
+
+
 * `OnObjectPivot`:
 * `OnStartLocationOnly`.
 
@@ -83,7 +90,7 @@ To use gestures like pinch, we need to enable the gesture recognizer in the proj
 Open the `BP_OrbitCamera`. In the variables panel, mark `bUseTouch` as `True`. This ensures that the touch input will be used in the trace channels events.
 
 #### 3. Using touch
-With these two settings, you will be able to use touch on supported devices such as mobiles. Using a two-finger pinch motion, you can zoom in and out. With two taps on the screen, you can focus on an object or a point. You can rotate either by swiping a finger on the screen or using the right analog stick. Finally, you can move the camera (pan) using the left analog stick.
+With these two settings, you will be able to use touch on supported devices such as mobiles. Using a two-finger **pinch** motion, you can zoom in and out. With **two taps** on the screen, you can focus on an object or a point. You can rotate either by **swiping** a finger on the screen or using the **right analog stick**. Finally, you can move the camera (pan) using the **left analog stick**.
 
 ### Screenshots and album
 You can take screenshots using the `P` key or the `Screenshot` button at the bottom center of the screen. You can check all the photos taken in the album by pressing `G` or the `Album` buttom at the bottom center of the screen.
