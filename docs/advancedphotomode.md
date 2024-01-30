@@ -130,10 +130,6 @@ Feel free to copy-paste the events above from the clipboard shortcut below.
 
 And that's all, you can now hit play and use the photo mode! Alternatively, you can use `action mappings` to setup the input events, as you can see in [this video](https://youtu.be/mdZZVLplxGQ?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak).
 
-
-## Functions, variables and details
-**Under construction**. This section will be updated with functions, variables and details about the Advanced Photo Mode asset. For now, you have the tutorials playlist ([here](https://youtu.be/mdZZVLplxGQ?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak)) and the functions/variables descriptions within the asset.
-
 ## Update log
 **`2023/05:` version 5.0 released.**
 ???+ info "5.0 news"

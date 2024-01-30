@@ -12,7 +12,7 @@ title: Orbit Camera
 ##### Last mod.: 2024-01
 
 ## Introduction
-This asset enables the visualization of objects through orbital movement. You have the flexibility to choose the behavior: orbit under click location, around the object's center, or around its original pivot. The asset provides a range of variables for customization. Try the web demo at this [link](https://alexandrezlima.github.io/orbitcamerademo/) or download the Windows version for free at [this link](https://google.com).
+This asset enables the visualization of objects through orbital movement. You have the flexibility to choose the behavior: orbit under click location, around the object's center, or around its original pivot. The asset provides a range of variables for customization. Try the web demo at this [link](https://alexandrezlima.github.io/orbitcamerademo/) or download the Windows version for free at [this link](https://drive.google.com/file/d/15wPyf7BoVktPu3DqqN-iDd5KeHNA2Etk/view?usp=sharing).
 
 ## Getting started
 ### Unreal library
@@ -33,12 +33,6 @@ After adding the asset to your project, you can test it by opening the `L_Showca
 
 Once in the map level, you can hit play and try out 4 cameras in the level. They're all the same camera class with different settings (you can customize these settings by clicking over the camera and checking the details panel).
 
-1.  Load assets using data tables;
-2.  Load all assets in the project (via folder scanning);
-3.  Load assets inside specific folders (via folder scanning).
-
-To change between them, click in the blueprint in the level (the one with a red arrow, `IconGeneratorStartPoint`). Then, in the details panel, you'll see an exposed variable called `Load Method`. Changing this variable will affect the way that the objects are searched.
-
 <figure markdown>
 ![Load Method - Icon Generator](assets/icongenerator-assets/icon-generator-loadmethodpng.png)
 <figcaption>Load Method</figcaption>
@@ -46,6 +40,12 @@ To change between them, click in the blueprint in the level (the one with a red 
 
 If you just want to see all of your meshes without further reading, select the load method `Load all` and hit play (this method still loads blueprints actors from a data table, the autosearch includes static meshes and skeletal meshes only). But if you want to know how each option works, let’s check it below (please, make sure to read the [{==#washed-colors==}](#washed-colors-correction) section).
 
+
+## Variables
+You can find the variables descriptions below. All the variables have a tooltip in the project (to check there, just hover over the variable!).
+
+??? abstract "Variables"
+    --8<-- "docs/codes/orbitcamera/orbit-camera-variables.txt"
 
 #### Loading method: data tables
 This load method is interesting for those who want to have control over the loaded list, with specific objects. To use it, set the `Load Method` variable to `Data Table`.
@@ -341,8 +341,8 @@ Icon Generator has some input controls:
 
 ### Questions and Answers
 
-??? question "What kind of objects can I use to create icons with this tool?"
-	You can create icons for static meshes, skeletal meshes and blueprints actors.
+??? question "I would like to try this asset. Do you have any demo available?"
+	Yes! You can try this asset directly in your browser at this [link](https://alexandrezlima.github.io/orbitcamerademo/) or you can download the Windows version at [this link](https://drive.google.com/file/d/15wPyf7BoVktPu3DqqN-iDd5KeHNA2Etk/view?usp=sharing). This demo brings a debug menu where you can test a lot of customization options at runtime that are available in the asset. The web demo version doesn't supoport high resolution screenshots and the blur effects are reduced compared to the desktop version.
 
 ??? question "Does this asset support Post Process?"
 	Yes, it does, for both transparent or non-transparent backgrounds. Some post process variables are exposed using sliders (like saturation, contrast, gamma, post process materials, LUTs etc), but you can also edit the post process manually as you want editing the post process volume in the level.
