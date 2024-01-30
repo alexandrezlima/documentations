@@ -45,7 +45,7 @@ If you just want to see all of your meshes without further reading, select the l
 You can find the variables descriptions below. All the variables have a tooltip in the project (to check there, just hover over the variable!).
 
 ??? abstract "Variables"
-    --8<-- "docs/codes/orbitcamera/orbit-camera-variables.txt"
+    --8<-- "docs/codes/orbitcamera/orbit-cam-variables.txt"
 
 #### Loading method: data tables
 This load method is interesting for those who want to have control over the loaded list, with specific objects. To use it, set the `Load Method` variable to `Data Table`.
