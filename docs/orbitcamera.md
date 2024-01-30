@@ -66,6 +66,16 @@ With this menu you can change the settings at runtime and check how it impacts i
 
 #### Orbit mode
 
+### Touch setup
+This asset can be used with touch devices. You'll need, however, setup some keys and settings as follows:
+
+#### 1. Enabling gestures
+
+#### 2. Touch settings in BP_OrbitCamera
+
+#### 3. Zoom: pinch setup
+
+#### 4. Rotation
 
 ### Screenshots and album
 
@@ -89,7 +99,7 @@ The orbit camera has some input controls:
 |	P 					| Takes a screenshot and saves it in the album.
 |	G 					| Opens the album.
 
-All the keys are customizable, you can change it to your own controls and adapt it to use with touch devices (for this case, check the touch section).
+All the keys are customizable, you can change it to your own controls by editing the `BP_OrbitCamera` blueprint. You can also adapt it to use with touch devices (for this case, check the touch section for instructions).
 
 
 ### Update log
@@ -98,17 +108,21 @@ All the keys are customizable, you can change it to your own controls and adapt 
 ### Questions and Answers
 
 ??? question "I would like to try this asset. Do you have any demo available?"
-	Yes! You can try this asset directly in your browser at this [link](https://alexandrezlima.github.io/orbitcamerademo/) or you can download the Windows version at [this link](https://drive.google.com/file/d/15wPyf7BoVktPu3DqqN-iDd5KeHNA2Etk/view?usp=sharing). This demo brings a debug menu where you can test a lot of customization options at runtime that are available in the asset. The web demo version doesn't supoport high resolution screenshots and the blur effects are reduced compared to the desktop version.
+	Yes! You can try this asset directly in your browser at this [link](https://alexandrezlima.github.io/orbitcamerademo/) or you can download the Windows version at [this link](https://drive.google.com/file/d/15wPyf7BoVktPu3DqqN-iDd5KeHNA2Etk/view?usp=sharing) (WebGL application for html5, this is not a streaming project). This demo brings a debug menu where you can test a lot of customization options at runtime that are available in the asset. The web demo version doesn't supoport high resolution screenshots and the blur effects are reduced compared to the desktop version.
 
 ??? question "Can I have more than one camera in my level?"
 	Yes, you can have one or multiple orbit cameras in your level. For example, you can setup multiple cameras to view different points of an object. You can limit the movement and rotation of each camera individually.
 
 	To control the first possessed camera, make sure to click over your secondary cameras, go to the details panel and mark `Auto Possess Player` as `Disabled`.
 
-	If you want to be able to switch over multiple cameras at runtime, mark the `bShowCamerasMenu` variable as `True` in the `BP_OrbitCamera` blueprint. A menu will show up with your multiple cameras. You can edit their names in the `CameraName` variable in the details panel of each camera (this name will be displayed in the widget).
+	If you want to be able to switch over multiple cameras at runtime using buttons in a menu, mark the `bShowCamerasMenu` variable as `True` in the `BP_OrbitCamera` blueprint. A menu will show up with your multiple cameras (feel free to edit its appearance in the `W_Cameras` widget at `Content → OrbitCamera → Widgets` folder). You can edit their names in the `CameraName` variable in the details panel of each camera (this name will be displayed in the widget).
 
 ??? question "Can I choose a different path for my screenshots?"
-	Yes, you can. First, make sure to mark `bCustomScreenshotPath` variable as `True`. Then, you can set the custom path in two ways: 1) call the function `SetScreenshotPath` (for example in the begin play node) and pass your path as a parameter; or 2) set the `CustomScreenshotPath` string variable with your custom path.
+	Yes, you can. First, make sure to mark `bCustomScreenshotPath` variable as `True`. Then, you can set the custom path in two ways: 
+	
+	1) call the function `SetScreenshotPath` (for example in the begin play node) and pass your path as a parameter; 
+	or
+	2) set the `CustomScreenshotPath` string variable with your custom path.
 
 ??? question "Can I increase the screenshot resolution?"
 	Yes, you can increase the screenshot resolution. Open the `GetScreenshotResolution` function in the `BP_OrbitCamera` blueprint and edit the resolution return. By default, the screenshot resolution is the same as your application window size.
