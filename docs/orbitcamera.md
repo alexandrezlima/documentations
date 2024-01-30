@@ -34,271 +34,42 @@ After adding the asset to your project, you can test it by opening the `L_Showca
 Once in the map level, you can hit play and try out 4 cameras in the level. They're all the same camera class with different settings (you can customize these settings by clicking over the camera and checking the details panel).
 
 <figure markdown>
-![Load Method - Icon Generator](assets/icongenerator-assets/icon-generator-loadmethodpng.png)
-<figcaption>Load Method</figcaption>
+![Orbit camera customizations](assets/orbitcamera-assets/settings.png)
+<figcaption>Orbit camera settings</figcaption>
 </figure>
 
-If you just want to see all of your meshes without further reading, select the load method `Load all` and hit play (this method still loads blueprints actors from a data table, the autosearch includes static meshes and skeletal meshes only). But if you want to know how each option works, let’s check it below (please, make sure to read the [{==#washed-colors==}](#washed-colors-correction) section).
+### How to use
+The orbit camera is a pawn class. That means it is controlled by a controller (any controller, you can use even the default controller, no need to setup it!).
+
+Go to the `Content → OrbitCamera → Blueprints → BP_OrbitCamera`, drag and drop the `BP_OrbitCamera` your level and that's all.
+
+<figure markdown>
+![Drag and drop](assets/orbitcamera-assets/orbit-camera-usage.png)
+<figcaption>Drag and drop the `BP_OrbitCamera`</figcaption>
+</figure>
 
 
-## Variables
+### Screenshots and album
+
+### Variables
 You can find the variables descriptions below. All the variables have a tooltip in the project (to check there, just hover over the variable!).
 
 ??? abstract "Variables"
     --8<-- "docs/codes/orbitcamera/orbit-cam-variables.txt"
 
-#### Loading method: data tables
-This load method is interesting for those who want to have control over the loaded list, with specific objects. To use it, set the `Load Method` variable to `Data Table`.
-
-<figure markdown>
-![Load Method - Icon Generator](assets/icongenerator-assets/icon-generator-loadmethod-1.png)
-<figcaption>Load Method: Data Table</figcaption>
-</figure>
-
-Now, all the objects will be loaded from data tables, located in `Content → Icon Generator → DataTables`. They are: `DT_StaticMeshes`, `DT_SkeletalMeshes` and `DT_Blueprints`.
-
-<figure markdown>
-![Data tables objects - Icon Generator](assets/icongenerator-assets/icon-generator-data-tables-1.png){ width=500 }
-<figcaption>Objects data tables</figcaption>
-</figure>
-
-
-??? tip "Tip: How to add itens to the data table"
-	To add a new item to one of the data tables, open the one with the object type you want. Click on the `+` signal at the top. Then, select the row created and add the info. In the `DT_SkeletalMeshes` data table, you have an extra information: animations. You can add them manually for the skeleton you're adding or, alternatively, leave it empty (there is a toggle in the Icon Generator to autosearch animations in your project that are compatible with the current selected skeleton -- you can read more about it in the [{==#animations==}](#animations) section).
-
-
-#### Loading method: load all
-This is the easiest way to load your assets (Static Meshes and Skeletal Meshes). This method still loads blueprints from the `DT_Blueprints` data table (located in `Content → Icon Generator → DataTables`). It doesn't load all the assets in memory at once, as the name suggests. So there is no impact on performance: the objects are loaded only when called/needed (and unloaded if not), no matter how many objects you have on your project.
-
-To use it, set the load method to `Load All Meshes from Project`.
-
-<figure markdown>
-![Load Method 2 - Icon Generator](assets/icongenerator-assets/icon-generator-loadmethod-2.png)
-<figcaption>Load Method: Load All Meshes from Project</figcaption>
-</figure>
-
-As mentioned before, this method still loads blueprints actors from the `DT_Blueprints` data table.
-
-<figure markdown>
-![Data tables objects - Icon Generator](assets/icongenerator-assets/icon-generator-data-tables-2.png){ width=500 }
-<figcaption>Blueprints data table</figcaption>
-</figure>
-
-The skeletal meshes animations can be loaded using a toggle in the Icon Generator. It autosearches animations in your project that are compatible with the current selected skeleton (more about it in the [{==#animations==}](#animations) section).
-
-
-#### Loading method: load folder
-This load method is very similar to the previous one (it loads Static Meshes and Skeletal Meshes – blueprint actors are still loaded from the DT_Blueprints data table). The difference is that in this method, you can specify which folders your assets are in. It uses a recursive search, so if you have subfolders inside this folder, these folders will also be searched.
-
-To use it, set the load method to `Load Specific Folders`.
-
-<figure markdown>
-![Load Method 3 - Icon Generator](assets/icongenerator-assets/icon-generator-loadmethod-3.png)
-<figcaption>Load Method: Load Specific Folders</figcaption>
-</figure>
-
-Then, right below the load method, there is the array `Specific Folders`. Here you can add one or more folder paths to search your meshes. The default value is `/Content/`, meaning that it will search your entire `Content folder`, similar to the previous method but without the engine assets.
-
-<figure markdown>
-![Load Method 3 - Specify folders](assets/icongenerator-assets/icon-generator-loadmethod-3-example.png)
-<figcaption>Specify folders</figcaption>
-</figure>
-
-!!! example "Example: adding a specific folder"
-	As an example, let's say we want to load the assets that are in `Content → MyFolder → MyAssets`. Then, all we need to do is to change the path to `/Content/MyFolder/MyAssets`. That way, only assets in this folder (and subfolders) will be loaded. If you want to add more than one folder (if it is in a different path, for example), just hit the `+` button in the array and add as many paths you want!
-
-	<figure markdown>
-	![Load Method 3 - folder example](assets/icongenerator-assets/icon-generator-loadmethod-3-example-2.png)
-	<figcaption>Folder path example</figcaption>
-	</figure>
-
-### Washed colors correction
-If you’re using the `import icon to the project` option (the one where automatically imports the texture to your project), the icon generated will look just fine when you open it, but it can show a washed color when inside widgets:
-
-<figure markdown>
-![Washed colors 1](assets/icongenerator-assets/icon-generator-washed-1.png){ width=200 align=left }
-![Washed colors 2](assets/icongenerator-assets/icon-generator-washed-2.png){ width=209.7 align=right }
-<figcaption>Image viewer vs widget viewer</figcaption>
-</figure>
-
-It is noticeable that the widget viewer shows an icon with a washed color. There is, however, a simple fix: you just need to check the `sRGB` checkbox in the texture viewer (marking it as true).
-
-=== ":material-image: `Texture details panel`"
-	<figure markdown>
-	![Washed colors 3](assets/icongenerator-assets/icon-generator-washed-3.png)
-	<figcaption>sRGB option (located in the details panel after opening the texture)</figcaption>
-	</figure>
-=== ":material-image: `Texture panel zoomed out`"
-	<figure markdown>
-	![Washed colors 4](assets/icongenerator-assets/icon-generator-washed-4.png)
-	<figcaption>Zoomed out texture viewer</figcaption>
-	</figure>
-
-
-After the sRGB fix, the texture appearance will look as it should in the widget viewer and you'll be able to save it.
-
-<figure markdown>
-![Washed colors 5](assets/icongenerator-assets/icon-generator-washed-5.png){ width=200 align=left }
-![Washed colors 5](assets/icongenerator-assets/icon-generator-washed-6.png){ width=204.27 align=right }
-<figcaption>Image viewer (sRGB as true) vs widget viewer</figcaption>
-</figure>
-
-!!! tip "Tip: If you have more than one texture, you don’t need to apply sRGB one by one." 
-	It is possible to do it with all textures at once. Select all textures you want to apply the sRGB, right click over one of them, go to `Asset Actions`, then `Bulk Edit via Property Matrix`.
-
-	<figure markdown>
-	![Bulk 1](assets/icongenerator-assets/icon-generator-bulk-1.png)
-	<figcaption>Bulk Edit via Property Matrix</figcaption>
-	</figure>
-
-	Then, in the opened window, expand the `texture` section and mark `sRGB` as `true`. So, all the textures selected will be changed to sRGB at once!
-
-	Below you can see this window in UE4 and UE5.
-
-	=== ":material-unreal: `Unreal Engine 5`"
-		<figure markdown>
-		![Bulk 2](assets/icongenerator-assets/icon-generator-bulk-2.png)
-		<figcaption>UE5 texture details</figcaption>
-		</figure>
-	=== ":material-unreal: `Unreal Engine 4`"
-		<figure markdown>
-		![Bulk 3](assets/icongenerator-assets/icon-generator-bulk-3.png)
-		<figcaption>UE4 texture details</figcaption>
-		</figure>
-
-### Animations
-You can load animations for your skeletal meshes and create icons of its poses. There are two ways to do this.
-
-The first and easiest is by enabling the toggle `Autosearch valid animations` in the `Animations` tab (this tab appears after selecting the object type `Skeletal Meshes`). This toggle is available from version 1.05 above (marked at the bottom right corner).
-
-<figure markdown>
-![Animations 1](assets/icongenerator-assets/icon-generator-animations-1.png){ width=300 }
-<figcaption>Animations toggle</figcaption>
-</figure>
-
-All the animations of the selected skeletal mesh will appear in the `Animations combobox`. If the selected skeletal mesh doesn't have animations, only the `None` value will show up.
-
-The second method is via data table. First you need to choose the load method `Data Table`. Then, you can choose animations in the `DT_SkeletalMeshes` data table. You’ll find these animations in the animations tab as showed in the image above (if the toggle is marked as false and the selected skeleton has animations in the data table).
-
-<figure markdown>
-![Animations 2](assets/icongenerator-assets/icon-generator-animations-2.png){ width=500 }
-<figcaption>DT_SkeletalMeshes data table and its animations</figcaption>
-</figure>
-
-Notice that the toggle is still there, so you can also mark it as true to load animations even in the `Data Table` load method.
-
-!!! info "Both methods support animation sequences and anim montages."
-
-### Export vs Import
-Both located on the left panel of the Icon Generator, their names can cause confusion.
-
-##### Export
-The export function is used to create and export an external image file (.png, .jpg, .TGA etc). The file will not appear on the editor content folder. If you're using the default path (which is `Your Project → Saved → Icons`), you need to navigate to this folder to see the icon.
-
-Alternatively, you can set a path of your choice in the `output file path` field (note that this field requires an absolute path, as example: `C:\User\Documents\MyExampleFolder`).
-
-<figure markdown>
-![Export](assets/icongenerator-assets/icon-generator-export.png){ width=350 }
-<figcaption>Export function</figcaption>
-</figure>
-
-This functions allows you to create icons in any size. Power of two is **not** a requirement.
-
-##### Import
-The import function is used to create an `.uasset` texture file that will appear in your content folder, and you'll be able to see it inside the editor. You can imagine it as a shortcut of exporting an icon and then importing it manually to the project (as we normally do with textures). Make sure to apply the sRGB fix ([{==#washed-colors-correction==}](#washed-colors-correction) section), otherwise the icon create will not be saved.
-
-<figure markdown>
-![Import](assets/icongenerator-assets/icon-generator-import.png){ width=350 }
-<figcaption>Import function</figcaption>
-</figure>
-
-But the importing function has a limitation. Only `power of two` icons can be created (unfortunately I can’t change this, it is an internal function of the Unreal Engine).
-
-!!! info ":octicons-number-24: Power of two sizes"
-
-	These are valid icon sizes:  16x16, 32x16, 2048x1024, etc.
-
-	And these are invalid icon sizes: 79x16, 34x34, 2000x1000, 32x25, etc.
-
-	In summary, the numbers must be $2^n$. Examples:
-	
-	*	$2^4 = 16$
-	*	$2^5 = 32$
-	*	$2^6 = 64$
-	*	$2^7 = 128$
-	* 	$...$
-
-	So these are valid power of two sizes, defined by $2s$ x $2t$, where $s$ and $t$ are positive integer numbers.
-
-You can also choose a path to save your icons in the `Local Folder Path` textbox, but note that in this case you have to choose a `relative path`, as example: `Content/MyRandomFolder/MyIcons`.
-
-### Background and foreground
-You can add your own custom background/foreground textures and/or remove the starter textures. To do this, open the `DT_Backgrounds` for backgrounds and `DT_Foregrounds` for foregrounds, both located in `Content → Icon Generator → Data Tables`.
-
-<figure markdown>
-![Background and Foreground 1](assets/icongenerator-assets/icon-generator-back-fore-1.png){ width=500 }
-<figcaption>Background and foreground data tables</figcaption>
-</figure>
-
-The content chosen in the `DT_Backgrounds` data table will appear inside the backgrounds box (if you mark the toggle `transparent background` as `false` and select the `background type` as `Texture`, otherwise it will be hidden).
-
-<figure markdown>
-![Background and Foreground 2](assets/icongenerator-assets/icon-generator-back-fore-2.png){ width=250 }
-<figcaption>Background textures</figcaption>
-</figure>
-
-The content chosen in the `DT_Foregrounds` data table will appear inside the foregrounds box (if you mark the toggle `show foreground` as `true`, otherwise it will be hidden).
-
-<figure markdown>
-![Background and Foreground 3](assets/icongenerator-assets/icon-generator-back-fore-3.png){ width=250 }
-<figcaption>Foreground textures</figcaption>
-</figure>
-
-### Bulk icons
-Icon Generator has a button to bulk icons. This bulk creates icons for each object you have of the current object type selected. You have the option to start the bulk from the current object (toggle `Start bulk from current`).
-
-You may notice that some assets can take a few seconds to be fully loaded (material and LOD), depending on your machine and the object complexity. Some cases, objects do not have enough time to render properly before the icon generation occurs (the time between the current object and the next, when the icon is created). The object is loaded only when called to appear in the screen (resulting in a optmized application, once you don't need to wait several minutes to start using it or to have a list of all objects).
-
-If you need more time for each icon (to wait it load properly), it is possible to increase this "wait" time in the bulk export (of course, increasing it will result in more time to complete the bulk for all). To increase it, you can follow [this tutorial](https://youtu.be/vVP19zncg6U?list=PLHdESzTufIORQ6LbFutzgkbN-bDREGU8M) video or the steps below.
-
-Open the `UI_ObjectRender` widget, located at `Content → IconGenerator → Widgets`.
-
-<figure markdown>
-![Bulk Export - 1](assets/icongenerator-assets/icon-generator-bulk1.png)
-<figcaption>Bulk export delay per object - part I</figcaption>
-</figure>
-
-At the top right corner, click on `Graph` to open the widget blueprint. Then, in the variables panel, open the section `EDITABLE`. Here you'll see some variables to customize. For this section, the importants are `BulkDelayPerMesh` and `BulkDelayPerBlueprint`. Increase these variables values to have more time for each object be properly loaded based on your machine. The greater this value, the greater will be the total time to bulk all (this time x total objects to bulk).
-
-<figure markdown>
-![Bulk Export - 2](assets/icongenerator-assets/icon-generator-bulk2.png)
-<figcaption>Bulk export delay per object - part II</figcaption>
-</figure>
-
-### Post process and filters
-You can add or remove post process and filters from Icon Generator. To do this, follow the steps below or [this video](https://youtu.be/L-wfRZ8wK5k?list=PLHdESzTufIORQ6LbFutzgkbN-bDREGU8M) (for post process) and/or [this video](https://youtu.be/g9oqq1dLi6Q?list=PLHdESzTufIORQ6LbFutzgkbN-bDREGU8M) (for filters -- LUTs).
-
-Open the `UI_ObjectRender` widget, located at `Content → IconGenerator → Widgets`. At the top right corner, click on `Graph` to open the widget blueprint. Then, in the variables panel, open the section `EDITABLE`. Here you'll see some variables to customize. For this section, the importants are `PostProcessMaterialsMap` and `LUTsMap`. Click in one of them to start the customization. You'll see a map variable, where the left side is the name that will appear at right side panel of the Icon Generator (each name must be unique). And the right side of the map is a LUT or a Post Process, depending on the selected variable. You can add your own post process materials or LUTs here (or delete them).
-
-<figure markdown>
-![PP and Luts](assets/icongenerator-assets/icon-generator-PPLuts.png)
-<figcaption>Post process materials and LUTs</figcaption>
-</figure>
-
-
 ### Controls
-Icon Generator has some input controls:
+The orbit camera has some input controls:
 
 | 	`Key`     			| `Action/Description`
 |	----------------:	| :----------------
-|	Left mouse button 	| Click and hold over the object. Move the mouse to rotate.
-|	Right mouse button	| Click and hold over the object. Move the mouse to move the camera position.
-|	W, A, S and D 		| Press one of them to move the camera position.
-|	Mouse scroll 		| Zoom in/out (camera movement in the object direction).
-|	X 					| Creates the icon of the current object (shortcut).
+|	Left mouse button 	| Click to focus on an object or point (if the orbit mode is `OnClickedLocation`, `OnObjectCenter` or `OnObjectPivot`)
+|	Right mouse button	| Click and hold. Move the mouse to move the rotate the camera.
+|	Middle mouse button	| Click and hold. Move the mouse to move the camera (pan).
+|	Middle mouse button	| Double click. Set the focus under the mouse position in the world.
+|	Middle mouse button	| Triple click. Remove the focus and set it to the default focus.
 |	R 					| Resets the camera position (shortcut).
-|	T 					| Resets the object rotation (shortcut).
 
+All the keys are customizable, you can change it to your own controls and adapt it to use with touch devices (for this case, check the touch section).
 
 
 ### Update log
