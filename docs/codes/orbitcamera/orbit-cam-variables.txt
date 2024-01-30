@@ -14,7 +14,6 @@ Camera Settings variables
 
 | `Variable`                  | `Description`                                                                                  | `Default value` |
 |-----------------------------|------------------------------------------------------------------------------------------------|-----------------|
-| Filmback | Camera filmback settings (sensor width, height and aspect ratio). | 35mm Full Aperture |
 | Lens | Camera lens settings. | Universal Zoom |
 | Focus | Camera focus settings. | None |
 | PostProcess | Camera post process settings. | (default post process values) |
