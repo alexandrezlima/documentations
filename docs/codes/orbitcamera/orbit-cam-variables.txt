@@ -1,3 +1,4 @@
+## Rotation variables
 | `Variable`                  | `Description`                                                                                  | `Default value` |
 |-----------------------------|------------------------------------------------------------------------------------------------|-----------------|
 | bInvertedYawRotation        | If true, inverts the yaw (left/right) rotation.                                                | FALSE           |
@@ -7,8 +8,19 @@
 | bEnableCameraRotationLag    | If true, enables the rotation lag (smooth rotation).                                           | TRUE            |
 | CameraRotationLagSpeed      | The greater this value, the greater is the rotation speed (less smoothness).                   | 10.0            |
 | bAutoYawRotation            | If true, will start an auto rotation on the yaw axis (left/right) using the "AutoYawRotationRate" variable's value as rotation rate. | FALSE |
+| AutoYawRotationRate         | Automatic yaw rotation rate. Uses this value to set the rotation rate speed if the "bAutoYawRotation" is true. | 5.0 |
+| bConstrainYawRotation       | If true, constrains the yaw (up/down) movement to the starting point until min/max set in the "YawRangeLimit" variable. | FALSE |
+| YawRangeLimit               | Sets the min and max yaw rotation if the "bContrainYawRotation" is true.                       | Min = -180, Max = 180|
+| bConstrainPitchRotation     | If true, constrains the pitch (left/right) movement to the starting point until min/max set in the "PitchRangeLimit" variable. | FALSE |
+| PitchRangeLimit             | Sets the min and max pitch rotation if the "bContrainPitchRotation" is true.                   | Min = -89.9, Max = 89.9 |
+
+## Zoom variables
 | | | |
 | | | |
+| | | |
+| | | |
+
+## Pan variables
 | bInvertedPanX               | If true, inverts the pan movement in the X axis.                                               | FALSE           |
 | bInvertedPanY               | If true, inverts the pan movement in the Y axis (Y axis in 2D space or Z axis in 3D space).    | FALSE           |
 | | | |
