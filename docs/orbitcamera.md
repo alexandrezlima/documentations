@@ -72,9 +72,17 @@ The main option in this asset is the orbit mode, found in the `OrbitMode` variab
 </figure>
 
 
-* `OnObjectPivot`: The camera will orbit around the object's pivot. Note that the pivot may coincide with the center of the object or not.
+* `OnObjectPivot`: the camera will orbit around the object's pivot. Note that the pivot may coincide with the center of the object or not.
 
-* `OnStartLocationOnly`.
+* `OnStartLocationOnly`: the camera will orbit the starting point, and it won't move to a different point.
+
+#### Starting mode
+The starting mode can help you align the camera initially. This variable (`StartingMode`, available in `BP_OrbitCamera`) can be combined with the `StartingActor` variable (available in the same blueprint) to focus on the center or pivot of a specific object.
+
+<figure markdown>
+![Starting mode](assets/orbitcamera-assets/objectcenter.png)
+<figcaption>Starting mode: first, set the starting mode (1); click over the picker (2); select the object to focus (3).</figcaption>
+</figure>
 
 ### Touch setup
 This asset can be used with touch devices. You'll need, however, setup some keys and settings as follows:
