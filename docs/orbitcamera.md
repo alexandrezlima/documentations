@@ -18,10 +18,6 @@ This asset enables the visualization of objects through orbital movement. You ha
 ### Unreal library
 First of all, download and add it to your project. You can find it in your `Unreal Engine Library`.
 
-<figure markdown>
-![Unreal Engine Library](assets/icongenerator-assets/icon-generator-download.png){ width="250" }
-<figcaption>Unreal Engine Library</figcaption>
-</figure>
 
 ### How to use
 The orbit camera is a pawn class. That means it is controlled by a controller (any controller, you can use even the default controller, no need to setup it!).
@@ -65,6 +61,12 @@ With this menu you can change the settings at runtime and check how it impacts i
 	</figure>
 
 #### Orbit mode
+The main option in this asset is the orbit mode, found in the `OrbitMode` variable in the `BP_OrbitCamera` blueprint. You have four options: `OnClickedLocation`, `OnObjectCenter`, `OnObjectPivot`, `OnStartLocationOnly`.
+
+* `OnClickedLocation`:
+* `OnObjectCenter`:
+* `OnObjectPivot`:
+* `OnStartLocationOnly`.
 
 ### Touch setup
 This asset can be used with touch devices. You'll need, however, setup some keys and settings as follows:
