@@ -103,7 +103,7 @@ Open the `BP_OrbitCamera`. In the variables panel, mark `bUseTouch` as `True`. T
 With these two settings, you will be able to use touch on supported devices such as mobiles. Using a two-finger **pinch** motion, you can zoom in and out. With **two taps** on the screen, you can focus on an object or a point (depending on the orbit mode you've selected). You can rotate either by **swiping** a finger on the screen or using the **right analog stick**. Finally, you can move the camera (pan) using the **left analog stick**.
 
 <figure markdown>
-![Mobile test](assets/orbitcamera-assets/mobiletest.png){ width=350 }
+![Mobile test](assets/orbitcamera-assets/mobiletest.png){ width=400 }
 <figcaption>Mobile test</figcaption>
 </figure>
 
