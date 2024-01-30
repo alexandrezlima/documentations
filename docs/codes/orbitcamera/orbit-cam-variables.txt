@@ -1,5 +1,6 @@
 ## General
 | `Variable`                  | `Description`                                                                                  | `Default value` |
+|-----------------------------|------------------------------------------------------------------------------------------------|-----------------|
 | CameraName | This camera name is displayed in the "Cameras" widget. | Camera |
 | OrbitMode | The orbit mode defines the click behavior of this camera. If "OnClickedLocation", the camera will be placed under the clicked location; if "OnObjectCenter", the camera will get the object's center as the orbit point; if "OnObjectPivot", the camera will get the object location (note that it can be the same location as the object center if the pivot is in its center); if "OnStartLocationOnly" the camera will be fixed at the starting position (it won't move if you click anywhere). | OnObjectCenter |
 | StartingMode | You can selected a starting mode for this camera. If "OnSelectedActorCenter" or "OnSelectedActorPìvot", make sure to select this actor in the "StartingActor" variable. | OnStartingLocation |
@@ -10,6 +11,7 @@
 
 ## Camera Settings
 | `Variable`                  | `Description`                                                                                  | `Default value` |
+|-----------------------------|------------------------------------------------------------------------------------------------|-----------------|
 | Filmback | Camera filmback settings (sensor width, height and aspect ratio). | 35mm Full Aperture |
 | Lens | Camera lens settings. | Universal Zoom |
 | Focus | Camera focus settings. | None |
@@ -17,6 +19,7 @@
 
 ## Pan variables
 | `Variable`                  | `Description`                                                                                  | `Default value` |
+|-----------------------------|------------------------------------------------------------------------------------------------|-----------------|
 | bContinuousPanMovement      | If true, the pan movement will continous follow the mouse cursor direction. If false, the movement will stop once the mouse cursor stops. | TRUE |
 | bInvertedPanX               | If true, inverts the pan movement in the X axis.                                               | FALSE           |
 | bInvertedPanY               | If true, inverts the pan movement in the Y axis (Y axis in 2D space or Z axis in 3D space).    | FALSE           |
@@ -44,6 +47,7 @@
 
 ## Zoom variables
 | `Variable`                  | `Description`                                                                                  | `Default value` |
+|-----------------------------|------------------------------------------------------------------------------------------------|-----------------|
 | ZoomType                    | Defines the zoom type: camera distance (spring arm target arm length), focal length or dolly zoom effect. | CameraDistance |
 | ZoomSensitivity             | Defines the zoom sensitivity for each zoom type.                                               | CameraDistance=5, FocalLength=5, DollyZoomEffect=5 |
 | bInvertedZoom               | If true, inverts the zoom movement.                                                            | FALSE |
@@ -58,6 +62,7 @@
 
 ## Autofocus
 | `Variable`                  | `Description`                                                                                  | `Default value` |
+|-----------------------------|------------------------------------------------------------------------------------------------|-----------------|
 | AutofocusTraceChannel       | Defines the collision channel in order to find points to focus. | VISIBILITY |
 | bAutofocusOnChangedPosition | If true, autofocus the lenses in the orbit point. | FALSE |
 | bSmoothFocusChanges         | If true, enables the autofocus smoothness in the focus changes.                    | TRUE |
@@ -65,6 +70,7 @@
 
 ## Screenshot
 | `Variable`                  | `Description`                                                                                  | `Default value` |
+|-----------------------------|------------------------------------------------------------------------------------------------|-----------------|
 | bUseCustomScreenshotPath    | If true, uses the "CustomScreenshotPath" variable as the default screenshot path. You can set it using the "SetScreenshotPath" function. | FALSE |
 | CustomScreenshotPath        | Use combined with "bUseCustomScreenshotPath" variable to save your screenshots in a custom path.  | (empty) |
 | bShowScreenshotFlash        | If true, performs an white flash animation by calling a widget.                                   | TRUE |
@@ -72,11 +78,13 @@
 
 ## Touch (make sure to check out the touch section in this documentation to setup touch devices, including the variables below).
 | `Variable`                  | `Description`                                                                                  | `Default value` |
+|-----------------------------|------------------------------------------------------------------------------------------------|-----------------|
 | bUseTouch                   | If true, uses touch events in trace channels checks instead of mouse events.                   | FALSE           |
 | CollisionFingerIndex        | Select the finger index for touch events.                                                      | TOUCH 1 |
 
 ## Debug
 | `Variable`                  | `Description`                                                                                  | `Default value` |
+|-----------------------------|------------------------------------------------------------------------------------------------|-----------------|
 | bShowCamerasMenu            | If true, shows the cameras menu.                                                               | TRUE |
 | bEnableDebugMenu            | If true, shows the debug menu on which you can test changing some variables at runtime.        | TRUE |
 | bDebugFocusedObject         | If true, shows a green debug box with the object size around the focused object.               | FALSE |
