@@ -81,7 +81,7 @@ The starting mode can help you align the camera initially. This variable (`Start
 
 <figure markdown>
 ![Starting mode](assets/orbitcamera-assets/startingmode.png)
-<figcaption>Starting mode: first, set the starting mode (1); click over the picker (2); select the object to focus (3).</figcaption>
+<figcaption>Starting mode: set the starting mode (1); click over the picker (2); select the object to focus (3).</figcaption>
 </figure>
 
 ### Touch setup
