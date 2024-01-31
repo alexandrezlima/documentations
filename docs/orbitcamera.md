@@ -85,6 +85,13 @@ To select the starting actor for a specific orbit camera, click over the orbit c
 <figcaption>Starting mode: set the starting mode (1); click over the picker (2); select the object to focus (3).</figcaption>
 </figure>
 
+#### Limiting rotation
+
+#### Limiting pan
+
+#### Zoom type
+(gif)
+
 ### Touch setup
 This asset can be used with touch devices. You'll need, however, enable some booleans settings as follows:
 
