@@ -16,7 +16,7 @@ This asset enables the visualization of objects through orbital movement. You ha
 
 ## Getting started
 ### Unreal library
-First of all, download and add it to your project. You can find it in your `Unreal Engine Library`.
+First of all, download the Orbit Camera asset and add it to your project. You can find it in your `Unreal Engine Library`.
 
 
 ### How to use
@@ -86,8 +86,10 @@ To select the starting actor for a specific orbit camera, click over the orbit c
 </figure>
 
 #### Limiting rotation
+With the camera selected in the level, go to its details panel. 
 
 #### Limiting pan
+With the camera selected in the level, go to its details panel.
 
 #### Zoom type
 (gif)
