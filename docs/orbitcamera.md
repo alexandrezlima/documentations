@@ -18,6 +18,11 @@ This asset enables the visualization of objects through orbital movement. You ha
 ### Unreal library
 First of all, download the Orbit Camera asset and add it to your project. You can find it in your `Unreal Engine Library`.
 
+<figure markdown>
+![Unreal Engine Library](assets/orbitcamera-assets/orbit-camera-marketplace.png){ width="250" }
+<figcaption>Unreal Engine Library</figcaption>
+</figure>
+
 
 ### How to use
 The orbit camera is a pawn class. That means it is controlled by a controller (any controller, you can use even the default controller, no need to setup it!).
@@ -86,13 +91,15 @@ To select the starting actor for a specific orbit camera, click over the orbit c
 </figure>
 
 #### Limiting rotation
-With the camera selected in the level, go to its details panel. 
+With the camera selected in the level, go to its details panel. In the `Rotation` section, you'll find two boolean variables: `bConstrainYawRotation` and `bConstrainPitchRotation`. Mark as `True` the axis that you want to limit (you can selected one or both).
+
+Then, you just need to set the range limit below the boolean variable (`YawRangeLimit` and `PitchRangeLimit`). The min and max values are the relative rotation considering your current rotation. So if it is something like `{-10, +10}` in the Yaw axis, you'll be able to rotate +10 to the left and +10 to the right. The same idea is can be applied in the pitch axis.
 
 #### Limiting pan
-With the camera selected in the level, go to its details panel.
+With the camera selected in the level, go to its details panel. In the `Pan` section, click on the `Add Pan Bounds` button. It will create a box around your current orbit location. You can edit it by increasing the `PanConstrainRotation` and `PanContrainExtent` variables (if you edit the rotation, make sure to hit the `Remove Pan Bounds` button and re-add it in the `Add Pan Bounds` button). Your camera will be limited and will be able to move within this box.
 
 #### Zoom type
-(gif)
+You can select different zoom types in the `Zoom` section (to find it, select the camera in the level and go to its details panel). The `ZoomType` variable will set the zoom type. You can edit its sensitivity in the `ZoomSensitivity` variable.
 
 ### Touch setup
 This asset can be used with touch devices. You'll need, however, enable some booleans settings as follows:
