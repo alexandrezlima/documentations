@@ -101,6 +101,19 @@ With the camera selected in the level, go to its details panel. In the `Pan` sec
 #### Zoom type
 You can select different zoom types in the `Zoom` section (to find it, select the camera in the level and go to its details panel). The `ZoomType` variable will set the zoom type. You can edit its sensitivity in the `ZoomSensitivity` variable.
 
+#### Ignoring collision
+You have chosen the orbit mode `OnClickedLocation`, `ObjectCenter`, or `ObjectPivot` and wish to disable collision (in this case, identifying an object by click) for a specific object, such as the floor? To ignore an object in the Orbit Camera's click recognition, simply mark the collision channel of the corresponding object as `Ignore` in the collision channel present in the variable `OrbitLocationTraceChannel` within the `BP_OrbitCamera`. To do this:
+
+* Click on the object in the world that you want to ignore.
+* In the details panel, navigate to the `Collision` section.
+* Under `Collision Presets`, choose `Custom`.
+* Right below, in the same panel, look for the trace channel present in the variable `OrbitLocationTraceChannel`. By default, this channel is set to `visibility`. In this example, simply mark `visibility` as `ignore`.
+
+<figure markdown>
+![Collision settings](assets/orbitcamera-assets/collision.png)
+<figcaption>Collision settings</figcaption>
+</figure>
+
 ### Touch setup
 This asset can be used with touch devices. You'll need, however, enable some booleans settings as follows:
 
