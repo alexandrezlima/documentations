@@ -63,7 +63,7 @@ This load method is interesting for those who want to have control over the load
 <figcaption>Load Method: Data Table</figcaption>
 </figure>
 
-Now, all the objects will be loaded from data tables, located in `Content → Icon Generator → DataTables`. They are: `DT_StaticMeshes`, `DT_SkeletalMeshes` and `DT_Blueprints`.
+Now, all the objects will be loaded from data tables, located in `Content → Icon Generator → DataTables`. They are: `DT_StaticMeshes`, `DT_SkeletalMeshes` and `DT_Blueprints`. Please, note that these data tables includes items from the demo folder. If you want to delete these items, make sure to remove them from the data table. EDIT may 2024: [this video shows how you can remove the entire demo folder](https://www.youtube.com/watch?v=sttlktYFdFU).
 
 <figure markdown>
 ![Data tables objects - Icon Generator](assets/icongenerator-assets/icon-generator-data-tables-1.png){ width=500 }
