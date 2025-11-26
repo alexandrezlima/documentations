@@ -1,0 +1,1561 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://alexandrezlima.github.io/documentations/orbitcamera/">
+      
+      
+        <link rel="prev" href="../lockon/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Orbit Camera - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#orbit-camera-version-10" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Orbit Camera
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advancedphotomode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Photo Mode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../icongenerator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Icon Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lockon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lock-on Targeting System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orbit Camera
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orbit Camera
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#last-mod-2024-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Last mod.: 2024-01
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unreal-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unreal library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to use
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#orbit-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Orbit mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limiting-rotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limiting rotation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limiting-pan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limiting pan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zoom-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zoom type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ignoring-collision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ignoring collision
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touch-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Touch setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Touch setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-enabling-gestures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Enabling gestures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-touch-in-bp_orbitcamera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Touch in BP_OrbitCamera
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-using-touch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Using touch
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screenshots-and-album" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screenshots and album
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update log
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions-and-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Questions and Answers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#last-mod-2024-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Last mod.: 2024-01
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unreal-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unreal library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to use
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#orbit-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Orbit mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limiting-rotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limiting rotation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limiting-pan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limiting pan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zoom-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zoom type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ignoring-collision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ignoring collision
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touch-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Touch setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Touch setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-enabling-gestures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Enabling gestures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-touch-in-bp_orbitcamera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Touch in BP_OrbitCamera
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-using-touch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Using touch
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screenshots-and-album" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screenshots and album
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update log
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions-and-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Questions and Answers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="orbit-camera-version-10">ORBIT CAMERA | version 1.0</h1>
+<h5 id="last-mod-2024-01">Last mod.: 2024-01</h5>
+<h2 id="introduction">Introduction</h2>
+<p>This asset enables the visualization of objects through orbital movement. You have the flexibility to choose the behavior: orbit under click location, around the object's center, or around its original pivot. The asset provides a range of variables for customization. Try the web demo at this <a href="https://alexandrezlima.github.io/orbitcamerademo/">link</a> or download the Windows version for free at <a href="https://drive.google.com/file/d/1VqFKOF9S8F1EqYrwe4Jgqu0m4yUJFgNC/view?usp=sharing">this link</a>.</p>
+<h2 id="getting-started">Getting started</h2>
+<h3 id="unreal-library">Unreal library</h3>
+<p>First of all, download the Orbit Camera asset and add it to your project. You can find it in your <code>Unreal Engine Library</code>.</p>
+<figure>
+<p><img alt="Unreal Engine Library" src="../assets/orbitcamera-assets/orbit-camera-marketplace.png" width="250" /></p>
+<figcaption>Unreal Engine Library</figcaption>
+</figure>
+<h3 id="how-to-use">How to use</h3>
+<p>The orbit camera is a pawn class. That means it is controlled by a controller (any controller, you can use even the default controller, no need to setup it!).</p>
+<p>Go to the <code>Content → OrbitCamera → Blueprints → BP_OrbitCamera</code>, drag and drop the <code>BP_OrbitCamera</code> into your level and that's all, after hitting play you'll control the orbit camera.</p>
+<figure>
+<p><img alt="Drag and drop" src="../assets/orbitcamera-assets/orbit-camera-usage.png" /></p>
+<figcaption>Drag and drop the `BP_OrbitCamera`</figcaption>
+</figure>
+<p>You may want to customize the orbit camera settings. The process to edit it is very simple: click over the orbit camera in the world, go to the details panel and you'll notice a lot of exposed variables to customize.</p>
+<figure>
+<p><img alt="Orbit camera customizations" src="../assets/orbitcamera-assets/settings.png" /></p>
+<figcaption>Orbit camera settings</figcaption>
+</figure>
+<p>Each variable has a tooltip with a description that tells you what it does (hover the mouse cursor over the variable). If you want to test most of the variables at runtime, make sure to mark the variable <code>bEnableDebugMenu</code> as <code>True</code> and a menu will show up after you hit play.</p>
+<figure>
+<p><img alt="Debug menu" src="../assets/orbitcamera-assets/orbit-camera-debug.png" /></p>
+<figcaption>Debug menu</figcaption>
+</figure>
+<p>With this menu you can change the settings at runtime and check how it impacts in the camera behavior. Take your time and tweak it!</p>
+<details class="info">
+<summary>Testing the demo level</summary>
+<p>After adding the asset to your project, you can test it by opening the <code>L_Showcase</code> map. It can be found at: <code>Content → OrbitCamera → Demo → Maps</code>.</p>
+<p><figure markdown>
+<img alt="Unreal Engine Library" src="../assets/orbitcamera-assets/orbit-camera-map.png" />
+<figcaption>Orbit Camera map</figcaption>
+</figure></p>
+<p>Once in the map level, you can hit play and try out 4 cameras in the level. They're all the same camera class with different settings (you can customize these settings by clicking over the camera and checking the details panel).</p>
+<p><figure markdown>
+<img alt="Orbit camera customizations" src="../assets/orbitcamera-assets/settings.png" />
+<figcaption>Orbit camera settings</figcaption>
+</figure></p>
+</details>
+<h4 id="orbit-mode">Orbit mode</h4>
+<p>The main option in this asset is the orbit mode, found in the <code>OrbitMode</code> variable in the <code>BP_OrbitCamera</code> blueprint. You have four options: <code>OnClickedLocation</code>, <code>OnObjectCenter</code>, <code>OnObjectPivot</code>, <code>OnStartLocationOnly</code>.</p>
+<ul>
+<li>
+<p><code>OnClickedLocation</code>: the camera will orbit the clicked (or touch, check the <a href="#Touch-setup"><mark class="critic">#Touch</mark></a> section) point. Surfaces are recognized if they have a collision response corresponding to the type specified in the <code>OrbitLocationTraceChannel</code> variable. By default, this channel is set to <code>Visibility</code>. In the demo map, for example, the floor is marked to ignore <code>Visibility</code> trace channels and the objects in the level are marked to block this channel.</p>
+</li>
+<li>
+<p><code>OnObjectCenter</code>: the camera will orbit the object's center. Imagine a box in which your object fits perfectly in terms of height, width, and length. The center of the object will be the center of this imaginary box. You can visualize this imaginary box by toggling the 'bDebugFocusedObject' variable to <code>True</code>, either in the variables panel or directly in the debug menu widget.</p>
+</li>
+</ul>
+<figure>
+<p><img alt="Debugging object bounds" src="../assets/orbitcamera-assets/objectcenter.png" width="300" /></p>
+<figcaption>Debugging object bounds</figcaption>
+</figure>
+<ul>
+<li>
+<p><code>OnObjectPivot</code>: the camera will orbit around the object's pivot. Note that the pivot may coincide with the center of the object or not.</p>
+</li>
+<li>
+<p><code>OnStartLocationOnly</code>: the camera will orbit the starting point, and it won't move to a different point (you can rotate and pan, unless you limit it).</p>
+</li>
+</ul>
+<h4 id="starting-mode">Starting mode</h4>
+<p>The starting mode can help you align the camera initially. This variable (<code>StartingMode</code>, available in <code>BP_OrbitCamera</code>) can be combined with the <code>StartingActor</code> variable (available in the same blueprint) to focus on the center or pivot of a specific object.</p>
+<p>To select the starting actor for a specific orbit camera, click over the orbit camera in the level, go to the details panel, select the starting mode and pick the starting actor as follows.</p>
+<figure>
+<p><img alt="Starting mode" src="../assets/orbitcamera-assets/startingmode.png" /></p>
+<figcaption>Starting mode: set the starting mode (1); click over the picker (2); select the object to focus (3).</figcaption>
+</figure>
+<h4 id="limiting-rotation">Limiting rotation</h4>
+<p>With the camera selected in the level, go to its details panel. In the <code>Rotation</code> section, you'll find two boolean variables: <code>bConstrainYawRotation</code> and <code>bConstrainPitchRotation</code>. Mark as <code>True</code> the axis that you want to limit (you can selected one or both).</p>
+<p>Then, you just need to set the range limit below the boolean variable (<code>YawRangeLimit</code> and <code>PitchRangeLimit</code>). The min and max values are the relative rotation considering your current rotation. So if it is something like <code>{-10, +10}</code> in the Yaw axis, you'll be able to rotate +10 to the left and +10 to the right. The same idea is can be applied in the pitch axis.</p>
+<h4 id="limiting-pan">Limiting pan</h4>
+<p>With the camera selected in the level, go to its details panel. In the <code>Pan</code> section, click on the <code>Add Pan Bounds</code> button. It will create a box around your current orbit location. You can edit it by increasing the <code>PanConstrainRotation</code> and <code>PanContrainExtent</code> variables (if you edit the rotation, make sure to hit the <code>Remove Pan Bounds</code> button and re-add it in the <code>Add Pan Bounds</code> button). Your camera will be limited and will be able to move within this box.</p>
+<h4 id="zoom-type">Zoom type</h4>
+<p>You can select different zoom types in the <code>Zoom</code> section (to find it, select the camera in the level and go to its details panel). The <code>ZoomType</code> variable will set the zoom type. You can edit its sensitivity in the <code>ZoomSensitivity</code> variable.</p>
+<h4 id="ignoring-collision">Ignoring collision</h4>
+<p>You have chosen the orbit mode <code>OnClickedLocation</code>, <code>ObjectCenter</code>, or <code>ObjectPivot</code> and wish to disable collision (in this case, identifying an object by click) for a specific object, such as the floor? To ignore an object in the Orbit Camera's click recognition, simply mark the collision channel of the corresponding object as <code>Ignore</code> in the collision channel present in the variable <code>OrbitLocationTraceChannel</code> within the <code>BP_OrbitCamera</code>. To do this:</p>
+<ul>
+<li>Click on the object in the world that you want to ignore.</li>
+<li>In the details panel, navigate to the <code>Collision</code> section.</li>
+<li>Under <code>Collision Presets</code>, choose <code>Custom</code>.</li>
+<li>Right below, in the same panel, look for the trace channel present in the variable <code>OrbitLocationTraceChannel</code>. By default, this channel is set to <code>visibility</code>. In this example, simply mark <code>visibility</code> as <code>ignore</code>.</li>
+</ul>
+<figure>
+<p><img alt="Collision settings" src="../assets/orbitcamera-assets/collision.png" /></p>
+<figcaption>Collision settings</figcaption>
+</figure>
+<h3 id="touch-setup">Touch setup</h3>
+<p>This asset can be used with touch devices. You'll need, however, enable some booleans settings as follows:</p>
+<h4 id="1-enabling-gestures">1. Enabling gestures</h4>
+<p>To use gestures like pinch, we need to enable the gesture recognizer in the project settings. To do this, click on <code>Edit → Project Settings</code> at the top bar. Search <code>gesture</code> and mark <code>EnableGestureRecognizer</code> as <code>True</code>.</p>
+<figure>
+<p><img alt="Gestures" src="../assets/orbitcamera-assets/gestures.png" /></p>
+<figcaption>Project settings: gestures</figcaption>
+</figure>
+<h4 id="2-touch-in-bp_orbitcamera">2. Touch in BP_OrbitCamera</h4>
+<p>Open the <code>BP_OrbitCamera</code>. In the variables panel, mark <code>bUseTouch</code> as <code>True</code>. This ensures that the touch input will be used in the trace channels events.</p>
+<h4 id="3-using-touch">3. Using touch</h4>
+<p>With these two settings, you will be able to use touch on supported devices such as mobiles. Using a two-finger <strong>pinch</strong> motion, you can zoom in and out. With <strong>two taps</strong> on the screen, you can focus on an object or a point (depending on the orbit mode you've selected). You can rotate either by <strong>swiping</strong> a finger on the screen or using the <strong>right analog stick</strong>. Finally, you can move the camera (pan) using the <strong>left analog stick</strong>.</p>
+<figure>
+<p><img alt="Mobile test" src="../assets/orbitcamera-assets/mobiletest.png" width="400" /></p>
+<figcaption>Mobile test</figcaption>
+</figure>
+<h3 id="screenshots-and-album">Screenshots and album</h3>
+<p>You can take screenshots using the <code>P</code> key or the <code>Screenshot</code> button at the bottom center of the screen. You can check all the photos taken in the album by pressing <code>G</code> or the <code>Album</code> button at the bottom center of the screen.</p>
+<p>It is possible to customize it as well by editing the <code>W_ScreenshotAndAlbum</code> widget or editing the keys in the <code>BP_OrbitCamera</code> blueprint (at <code>Content → OrbitCamera → Blueprints</code> folder).</p>
+<p>You can edit both screenshot path and resolution. To edit the path, make sure to mark <code>bCustomScreenshotPath</code> variable as <code>True</code>. Then, you can set the custom path in two ways: 
+    1) call the function <code>SetScreenshotPath</code> (for example in the begin play node) and pass your path as a parameter; 
+    or
+    2) set the <code>CustomScreenshotPath</code> string variable with your custom path.</p>
+<p>To edit the resolution open the <code>GetScreenshotResolution</code> function in the <code>BP_OrbitCamera</code> blueprint and edit the resolution return. By default, the screenshot resolution is the same as your application window size.</p>
+<h3 id="variables">Variables</h3>
+<p>You can find the variables descriptions below. All the variables have a tooltip in the project (to check there, just hover over the variable!).</p>
+<details class="abstract">
+<summary>Variables</summary>
+<p>General variables</p>
+<table>
+<thead>
+<tr>
+<th><code>Variable</code></th>
+<th><code>Description</code></th>
+<th><code>Default value</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CameraName</td>
+<td>This camera name is displayed in the "Cameras" widget.</td>
+<td>Camera</td>
+</tr>
+<tr>
+<td>OrbitMode</td>
+<td>The orbit mode defines the click behavior of this camera. If "OnClickedLocation", the camera will be placed under the clicked location; if "OnObjectCenter", the camera will get the object's center as the orbit point; if "OnObjectPivot", the camera will get the object location (note that it can be the same location as the object center if the pivot is in its center); if "OnStartLocationOnly" the camera will be fixed at the starting position (it won't move if you click anywhere).</td>
+<td>OnObjectCenter</td>
+</tr>
+<tr>
+<td>StartingMode</td>
+<td>You can selected a starting mode for this camera. If "OnSelectedActorCenter" or "OnSelectedActorPìvot", make sure to select this actor in the "StartingActor" variable.</td>
+<td>OnStartingLocation</td>
+</tr>
+<tr>
+<td>DefaultCameraDistance</td>
+<td>Starting camera distance.</td>
+<td>250.0</td>
+</tr>
+<tr>
+<td>DefaultFocalLength</td>
+<td>Starting camera Focal Length.</td>
+<td>35.0</td>
+</tr>
+<tr>
+<td>bShowMouseCursor</td>
+<td>If true, shows the mouse cursor</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>StartingActor</td>
+<td>Select an actor in the level combined with the "StartingMode" variable. You can, for example, orbit around a selected object.</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<p>Camera Settings variables</p>
+<table>
+<thead>
+<tr>
+<th><code>Variable</code></th>
+<th><code>Description</code></th>
+<th><code>Default value</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lens</td>
+<td>Camera lens settings.</td>
+<td>Universal Zoom</td>
+</tr>
+<tr>
+<td>Focus</td>
+<td>Camera focus settings.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>PostProcess</td>
+<td>Camera post process settings.</td>
+<td>(default post process values)</td>
+</tr>
+</tbody>
+</table>
+<p>Pan variables</p>
+<table>
+<thead>
+<tr>
+<th><code>Variable</code></th>
+<th><code>Description</code></th>
+<th><code>Default value</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bContinuousPanMovement</td>
+<td>If true, the pan movement will continous follow the mouse cursor direction. If false, the movement will stop once the mouse cursor stops.</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>bInvertedPanX</td>
+<td>If true, inverts the pan movement in the X axis.</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>bInvertedPanY</td>
+<td>If true, inverts the pan movement in the Y axis (Y axis in 2D space or Z axis in 3D space).</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>PanSpeed</td>
+<td>The greater this value, the faster the camera's pan movement.</td>
+<td>7.5</td>
+</tr>
+<tr>
+<td>PanInterpolationSpeed</td>
+<td>The greater this value, the faster the interpolation in the camera pan.</td>
+<td>5.0</td>
+</tr>
+<tr>
+<td>PanConstrainExtent</td>
+<td>The pan bounds extent. To add bounds, make sure to hit the "AddPanBounds" button in the details panel of your orbit camera in the world.</td>
+<td>X=25, Y=25, Z=25</td>
+</tr>
+<tr>
+<td>PanConstrainRotation</td>
+<td>Pan bounds rotation.</td>
+<td>Roll=0, Pitch=45, Yaw=0</td>
+</tr>
+<tr>
+<td>PanBounds</td>
+<td>Pan bounds, is valid if you've added, using the "AddPanBounds" button, bounds for the pan movement.</td>
+<td>None (is autogenerated after hitting the "AddPanBounds" variable)</td>
+</tr>
+</tbody>
+</table>
+<p>Rotation variables</p>
+<table>
+<thead>
+<tr>
+<th><code>Variable</code></th>
+<th><code>Description</code></th>
+<th><code>Default value</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bInvertedYawRotation</td>
+<td>If true, inverts the yaw (left/right) rotation.</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>YawRotationSpeed</td>
+<td>The greater this value, the faster the speed of the rotation in the yaw (left/right) axis.</td>
+<td>75.0</td>
+</tr>
+<tr>
+<td>bInvertedPitchRotation</td>
+<td>If true, inverts the pitch (up/down) rotation.</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>PitchRotationSpeed</td>
+<td>The greater this value, the faster the speed of the rotation in the pitch (up/down) axis.</td>
+<td>75.0</td>
+</tr>
+<tr>
+<td>bEnableCameraRotationLag</td>
+<td>If true, enables the rotation lag (smooth rotation).</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>CameraRotationLagSpeed</td>
+<td>The greater this value, the greater is the rotation speed (less smoothness).</td>
+<td>10.0</td>
+</tr>
+<tr>
+<td>bAutoYawRotation</td>
+<td>If true, will start an auto rotation on the yaw axis (left/right) using the "AutoYawRotationRate" variable's value as rotation rate.</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>AutoYawRotationRate</td>
+<td>Automatic yaw rotation rate. Uses this value to set the rotation rate speed if the "bAutoYawRotation" is true.</td>
+<td>5.0</td>
+</tr>
+<tr>
+<td>bConstrainYawRotation</td>
+<td>If true, constrains the yaw (up/down) movement to the starting point until min/max set in the "YawRangeLimit" variable.</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>YawRangeLimit</td>
+<td>Sets the min and max yaw rotation if the "bContrainYawRotation" is true.</td>
+<td>Min = -180, Max = 180</td>
+</tr>
+<tr>
+<td>bConstrainPitchRotation</td>
+<td>If true, constrains the pitch (left/right) movement to the starting point until min/max set in the "PitchRangeLimit" variable.</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>PitchRangeLimit</td>
+<td>Sets the min and max pitch rotation if the "bContrainPitchRotation" is true.</td>
+<td>Min = -89.9, Max = 89.9</td>
+</tr>
+</tbody>
+</table>
+<p>Zoom variables</p>
+<table>
+<thead>
+<tr>
+<th><code>Variable</code></th>
+<th><code>Description</code></th>
+<th><code>Default value</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ZoomType</td>
+<td>Defines the zoom type: camera distance (spring arm target arm length), focal length or dolly zoom effect.</td>
+<td>CameraDistance</td>
+</tr>
+<tr>
+<td>ZoomSensitivity</td>
+<td>Defines the zoom sensitivity for each zoom type.</td>
+<td>CameraDistance=5, FocalLength=5, DollyZoomEffect=5</td>
+</tr>
+<tr>
+<td>bInvertedZoom</td>
+<td>If true, inverts the zoom movement.</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>CameraDistanceInterpolationSpeed</td>
+<td>The greater this value, the faster the interpolation in the camera distance movement.</td>
+<td>10.0</td>
+</tr>
+<tr>
+<td>CameraDistanceRange</td>
+<td>Sets a limit in the camera zoom (camera distance).</td>
+<td>Min=50, Max=1000</td>
+</tr>
+<tr>
+<td>FocalLengthInterpolationSpeed</td>
+<td>The greater this value, the faster the interpolation in the focal length (zoom) movement.</td>
+<td>10.0</td>
+</tr>
+<tr>
+<td>FocalLengthRange</td>
+<td>Sets a limit in the camera zoom (focal length).</td>
+<td>Min=10, Max=75</td>
+</tr>
+<tr>
+<td>DollyEffectInterpolationSpeed</td>
+<td>The greater this value, the faster the interpolation in the dolly effect movement.</td>
+<td>10.0</td>
+</tr>
+<tr>
+<td>DollyEffectStartingWidth</td>
+<td>Sets a starting value for the dolly effect. The greater this value, the bigger the distance is.</td>
+<td>180.0</td>
+</tr>
+<tr>
+<td>bAutomaticZoom</td>
+<td>If true, adjusts the target arm length to visualize the entire object on screen.</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>AutomaticZoomScale</td>
+<td>Adjusts the automatic zoom scale. You may need to edit this for different focal lengths.</td>
+<td>3.0</td>
+</tr>
+</tbody>
+</table>
+<p>Autofocus variables</p>
+<table>
+<thead>
+<tr>
+<th><code>Variable</code></th>
+<th><code>Description</code></th>
+<th><code>Default value</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AutofocusTraceChannel</td>
+<td>Defines the collision channel in order to find points to focus.</td>
+<td>VISIBILITY</td>
+</tr>
+<tr>
+<td>bAutofocusOnChangedPosition</td>
+<td>If true, autofocus the lenses in the orbit point.</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>bSmoothFocusChanges</td>
+<td>If true, enables the autofocus smoothness in the focus changes.</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>FocusSmoothingInterpSpeed</td>
+<td>The greater this value, the faster the interpolation speed in the autofocus event.</td>
+<td>8.0</td>
+</tr>
+</tbody>
+</table>
+<p>Screenshot variables</p>
+<table>
+<thead>
+<tr>
+<th><code>Variable</code></th>
+<th><code>Description</code></th>
+<th><code>Default value</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bUseCustomScreenshotPath</td>
+<td>If true, uses the "CustomScreenshotPath" variable as the default screenshot path. You can set it using the "SetScreenshotPath" function.</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>CustomScreenshotPath</td>
+<td>Use combined with "bUseCustomScreenshotPath" variable to save your screenshots in a custom path.</td>
+<td>(empty)</td>
+</tr>
+<tr>
+<td>bShowScreenshotFlash</td>
+<td>If true, performs an white flash animation by calling a widget.</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>bShowScreenshotAndAlbum</td>
+<td>If true, shows the "screenshot" and "album" buttons at the bottom center of the screen.</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+<p>Touch variables (make sure to check out the touch section in this documentation to setup touch devices, including the variables below).</p>
+<table>
+<thead>
+<tr>
+<th><code>Variable</code></th>
+<th><code>Description</code></th>
+<th><code>Default value</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bUseTouch</td>
+<td>If true, uses touch events in trace channels checks instead of mouse events.</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>CollisionFingerIndex</td>
+<td>Select the finger index for touch events.</td>
+<td>TOUCH 1</td>
+</tr>
+</tbody>
+</table>
+<p>Debug variables</p>
+<table>
+<thead>
+<tr>
+<th><code>Variable</code></th>
+<th><code>Description</code></th>
+<th><code>Default value</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bShowCamerasMenu</td>
+<td>If true, shows the cameras menu.</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>bEnableDebugMenu</td>
+<td>If true, shows the debug menu on which you can test changing some variables at runtime.</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>bDebugFocusedObject</td>
+<td>If true, shows a green debug box with the object size around the focused object.</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>bDebugOrbitPointLocation</td>
+<td>If true, shows a small red debug sphere at the orbit point location (it may not appear if inside another object).</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>bDebugAutofocusPoint</td>
+<td>If true, shows the a blue debug sphere where the focus point currently is.</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>bDrawDebugTrackingFocusPoint</td>
+<td>If true, shows a debug cube where the focus area currently is.</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="controls">Controls</h3>
+<p>The orbit camera has some input controls:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><code>Key</code></th>
+<th style="text-align: left;"><code>Action/Description</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Left mouse button</td>
+<td style="text-align: left;">Click to focus on an object or point (if the orbit mode is <code>OnClickedLocation</code>, <code>OnObjectCenter</code> or <code>OnObjectPivot</code>)</td>
+</tr>
+<tr>
+<td style="text-align: right;">Right mouse button</td>
+<td style="text-align: left;">Click and hold. Move the mouse to move the rotate the camera.</td>
+</tr>
+<tr>
+<td style="text-align: right;">Middle mouse button</td>
+<td style="text-align: left;">Click and hold. Move the mouse to move the camera (pan).</td>
+</tr>
+<tr>
+<td style="text-align: right;">Middle mouse button</td>
+<td style="text-align: left;">Double click. Set the focus under the mouse position in the world.</td>
+</tr>
+<tr>
+<td style="text-align: right;">Middle mouse button</td>
+<td style="text-align: left;">Triple click. Remove the focus and set it to the default focus.</td>
+</tr>
+<tr>
+<td style="text-align: right;">R</td>
+<td style="text-align: left;">Resets the camera position (shortcut).</td>
+</tr>
+<tr>
+<td style="text-align: right;">P</td>
+<td style="text-align: left;">Takes a screenshot and saves it in the album.</td>
+</tr>
+<tr>
+<td style="text-align: right;">G</td>
+<td style="text-align: left;">Opens the album.</td>
+</tr>
+</tbody>
+</table>
+<p>All the keys are customizable, you can change it to your own controls by editing the <code>BP_OrbitCamera</code> blueprint. You can also adapt it to use with touch devices (for this case, check the touch section for instructions).</p>
+<h3 id="update-log">Update log</h3>
+<p><strong><code>2024/02:</code> version 1.0 launch.</strong></p>
+<h3 id="questions-and-answers">Questions and Answers</h3>
+<details class="question">
+<summary>I would like to try this asset. Do you have any demo available?</summary>
+<p>Yes! You can try this asset directly in your browser at this <a href="https://alexandrezlima.github.io/orbitcamerademo/">link</a> or you can download the Windows version at <a href="https://drive.google.com/file/d/15wPyf7BoVktPu3DqqN-iDd5KeHNA2Etk/view?usp=sharing">this link</a> (WebGL application for html5, this is not a streaming project). This demo brings a debug menu where you can test a lot of customization options at runtime that are available in the asset. The web demo version doesn't supoport high resolution screenshots and the blur effects are reduced compared to the desktop version.</p>
+</details>
+<details class="question">
+<summary>Can I have more than one camera in my level?</summary>
+<p>Yes, you can have one or multiple orbit cameras in your level. For example, you can setup multiple cameras to view different points of an object. You can limit the movement and rotation of each camera individually.</p>
+<p>To control the first possessed camera, make sure to click over your secondary cameras, go to the details panel and mark <code>Auto Possess Player</code> as <code>Disabled</code>.</p>
+<p>If you want to be able to switch over multiple cameras at runtime using buttons in a menu, mark the <code>bShowCamerasMenu</code> variable as <code>True</code> in the <code>BP_OrbitCamera</code> blueprint. A menu will show up with your multiple cameras (feel free to edit its appearance in the <code>W_Cameras</code> widget at <code>Content → OrbitCamera → Widgets</code> folder). You can edit their names in the <code>CameraName</code> variable in the details panel of each camera (this name will be displayed in the widget).</p>
+</details>
+<details class="question">
+<summary>Can I choose a different path for my screenshots?</summary>
+<p>Yes, you can. First, make sure to mark <code>bCustomScreenshotPath</code> variable as <code>True</code>. Then, you can set the custom path in two ways: </p>
+<p>1) call the function <code>SetScreenshotPath</code> (for example in the begin play node) and pass your path as a parameter; 
+or
+2) set the <code>CustomScreenshotPath</code> string variable with your custom path.</p>
+</details>
+<details class="question">
+<summary>Can I increase the screenshot resolution?</summary>
+<p>Yes, you can increase the screenshot resolution. Open the <code>GetScreenshotResolution</code> function in the <code>BP_OrbitCamera</code> blueprint and edit the resolution return. By default, the screenshot resolution is the same as your application window size.</p>
+<p><figure markdown>
+<img alt="Screenshot resolution" src="../assets/orbitcamera-assets/screenshot-resolution.png" />
+<figcaption>Screenshot resolution</figcaption>
+</figure></p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.code.annotate", "toc.follow", "content.tooltips"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

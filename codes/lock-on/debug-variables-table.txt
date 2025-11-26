@@ -1,0 +1,7 @@
+| `Variable`       | `Description`                                                                               |
+|------------------|---------------------------------------------------------------------------------------------|
+| bShowDebug       | If false, debug info will not show up.                                                      |
+| bShowLockOnArea  | If true, shows an area that the targets can be captured.                                    |
+| bShowInputArrows | Shows the input (mouse and gamepad) arrows. Useful to see the targeting swap direction.     |
+| bShowDebugWidget | If true, shows the widget that contains information.                                        |
+| bShowTargetDebug | If true, draws a sphere around the current target, shows its display name and its distance. |

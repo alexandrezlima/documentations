@@ -1,0 +1,1360 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://alexandrezlima.github.io/documentations/icongenerator/">
+      
+      
+        <link rel="prev" href="../advancedphotomode/">
+      
+      
+        <link rel="next" href="../lockon/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Icon Generator - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#icon-generator-version-105" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Icon Generator
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advancedphotomode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Photo Mode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Icon Generator
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Icon Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#last-mod-20221229" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Last mod.: 2022/12/29
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unreal-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unreal library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loading-method-data-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loading method: data tables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loading-method-load-all" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loading method: load all
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loading-method-load-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loading method: load folder
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#washed-colors-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Washed colors correction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Animations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-vs-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Export vs Import
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Export vs Import">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Export
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Import
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#background-and-foreground" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background and foreground
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bulk-icons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bulk icons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-process-and-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post process and filters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update log
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions-and-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Questions and Answers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lockon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lock-on Targeting System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbitcamera/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orbit Camera
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#last-mod-20221229" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Last mod.: 2022/12/29
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unreal-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unreal library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loading-method-data-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loading method: data tables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loading-method-load-all" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loading method: load all
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loading-method-load-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loading method: load folder
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#washed-colors-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Washed colors correction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Animations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-vs-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Export vs Import
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Export vs Import">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Export
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Import
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#background-and-foreground" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background and foreground
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bulk-icons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bulk icons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-process-and-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post process and filters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update log
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions-and-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Questions and Answers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="icon-generator-version-105">ICON GENERATOR | version 1.05</h1>
+<h5 id="last-mod-20221229">Last mod.: 2022/12/29</h5>
+<h2 id="introduction">Introduction</h2>
+<p>This asset allows you to create icons for objects in your game. It works with static meshes, skeletal meshes or blueprint actors. With several customization options, it is possible to create icons with or without background (transparent, solid color or a chosen texture), with or without foreground (chosen texture). They can be loaded via data tables, autosearch load (loading all the assets in the project, via folder scanning) or you can specify the folders your assets are in (via folder scanning).</p>
+<p><img alt="Icon Generator V1.05" src="../assets/icongenerator-assets/icon-generator-main.png" /></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><code>background texture</code></th>
+<th style="text-align: center;"><code>transparent background</code></th>
+<th style="text-align: center;"><code>color background</code></th>
+<th style="text-align: center;"><code>foreground + no background</code></th>
+<th style="text-align: center;"><code>foreground + background</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;" width="200"><img alt="1" src="../assets/icongenerator-assets/SM_MatPreviewMesh_02_512x512_2.png" /></td>
+<td style="text-align: center;" width="200"><img alt="1" src="../assets/icongenerator-assets/SM_MatPreviewMesh_02_512x512.png" /></td>
+<td style="text-align: center;" width="200"><img alt="1" src="../assets/icongenerator-assets/SM_MatPreviewMesh_02_512x512_1.png" /></td>
+<td style="text-align: center;" width="200"><img alt="1" src="../assets/icongenerator-assets/SM_MatPreviewMesh_02_512x512_3.png" /></td>
+<td style="text-align: center;" width="200"><img alt="1" src="../assets/icongenerator-assets/SM_MatPreviewMesh_02_512x512_4.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>You can export icons (.png, .jpg, .TGA and other output formats) or/and import them automatically into your project (.uasset).</p>
+<h2 id="getting-started">Getting started</h2>
+<h3 id="unreal-library">Unreal library</h3>
+<p>First of all, download and add it to your project. You can find it in your <a href="https://www.unrealengine.com/marketplace/en-US/product/icon-generator">Unreal Engine Library</a>.</p>
+<figure>
+<p><img alt="Unreal Engine Library" src="../assets/icongenerator-assets/icon-generator-download.png" width="250" /></p>
+<figcaption>Unreal Engine Library</figcaption>
+</figure>
+<h3 id="setup">Setup</h3>
+<p>After adding the asset to your project, open the <code>M_IconSetup</code> map. It can be found in: <code>Content → Icon Generator → Maps</code>.</p>
+<figure>
+<p><img alt="Unreal Engine Library" src="../assets/icongenerator-assets/icon-generator-map.png" /></p>
+<figcaption>Icon Generator map</figcaption>
+</figure>
+<p>Once in the map level, you’ll need to choose the load method. You have three options:</p>
+<ol>
+<li>Load assets using data tables;</li>
+<li>Load all assets in the project (via folder scanning);</li>
+<li>Load assets inside specific folders (via folder scanning).</li>
+</ol>
+<p>To change between them, click in the blueprint in the level (the one with a red arrow, <code>IconGeneratorStartPoint</code>). Then, in the details panel, you'll see an exposed variable called <code>Load Method</code>. Changing this variable will affect the way that the objects are searched.</p>
+<figure>
+<p><img alt="Load Method - Icon Generator" src="../assets/icongenerator-assets/icon-generator-loadmethodpng.png" /></p>
+<figcaption>Load Method</figcaption>
+</figure>
+<p>If you just want to see all of your meshes without further reading, select the load method <code>Load all</code> and hit play (this method still loads blueprints actors from a data table, the autosearch includes static meshes and skeletal meshes only). But if you want to know how each option works, let’s check it below (please, make sure to read the <a href="#washed-colors-correction"><mark class="critic">#washed-colors</mark></a> section).</p>
+<h4 id="loading-method-data-tables">Loading method: data tables</h4>
+<p>This load method is interesting for those who want to have control over the loaded list, with specific objects. To use it, set the <code>Load Method</code> variable to <code>Data Table</code>.</p>
+<figure>
+<p><img alt="Load Method - Icon Generator" src="../assets/icongenerator-assets/icon-generator-loadmethod-1.png" /></p>
+<figcaption>Load Method: Data Table</figcaption>
+</figure>
+<p>Now, all the objects will be loaded from data tables, located in <code>Content → Icon Generator → DataTables</code>. They are: <code>DT_StaticMeshes</code>, <code>DT_SkeletalMeshes</code> and <code>DT_Blueprints</code>. Please, note that these data tables includes items from the demo folder. If you want to delete these items, make sure to remove them from the data table. EDIT may 2024: <a href="https://www.youtube.com/watch?v=sttlktYFdFU">this video shows how you can remove the entire demo folder</a>.</p>
+<figure>
+<p><img alt="Data tables objects - Icon Generator" src="../assets/icongenerator-assets/icon-generator-data-tables-1.png" width="500" /></p>
+<figcaption>Objects data tables</figcaption>
+</figure>
+<details class="tip">
+<summary>Tip: How to add itens to the data table</summary>
+<p>To add a new item to one of the data tables, open the one with the object type you want. Click on the <code>+</code> signal at the top. Then, select the row created and add the info. In the <code>DT_SkeletalMeshes</code> data table, you have an extra information: animations. You can add them manually for the skeleton you're adding or, alternatively, leave it empty (there is a toggle in the Icon Generator to autosearch animations in your project that are compatible with the current selected skeleton -- you can read more about it in the <a href="#animations"><mark class="critic">#animations</mark></a> section).</p>
+</details>
+<h4 id="loading-method-load-all">Loading method: load all</h4>
+<p>This is the easiest way to load your assets (Static Meshes and Skeletal Meshes). This method still loads blueprints from the <code>DT_Blueprints</code> data table (located in <code>Content → Icon Generator → DataTables</code>). It doesn't load all the assets in memory at once, as the name suggests. So there is no impact on performance: the objects are loaded only when called/needed (and unloaded if not), no matter how many objects you have on your project.</p>
+<p>To use it, set the load method to <code>Load All Meshes from Project</code>.</p>
+<figure>
+<p><img alt="Load Method 2 - Icon Generator" src="../assets/icongenerator-assets/icon-generator-loadmethod-2.png" /></p>
+<figcaption>Load Method: Load All Meshes from Project</figcaption>
+</figure>
+<p>As mentioned before, this method still loads blueprints actors from the <code>DT_Blueprints</code> data table.</p>
+<figure>
+<p><img alt="Data tables objects - Icon Generator" src="../assets/icongenerator-assets/icon-generator-data-tables-2.png" width="500" /></p>
+<figcaption>Blueprints data table</figcaption>
+</figure>
+<p>The skeletal meshes animations can be loaded using a toggle in the Icon Generator. It autosearches animations in your project that are compatible with the current selected skeleton (more about it in the <a href="#animations"><mark class="critic">#animations</mark></a> section).</p>
+<h4 id="loading-method-load-folder">Loading method: load folder</h4>
+<p>This load method is very similar to the previous one (it loads Static Meshes and Skeletal Meshes – blueprint actors are still loaded from the DT_Blueprints data table). The difference is that in this method, you can specify which folders your assets are in. It uses a recursive search, so if you have subfolders inside this folder, these folders will also be searched.</p>
+<p>To use it, set the load method to <code>Load Specific Folders</code>.</p>
+<figure>
+<p><img alt="Load Method 3 - Icon Generator" src="../assets/icongenerator-assets/icon-generator-loadmethod-3.png" /></p>
+<figcaption>Load Method: Load Specific Folders</figcaption>
+</figure>
+<p>Then, right below the load method, there is the array <code>Specific Folders</code>. Here you can add one or more folder paths to search your meshes. The default value is <code>/Content/</code>, meaning that it will search your entire <code>Content folder</code>, similar to the previous method but without the engine assets.</p>
+<figure>
+<p><img alt="Load Method 3 - Specify folders" src="../assets/icongenerator-assets/icon-generator-loadmethod-3-example.png" /></p>
+<figcaption>Specify folders</figcaption>
+</figure>
+<div class="admonition example">
+<p class="admonition-title">Example: adding a specific folder</p>
+<p>As an example, let's say we want to load the assets that are in <code>Content → MyFolder → MyAssets</code>. Then, all we need to do is to change the path to <code>/Content/MyFolder/MyAssets</code>. That way, only assets in this folder (and subfolders) will be loaded. If you want to add more than one folder (if it is in a different path, for example), just hit the <code>+</code> button in the array and add as many paths you want!</p>
+<p><figure markdown>
+<img alt="Load Method 3 - folder example" src="../assets/icongenerator-assets/icon-generator-loadmethod-3-example-2.png" />
+<figcaption>Folder path example</figcaption>
+</figure></p>
+</div>
+<h3 id="washed-colors-correction">Washed colors correction</h3>
+<p>If you’re using the <code>import icon to the project</code> option (the one where automatically imports the texture to your project), the icon generated will look just fine when you open it, but it can show a washed color when inside widgets:</p>
+<figure>
+<p><img align="left" alt="Washed colors 1" src="../assets/icongenerator-assets/icon-generator-washed-1.png" width="200" />
+<img align="right" alt="Washed colors 2" src="../assets/icongenerator-assets/icon-generator-washed-2.png" width="209.7" /></p>
+<figcaption>Image viewer vs widget viewer</figcaption>
+</figure>
+<p>It is noticeable that the widget viewer shows an icon with a washed color. There is, however, a simple fix: you just need to check the <code>sRGB</code> checkbox in the texture viewer (marking it as true).</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8.5 13.5 2.5 3 3.5-4.5 4.5 6H5m16 1V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2"/></svg></span> <code>Texture details panel</code></label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8.5 13.5 2.5 3 3.5-4.5 4.5 6H5m16 1V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2"/></svg></span> <code>Texture panel zoomed out</code></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><figure markdown>
+<img alt="Washed colors 3" src="../assets/icongenerator-assets/icon-generator-washed-3.png" />
+<figcaption>sRGB option (located in the details panel after opening the texture)</figcaption>
+</figure></p>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<img alt="Washed colors 4" src="../assets/icongenerator-assets/icon-generator-washed-4.png" />
+<figcaption>Zoomed out texture viewer</figcaption>
+</figure></p>
+</div>
+</div>
+</div>
+<p>After the sRGB fix, the texture appearance will look as it should in the widget viewer and you'll be able to save it.</p>
+<figure>
+<p><img align="left" alt="Washed colors 5" src="../assets/icongenerator-assets/icon-generator-washed-5.png" width="200" />
+<img align="right" alt="Washed colors 5" src="../assets/icongenerator-assets/icon-generator-washed-6.png" width="204.27" /></p>
+<figcaption>Image viewer (sRGB as true) vs widget viewer</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip: If you have more than one texture, you don’t need to apply sRGB one by one.</p>
+<p>It is possible to do it with all textures at once. Select all textures you want to apply the sRGB, right click over one of them, go to <code>Asset Actions</code>, then <code>Bulk Edit via Property Matrix</code>.</p>
+<p><figure markdown>
+<img alt="Bulk 1" src="../assets/icongenerator-assets/icon-generator-bulk-1.png" />
+<figcaption>Bulk Edit via Property Matrix</figcaption>
+</figure></p>
+<p>Then, in the opened window, expand the <code>texture</code> section and mark <code>sRGB</code> as <code>true</code>. So, all the textures selected will be changed to sRGB at once!</p>
+<p>Below you can see this window in <abbr title="Unreal Engine 4">UE4</abbr> and <abbr title="Unreal Engine 5">UE5</abbr>.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2 10 10 0 0 0 2 12m3.24 6.76A9.5 9.5 0 0 1 2.44 12c0-2.55.99-4.95 2.8-6.76A9.5 9.5 0 0 1 12 2.44c2.55 0 4.95.99 6.76 2.8a9.5 9.5 0 0 1 2.8 6.76c0 2.55-.99 4.95-2.8 6.76a9.5 9.5 0 0 1-6.76 2.8c-2.55 0-4.95-.99-6.76-2.8M6.35 9.5c-2.01 2.29-1.62 4.18-1.62 4.18s.55-1.3 1.88-2.68c.64-.63 1.11-.85 1.43-.85.36 0 .53.26.53.5v4.64c0 .46-.3.56-.57.55-.23 0-.45-.08-.45-.08C8.92 17.73 12.19 18 12.19 18l1.44-1.5h.04L15 17.63c2.39-1.42 3.55-4.05 3.55-4.05-1.05 1.12-1.76 1.39-2.16 1.38-.36 0-.51-.21-.51-.21-.01-.1-.06-5.85.01-5.85.42-.77 1.74-2.34 1.74-2.34-2.47.49-3.82 2.1-3.82 2.1-.4-.31-1.22-.26-1.22-.26.38.21.76.81.76 1.32v4.93s-.85.73-1.47.73c-.38 0-.61-.21-.74-.38-.09-.12-.14-.21-.14-.21v-6.1c-.07.06-.18.11-.29.11-.14-.01-.28-.07-.37-.27-.08-.15-.12-.38-.12-.7 0-1.13 1.28-1.87 1.28-1.87-1.63.43-3.14 1.26-5.15 3.54"/></svg></span> <code>Unreal Engine 5</code></label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2 10 10 0 0 0 2 12m3.24 6.76A9.5 9.5 0 0 1 2.44 12c0-2.55.99-4.95 2.8-6.76A9.5 9.5 0 0 1 12 2.44c2.55 0 4.95.99 6.76 2.8a9.5 9.5 0 0 1 2.8 6.76c0 2.55-.99 4.95-2.8 6.76a9.5 9.5 0 0 1-6.76 2.8c-2.55 0-4.95-.99-6.76-2.8M6.35 9.5c-2.01 2.29-1.62 4.18-1.62 4.18s.55-1.3 1.88-2.68c.64-.63 1.11-.85 1.43-.85.36 0 .53.26.53.5v4.64c0 .46-.3.56-.57.55-.23 0-.45-.08-.45-.08C8.92 17.73 12.19 18 12.19 18l1.44-1.5h.04L15 17.63c2.39-1.42 3.55-4.05 3.55-4.05-1.05 1.12-1.76 1.39-2.16 1.38-.36 0-.51-.21-.51-.21-.01-.1-.06-5.85.01-5.85.42-.77 1.74-2.34 1.74-2.34-2.47.49-3.82 2.1-3.82 2.1-.4-.31-1.22-.26-1.22-.26.38.21.76.81.76 1.32v4.93s-.85.73-1.47.73c-.38 0-.61-.21-.74-.38-.09-.12-.14-.21-.14-.21v-6.1c-.07.06-.18.11-.29.11-.14-.01-.28-.07-.37-.27-.08-.15-.12-.38-.12-.7 0-1.13 1.28-1.87 1.28-1.87-1.63.43-3.14 1.26-5.15 3.54"/></svg></span> <code>Unreal Engine 4</code></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><figure markdown>
+<img alt="Bulk 2" src="../assets/icongenerator-assets/icon-generator-bulk-2.png" />
+<figcaption><abbr title="Unreal Engine 5">UE5</abbr> texture details</figcaption>
+</figure></p>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<img alt="Bulk 3" src="../assets/icongenerator-assets/icon-generator-bulk-3.png" />
+<figcaption><abbr title="Unreal Engine 4">UE4</abbr> texture details</figcaption>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="animations">Animations</h3>
+<p>You can load animations for your skeletal meshes and create icons of its poses. There are two ways to do this.</p>
+<p>The first and easiest is by enabling the toggle <code>Autosearch valid animations</code> in the <code>Animations</code> tab (this tab appears after selecting the object type <code>Skeletal Meshes</code>). This toggle is available from version 1.05 above (marked at the bottom right corner).</p>
+<figure>
+<p><img alt="Animations 1" src="../assets/icongenerator-assets/icon-generator-animations-1.png" width="300" /></p>
+<figcaption>Animations toggle</figcaption>
+</figure>
+<p>All the animations of the selected skeletal mesh will appear in the <code>Animations combobox</code>. If the selected skeletal mesh doesn't have animations, only the <code>None</code> value will show up.</p>
+<p>The second method is via data table. First you need to choose the load method <code>Data Table</code>. Then, you can choose animations in the <code>DT_SkeletalMeshes</code> data table. You’ll find these animations in the animations tab as showed in the image above (if the toggle is marked as false and the selected skeleton has animations in the data table).</p>
+<figure>
+<p><img alt="Animations 2" src="../assets/icongenerator-assets/icon-generator-animations-2.png" width="500" /></p>
+<figcaption>DT_SkeletalMeshes data table and its animations</figcaption>
+</figure>
+<p>Notice that the toggle is still there, so you can also mark it as true to load animations even in the <code>Data Table</code> load method.</p>
+<div class="admonition info">
+<p class="admonition-title">Both methods support animation sequences and anim montages.</p>
+</div>
+<h3 id="export-vs-import">Export vs Import</h3>
+<p>Both located on the left panel of the Icon Generator, their names can cause confusion.</p>
+<h5 id="export">Export</h5>
+<p>The export function is used to create and export an external image file (.png, .jpg, .TGA etc). The file will not appear on the editor content folder. If you're using the default path (which is <code>Your Project → Saved → Icons</code>), you need to navigate to this folder to see the icon.</p>
+<p>Alternatively, you can set a path of your choice in the <code>output file path</code> field (note that this field requires an absolute path, as example: <code>C:\User\Documents\MyExampleFolder</code>).</p>
+<figure>
+<p><img alt="Export" src="../assets/icongenerator-assets/icon-generator-export.png" width="350" /></p>
+<figcaption>Export function</figcaption>
+</figure>
+<p>This functions allows you to create icons in any size. Power of two is <strong>not</strong> a requirement.</p>
+<h5 id="import">Import</h5>
+<p>The import function is used to create an <code>.uasset</code> texture file that will appear in your content folder, and you'll be able to see it inside the editor. You can imagine it as a shortcut of exporting an icon and then importing it manually to the project (as we normally do with textures). Make sure to apply the sRGB fix (<a href="#washed-colors-correction"><mark class="critic">#washed-colors-correction</mark></a> section), otherwise the icon create will not be saved.</p>
+<figure>
+<p><img alt="Import" src="../assets/icongenerator-assets/icon-generator-import.png" width="350" /></p>
+<figcaption>Import function</figcaption>
+</figure>
+<p>But the importing function has a limitation. Only <code>power of two</code> icons can be created (unfortunately I can’t change this, it is an internal function of the Unreal Engine).</p>
+<div class="admonition info">
+<p class="admonition-title"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.003 7.754a.75.75 0 0 1 .75-.75h5.232a.75.75 0 0 1 .53 1.28l-2.776 2.777c.55.097 1.057.253 1.492.483.905.477 1.504 1.284 1.504 2.418 0 .966-.471 1.75-1.172 2.27-.687.511-1.587.77-2.521.77-1.367 0-2.274-.528-2.667-.756a.75.75 0 0 1 .755-1.297c.331.193.953.553 1.912.553.673 0 1.243-.188 1.627-.473.37-.275.566-.635.566-1.067 0-.5-.219-.836-.703-1.091-.538-.284-1.375-.443-2.471-.443a.75.75 0 0 1-.53-1.28l2.643-2.644h-3.421a.75.75 0 0 1-.75-.75M7.88 15.215a1.4 1.4 0 0 0-1.446.83.75.75 0 0 1-1.37-.61 2.9 2.9 0 0 1 2.986-1.71c.589.06 1.139.323 1.557.743.434.446.685 1.058.685 1.778 0 1.641-1.254 2.437-2.12 2.986-.538.341-1.18.694-1.495 1.273H9.75a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1-.75-.75c0-1.799 1.337-2.63 2.243-3.21 1.032-.659 1.55-1.031 1.55-1.8 0-.355-.116-.584-.26-.732a1.07 1.07 0 0 0-.652-.298Zm.234-13.121a.75.75 0 0 1 .386.656V9h1.252a.75.75 0 0 1 0 1.5H5.75a.75.75 0 0 1 0-1.5H7V4.103l-.853.533a.749.749 0 1 1-.795-1.272l2-1.25a.75.75 0 0 1 .762-.02"/></svg></span> Power of two sizes</p>
+<p>These are valid icon sizes:  16x16, 32x16, 2048x1024, etc.</p>
+<p>And these are invalid icon sizes: 79x16, 34x34, 2000x1000, 32x25, etc.</p>
+<p>In summary, the numbers must be <span class="arithmatex">\(2^n\)</span>. Examples:</p>
+<ul>
+<li><span class="arithmatex">\(2^4 = 16\)</span></li>
+<li><span class="arithmatex">\(2^5 = 32\)</span></li>
+<li><span class="arithmatex">\(2^6 = 64\)</span></li>
+<li><span class="arithmatex">\(2^7 = 128\)</span></li>
+<li><span class="arithmatex">\(...\)</span></li>
+</ul>
+<p>So these are valid power of two sizes, defined by <span class="arithmatex">\(2s\)</span> x <span class="arithmatex">\(2t\)</span>, where <span class="arithmatex">\(s\)</span> and <span class="arithmatex">\(t\)</span> are positive integer numbers.</p>
+</div>
+<p>You can also choose a path to save your icons in the <code>Local Folder Path</code> textbox, but note that in this case you have to choose a <code>relative path</code>, as example: <code>Content/MyRandomFolder/MyIcons</code>.</p>
+<h3 id="background-and-foreground">Background and foreground</h3>
+<p>You can add your own custom background/foreground textures and/or remove the starter textures. To do this, open the <code>DT_Backgrounds</code> for backgrounds and <code>DT_Foregrounds</code> for foregrounds, both located in <code>Content → Icon Generator → Data Tables</code>.</p>
+<figure>
+<p><img alt="Background and Foreground 1" src="../assets/icongenerator-assets/icon-generator-back-fore-1.png" width="500" /></p>
+<figcaption>Background and foreground data tables</figcaption>
+</figure>
+<p>The content chosen in the <code>DT_Backgrounds</code> data table will appear inside the backgrounds box (if you mark the toggle <code>transparent background</code> as <code>false</code> and select the <code>background type</code> as <code>Texture</code>, otherwise it will be hidden).</p>
+<figure>
+<p><img alt="Background and Foreground 2" src="../assets/icongenerator-assets/icon-generator-back-fore-2.png" width="250" /></p>
+<figcaption>Background textures</figcaption>
+</figure>
+<p>The content chosen in the <code>DT_Foregrounds</code> data table will appear inside the foregrounds box (if you mark the toggle <code>show foreground</code> as <code>true</code>, otherwise it will be hidden).</p>
+<figure>
+<p><img alt="Background and Foreground 3" src="../assets/icongenerator-assets/icon-generator-back-fore-3.png" width="250" /></p>
+<figcaption>Foreground textures</figcaption>
+</figure>
+<h3 id="bulk-icons">Bulk icons</h3>
+<p>Icon Generator has a button to bulk icons. This bulk creates icons for each object you have of the current object type selected. You have the option to start the bulk from the current object (toggle <code>Start bulk from current</code>).</p>
+<p>You may notice that some assets can take a few seconds to be fully loaded (material and LOD), depending on your machine and the object complexity. Some cases, objects do not have enough time to render properly before the icon generation occurs (the time between the current object and the next, when the icon is created). The object is loaded only when called to appear in the screen (resulting in a optmized application, once you don't need to wait several minutes to start using it or to have a list of all objects).</p>
+<p>If you need more time for each icon (to wait it load properly), it is possible to increase this "wait" time in the bulk export (of course, increasing it will result in more time to complete the bulk for all). To increase it, you can follow <a href="https://youtu.be/vVP19zncg6U?list=PLHdESzTufIORQ6LbFutzgkbN-bDREGU8M">this tutorial</a> video or the steps below.</p>
+<p>Open the <code>UI_ObjectRender</code> widget, located at <code>Content → IconGenerator → Widgets</code>.</p>
+<figure>
+<p><img alt="Bulk Export - 1" src="../assets/icongenerator-assets/icon-generator-bulk1.png" /></p>
+<figcaption>Bulk export delay per object - part I</figcaption>
+</figure>
+<p>At the top right corner, click on <code>Graph</code> to open the widget blueprint. Then, in the variables panel, open the section <code>EDITABLE</code>. Here you'll see some variables to customize. For this section, the importants are <code>BulkDelayPerMesh</code> and <code>BulkDelayPerBlueprint</code>. Increase these variables values to have more time for each object be properly loaded based on your machine. The greater this value, the greater will be the total time to bulk all (this time x total objects to bulk).</p>
+<figure>
+<p><img alt="Bulk Export - 2" src="../assets/icongenerator-assets/icon-generator-bulk2.png" /></p>
+<figcaption>Bulk export delay per object - part II</figcaption>
+</figure>
+<h3 id="post-process-and-filters">Post process and filters</h3>
+<p>You can add or remove post process and filters from Icon Generator. To do this, follow the steps below or <a href="https://youtu.be/L-wfRZ8wK5k?list=PLHdESzTufIORQ6LbFutzgkbN-bDREGU8M">this video</a> (for post process) and/or <a href="https://youtu.be/g9oqq1dLi6Q?list=PLHdESzTufIORQ6LbFutzgkbN-bDREGU8M">this video</a> (for filters -- LUTs).</p>
+<p>Open the <code>UI_ObjectRender</code> widget, located at <code>Content → IconGenerator → Widgets</code>. At the top right corner, click on <code>Graph</code> to open the widget blueprint. Then, in the variables panel, open the section <code>EDITABLE</code>. Here you'll see some variables to customize. For this section, the importants are <code>PostProcessMaterialsMap</code> and <code>LUTsMap</code>. Click in one of them to start the customization. You'll see a map variable, where the left side is the name that will appear at right side panel of the Icon Generator (each name must be unique). And the right side of the map is a LUT or a Post Process, depending on the selected variable. You can add your own post process materials or LUTs here (or delete them).</p>
+<figure>
+<p><img alt="PP and Luts" src="../assets/icongenerator-assets/icon-generator-PPLuts.png" /></p>
+<figcaption>Post process materials and LUTs</figcaption>
+</figure>
+<h3 id="controls">Controls</h3>
+<p>Icon Generator has some input controls:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><code>Key</code></th>
+<th style="text-align: left;"><code>Action/Description</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">Left mouse button</td>
+<td style="text-align: left;">Click and hold over the object. Move the mouse to rotate.</td>
+</tr>
+<tr>
+<td style="text-align: right;">Right mouse button</td>
+<td style="text-align: left;">Click and hold over the object. Move the mouse to move the camera position.</td>
+</tr>
+<tr>
+<td style="text-align: right;">W, A, S and D</td>
+<td style="text-align: left;">Press one of them to move the camera position.</td>
+</tr>
+<tr>
+<td style="text-align: right;">Mouse scroll</td>
+<td style="text-align: left;">Zoom in/out (camera movement in the object direction).</td>
+</tr>
+<tr>
+<td style="text-align: right;">X</td>
+<td style="text-align: left;">Creates the icon of the current object (shortcut).</td>
+</tr>
+<tr>
+<td style="text-align: right;">R</td>
+<td style="text-align: left;">Resets the camera position (shortcut).</td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;">Resets the object rotation (shortcut).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="update-log">Update log</h3>
+<ul>
+<li>
+<p>Update 1.05</p>
+<details class="info" open="open">
+<summary>Update 1.05 changes</summary>
+<ul>
+<li>Added foreground option;</li>
+<li>Autosearch for animations (it searches animations for each skeleton without impact on performance or memory usage);</li>
+<li>Ambient occlusion support;</li>
+<li>Controls for the main light;</li>
+<li>Version is now showed at the bottom right corner.</li>
+</ul>
+</details>
+</li>
+<li>
+<p>Update 1.04</p>
+<details class="info">
+<summary>Update 1.04 changes</summary>
+<p>Added “move camera” using the mouse right button. Keys WASD keep working for the same function.</p>
+</details>
+</li>
+<li>
+<p>Update 1.03</p>
+<details class="info">
+<summary>Update 1.03 changes</summary>
+<ul>
+<li>Orthographic camera option; </li>
+<li>Improved pixel effect;</li>
+<li>Silhouette option;</li>
+<li>Improved item placement on screen; </li>
+<li>New background approach (using material instead of a world object);</li>
+<li>Performance optimization;</li>
+<li>Option to apply (or not) pixel effect on background;</li>
+<li>Background no more reflecting on the object;</li>
+<li>General adjustments on UI.</li>
+</ul>
+</details>
+</li>
+<li>
+<p>Update 1.02</p>
+<details class="info">
+<summary>Update 1.02 changes</summary>
+<p>Added a box to change the mesh materials (works with static meshes and skeletal meshes). You can check a preview <a href="https://youtu.be/-2eUb7gFzxA">here</a>.</p>
+</details>
+</li>
+<li>
+<p>Update 1.01</p>
+<details class="info">
+<summary>Update 1.01 changes</summary>
+<p>Added a searchable box. You can see how it works <a href="https://youtu.be/DEGmrB_e8pk">here</a>.</p>
+</details>
+</li>
+</ul>
+<h3 id="questions-and-answers">Questions and Answers</h3>
+<details class="question">
+<summary>What kind of objects can I use to create icons with this tool?</summary>
+<p>You can create icons for static meshes, skeletal meshes and blueprints actors.</p>
+</details>
+<details class="question">
+<summary>Does this asset support Post Process?</summary>
+<p>Yes, it does, for both transparent or non-transparent backgrounds. Some post process variables are exposed using sliders (like saturation, contrast, gamma, post process materials, LUTs etc), but you can also edit the post process manually as you want editing the post process volume in the level.</p>
+</details>
+<details class="question">
+<summary>I'm using the <code>Import textures to the project</code> function/toggle, and my last icons are disappearing after closing the editor. Why?</summary>
+<p>You'll be able to save the imported textures only if you edit the texture in some way, like the sRGB fix. Note that after creating the icon, there is no prompt to save it when you try to close the editor. But if you apply the sRGB fix shown at the <a href="#washed-colors-correction"><mark class="critic">#washed-colors-correction</mark></a> section, you'll be able to save the file and only then an <code>.uasset</code> will be generated, as shown in <a href="https://youtu.be/JTk2sbedDZ0">this video</a>.</p>
+</details>
+<details class="question">
+<summary>I’m using <abbr title="Unreal Engine 5">UE5</abbr>.1 and the objects looks transparent in the viewport  and the icon comes out totally black. How do I fix this?</summary>
+<p>Unreal Engine 5.1 included the alpha composite in the “cinematic” setting to be properly rendered (which is a regression compared to previous versions of the engine, the issues was reported to the epic team). And we need to use alpha composite.</p>
+<p>That means you need to set the scalability option <code>Effects</code> to <code>Cinematic</code>. <a href="https://youtu.be/JbM5bPsHho4">Here is a video showing how you can do it</a>. If you downloded Icon Generator from your Unreal Engine library after 2023-06-01, the asset code changes this scalability setting automatically (and brings the original value back to default after closing the level).</p>
+</details>
+<details class="question">
+<summary>Every time I close the Icon Generator on Unreal Engine 5.1, it loads some shaders again. Why does this happen? There is a way to avoid this?</summary>
+<p>This happens because of the previous question: <abbr title="Unreal Engine 5">UE5</abbr>.1 introduced an issue where the alpha composite appears only if the <code>Effects</code> quality is set to <code>Cinematic</code> (and, in some computers, <code>Epic</code> quality is enough).</p>
+<p>So the project in <abbr title="Unreal Engine 5">UE5</abbr>.1 changes it to “Cinematic” automatically when you hit play, and turns it back to its default when closing. To avoid the shaders recompiling, <a href="https://youtu.be/JbM5bPsHho4">you can try this</a> (setting to <code>cinematic</code>) and the loading will happen only once, as it will be changed from <code>cinematic</code> to <code>cinematic</code> (so no changes to be compiled).</p>
+</details>
+<details class="question">
+<summary>I’m using the <code>Import textures to the project</code> function/toggle. When I use the texture generated on a widget, it looks washed. How can I fix this?</summary>
+<p>When the Unreal Editor generates the texture (in this case, specifically the importing function and not the export one), for some reason the “sRGB” checkbox is marked as false by default, so the color looks washed because of that (even if I set it to sRGB true in the code, the color will show up washed, that’s why the following process needs to be done manually).</p>
+<p>So, to fix it, you need to mark the <code>sRGB checkbox</code> as <code>true</code> in the texture details panel. If you have more than one texture, it is possible to do it all at once – the documentation video shows how to do that (or you can check the <a href="#washed-colors-correction"><mark class="critic">#washed-colors-correction</mark></a> section), starting at 5min 22s (<a href="https://www.youtube.com/watch?v=gOroSCY0eSc&amp;list=PLHdESzTufIORQ6LbFutzgkbN-bDREGU8M&amp;t=321s&amp;ab_channel=A.">this link</a>).</p>
+<p><figure markdown>
+<img alt="Question 1" src="../assets/icongenerator-assets/icon-generator-question-3.png" />
+<figcaption>sRGB</figcaption>
+</figure></p>
+</details>
+<details class="question">
+<summary>This asset can create textures with custom size?</summary>
+<p>Yes! You just need to mark the <code>custom size</code> toggle as <code>true</code> and an extra box will show up to insert the custom size.</p>
+<p><figure markdown>
+<img align="left" alt="Question 1" src="../assets/icongenerator-assets/icon-generator-question-1.png" width="250" />
+<img align="right" alt="Question 2" src="../assets/icongenerator-assets/icon-generator-question-2.png" width="244.05" />
+<figcaption>Custom size toggle</figcaption>
+</figure></p>
+</details>
+<details class="question">
+<summary>I’m trying to export my texture using the Export toggle option, but the texture is not being generated (it says “done” but I can’t find it).</summary>
+<p>For an odd reason some projects do not allow you to generate a new folder within the Project/Saved folder. By default the Icon Generator saves your exported icons within the Project/Saved/Icons folder (it creates a new folder within Project/Saved).</p>
+<p>If you're getting this issue, I recommend that you change the default output path in the <code>Output file path</code> field. As example, you can set the value as <code>C:\Users\YourUser\Downloads\ExampleFolder</code>. Any valid path can be used to export icons!</p>
+</details>
+<details class="question">
+<summary>I’m trying to import my texture using the Import toggle option, but the texture is not being generated (it says “done” but I can’t find it).</summary>
+<p>Only <code>power of two</code> can be imported using the <code>Import toggle</code> (unfortunately I can’t change this, it is an internal function of the Unreal Engine).</p>
+<p>These are valid icon sizes:  16x16, 32x16, 2048x1024, etc.</p>
+<p>And these are invalid icon sizes: 79x16, 34x34, 2000x1000, 32x25, etc.</p>
+<p>In summary, the numbers must be <span class="arithmatex">\(2^n\)</span>. Examples:</p>
+<ul>
+<li><span class="arithmatex">\(2^4 = 16\)</span></li>
+<li><span class="arithmatex">\(2^5 = 32\)</span></li>
+<li><span class="arithmatex">\(2^6 = 64\)</span></li>
+<li><span class="arithmatex">\(2^7 = 128\)</span></li>
+<li><span class="arithmatex">\(...\)</span></li>
+</ul>
+<p>So these are valid power of two sizes, defined by <span class="arithmatex">\(2s\)</span> x <span class="arithmatex">\(2t\)</span>, where <span class="arithmatex">\(s\)</span> and <span class="arithmatex">\(t\)</span> are positive integer numbers.</p>
+</details>
+<details class="question">
+<summary>How can I increase the bulk delay per object? The current time is not enough to load the textures on my machine.</summary>
+<p>You can increase the float variable <code>bulk delay per mesh</code> of the <code>UI_ObjectRender</code> widget. Take a look at the <a href="#bulk-icons"><mark class="critic">#bulk-icons</mark></a> section for more details about increasing the bulk delay.</p>
+</details>
+<details class="question">
+<summary>I get an error when spawning my blueprint and closing the icon generator level.</summary>
+<p>You’ll get red errors only if your blueprint depends on any reference that is not in the level. For example, if your blueprint needs the reference of a specific actor (let’s say a health potion blueprint needs the player_character_3 reference), as the actor is not in the level, the reference will be null, so if the blueprint needs that reference in any point, it will show you an error. In any case, you don’t need to edit your blueprints, the error will not cause you any problems to generate the icons (of course, as long as its visual is not dependent on other actors).</p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.code.annotate", "toc.follow", "content.tooltips"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

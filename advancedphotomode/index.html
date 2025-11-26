@@ -1,0 +1,1293 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://alexandrezlima.github.io/documentations/advancedphotomode/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../icongenerator/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Advanced Photo Mode - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#advanced-photo-mode" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Advanced Photo Mode
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Photo Mode
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Photo Mode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported versions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unreal-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unreal library
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-adding-the-photo-mode-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Adding the Photo Mode Component
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-calling-the-photo-mode-or-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Calling the photo mode or gallery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Calling the photo mode or gallery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-input-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting up input keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-calling-the-photo-mode-or-gallery-enhanced-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Calling the photo mode or gallery + Enhanced Input.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Calling the photo mode or gallery + Enhanced Input.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update log
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-and-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Questions and answers
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../icongenerator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Icon Generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lockon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lock-on Targeting System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orbitcamera/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orbit Camera
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported versions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unreal-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unreal library
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-adding-the-photo-mode-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Adding the Photo Mode Component
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-calling-the-photo-mode-or-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Calling the photo mode or gallery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Calling the photo mode or gallery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-input-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting up input keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-calling-the-photo-mode-or-gallery-enhanced-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Calling the photo mode or gallery + Enhanced Input.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Calling the photo mode or gallery + Enhanced Input.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update log
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-and-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Questions and answers
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="advanced-photo-mode">Advanced Photo Mode</h1>
+<h2 id="introduction">Introduction</h2>
+<p>A photo mode in a game is a feature that allows players to capture and customize screenshots of their gameplay experiences. By allowing players to pause the game and manipulate the camera angle, depth of field, filters, and other settings, photo mode offers an opportunity for players to share and celebrate their favorite moments in a game with their friends, family, and online communities.</p>
+<p>Implementing a photo mode in a game can provide several benefits for developers. First and foremost, it can increase player engagement and satisfaction, as it encourages players to spend more time exploring and appreciating the game world. Moreover, photo mode can serve as a powerful marketing tool, as players are likely to share their stunning in-game shots on social media platforms, generating buzz and interest in the game.</p>
+<p>This project was influenced by the latest games in the industry, such as The Last of Us Part II (Naughty Dog, 2020), God of War (Santa Monica, 2018) and Shadow of the Colossus (Bluepoint Games, 2018 -- original by Team Ico SIE, 2005). In the images below, some examples that inspired this asset.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8.5 13.5 2.5 3 3.5-4.5 4.5 6H5m16 1V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2"/></svg></span> Shadow of The Colossus</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8.5 13.5 2.5 3 3.5-4.5 4.5 6H5m16 1V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2"/></svg></span> The Last of Us Part II</label><label for="__tabbed_1_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8.5 13.5 2.5 3 3.5-4.5 4.5 6H5m16 1V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2"/></svg></span> God of War</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Shadow of the Colossus (Bluepoint Games, 2018 -- original by Team Ico SIE)" src="../assets/advancedphotomode-assets/shadow-of-the-colossus-photomode.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="The Last of Us Part II (Naughty Dog, 2020)" src="../assets/advancedphotomode-assets/last-of-us-photomode.jpg" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="God of War (Santa Monica, 2018)" src="../assets/advancedphotomode-assets/god-of-war-photomode.png" /></p>
+</div>
+</div>
+</div>
+<p>The Advanced Photo Mode is a highly customizable and easy-to-integrate tool in a wide range of applications. It was made using blueprints (only).</p>
+<h2 id="supported-versions">Supported versions</h2>
+<p>Version 5.0 was launched for Unreal Engine 4.25 to 5.1+.</p>
+<details class="warning">
+<summary>Unreal Engine 5.5 has a bug in the native high-resolution screenshot function in packaged projects.</summary>
+<p>There is a long thread about it on the UE forum, you can check it here, including a C++ solution: <a href="https://forums.unrealengine.com/t/highresshot-not-working-in-shipping-packaging-5-5/2138118/24">HighResShot not working in shipping packaging 5.5</a>. 
+Advanced Photo Mode has an alternative screenshot method, the Render Target, which you can find <a href="https://youtu.be/cxd81Zb8Jxw?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak">here</a> -- may not compatible with all systems, but it worth a try.</p>
+</details>
+<p>This new version brings several new features and improvements, including greater ease of integration (plug and play), better logo and border adjustment and code organization. More details at the <a href="#update-log"><mark class="critic">#update log</mark></a> section.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>The 5.0 version of Advanced Photo Mode has made its usage process much simpler. Now, you can use it in your project with just a few steps, which are outlined below.</p>
+<h3 id="unreal-library">Unreal library</h3>
+<p>First of all, download and add it to your project. You can find it in your <a href="https://www.unrealengine.com/marketplace/en-US/product/advanced-photo-mode">Unreal Engine Library</a>.</p>
+<figure>
+<p><img alt="Unreal Engine Library" src="../assets/advancedphotomode-assets/add_project.png" width="300" />
+  </p>
+<figcaption>Unreal Engine Library</figcaption>
+</figure>
+<h2 id="setup">Setup</h2>
+<p>You can check out <a href="https://youtu.be/mdZZVLplxGQ?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak">this video</a> to watch the <abbr title="Advanced Photo Mode">APM</abbr> setup, or follow the steps below.</p>
+<h3 id="1-adding-the-photo-mode-component">1. Adding the Photo Mode Component</h3>
+<p>Open your pawn or character blueprint, go to the <code>Components</code> tab (usually located at the top left corner), click on <code>Add Component</code>, and then add the <code>BPC Photo Mode</code> component.</p>
+<figure>
+<p><img alt="Adding the component" src="../assets/advancedphotomode-assets/add_component.png" width="400" />
+  </p>
+<figcaption>Adding the `BPC Photo Mode` component</figcaption>
+</figure>
+<h3 id="2-calling-the-photo-mode-or-gallery">2. Calling the photo mode or gallery</h3>
+<p>If you're using the Enhanced Input System, go to the step 3 instead. This step will show you how to setup the input keys to open the photo mode or gallery. We have two ways to do this: using input keys directly or adding action mappings to our project.</p>
+<h4 id="setting-up-input-keys">Setting up input keys</h4>
+<p>Using an event key of your choice, use the <code>BPC Photo Mode</code> component to call the photo mode or gallery events and connect them to this key event. Example:</p>
+<figure>
+<p><img alt="Direct input setup" src="../assets/advancedphotomode-assets/direct_input.png" width="800" />
+  </p>
+<figcaption>Direct input setup (gamepad and keyboard)</figcaption>
+</figure>
+<p>Feel free to copy-paste the events above from the clipboard shortcut below.</p>
+<details class="abstract">
+<summary>Copy-paste: input keys + photo mode and gallery events</summary>
+<p>Click on the clipboard icon at the right to copy (or copy the code manually), then paste into your blueprint. This code will be transformed into blueprints!</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_VariableGet Name=&quot;K2Node_VariableGet_1&quot;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>   VariableReference=(MemberName=&quot;BPC_PhotoMode&quot;,bSelfContext=True)
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>   NodePosX=-3168
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>   NodePosY=672
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>   NodeGuid=C3E750FD4D848DF42D5766B228794A69
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>   CustomProperties Pin (PinId=19970D5A4D13CACB8F5863B4B3C104EF,PinName=&quot;BPC_PhotoMode&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_7 84BD1FDD4891553484B514B164974BC5,K2Node_CallFunction_8 46798C284745896D730EAAA74C751B36,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>   CustomProperties Pin (PinId=0DAC7DB847FC67490596088B33F434D4,PinName=&quot;self&quot;,PinFriendlyName=NSLOCTEXT(&quot;K2Node&quot;, &quot;Target&quot;, &quot;Target&quot;),PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Demo/ThirdPersonTemplate/ThirdPersonBP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>End Object
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name=&quot;K2Node_CallFunction_7&quot;
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>   FunctionReference=(MemberParent=BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,MemberName=&quot;Photo Mode&quot;,MemberGuid=808D14C641A60619AC60CB8DCC4D1586)
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>   NodePosX=-2960
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>   NodePosY=528
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>   NodeGuid=2FDDC9744094BA2B30C01CA834D7BDEE
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>   CustomProperties Pin (PinId=A0B83BA240FCDED5766DC3B6176C8A92,PinName=&quot;execute&quot;,PinToolTip=&quot;\nExec&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_InputKey_3 B16672674E017165EA07ABBEE9C49C47,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>   CustomProperties Pin (PinId=CED63EDF48BDFF31EF94E1A00F60403A,PinName=&quot;then&quot;,PinToolTip=&quot;\nExec&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>   CustomProperties Pin (PinId=84BD1FDD4891553484B514B164974BC5,PinName=&quot;self&quot;,PinFriendlyName=NSLOCTEXT(&quot;K2Node&quot;, &quot;Target&quot;, &quot;Target&quot;),PinToolTip=&quot;Target\nBPC Photo Mode Object Reference&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_VariableGet_1 19970D5A4D13CACB8F5863B4B3C104EF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>   CustomProperties Pin (PinId=EFF2138146D9013B77F379A17F05D9FE,PinName=&quot;Key&quot;,PinToolTip=&quot;Key\nKey Structure&quot;,PinType.PinCategory=&quot;struct&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=ScriptStruct&#39;&quot;/Script/InputCore.Key&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue=&quot;None&quot;,AutogeneratedDefaultValue=&quot;None&quot;,LinkedTo=(K2Node_InputKey_3 A8E7C24C44F20E2DAC8B628AEC8FCB15,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>End Object
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name=&quot;K2Node_CallFunction_8&quot;
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>   FunctionReference=(MemberParent=BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,MemberName=&quot;OpenGallery&quot;,MemberGuid=D03FCC1D4182BBFCAAE5C8898EB581C2)
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>   NodePosX=-2960
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>   NodePosY=704
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>   NodeGuid=A385864148887ECD227A0F8B722A58D9
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>   CustomProperties Pin (PinId=2E62FD77432DD0926D3ABBA39CC23615,PinName=&quot;execute&quot;,PinToolTip=&quot;\nExec&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_InputKey_4 D0D50D654D23CC8038B15F863ED91CDF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>   CustomProperties Pin (PinId=CDDDFF5D4B28AD1448758285F6A14031,PinName=&quot;then&quot;,PinToolTip=&quot;\nExec&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>   CustomProperties Pin (PinId=46798C284745896D730EAAA74C751B36,PinName=&quot;self&quot;,PinFriendlyName=NSLOCTEXT(&quot;K2Node&quot;, &quot;Target&quot;, &quot;Target&quot;),PinToolTip=&quot;Target\nBPC Photo Mode Object Reference&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_VariableGet_1 19970D5A4D13CACB8F5863B4B3C104EF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>   CustomProperties Pin (PinId=D394D39749A800A9741F29855B82629D,PinName=&quot;LastKey&quot;,PinToolTip=&quot;Last Key\nKey Structure&quot;,PinType.PinCategory=&quot;struct&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=ScriptStruct&#39;&quot;/Script/InputCore.Key&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue=&quot;None&quot;,AutogeneratedDefaultValue=&quot;None&quot;,LinkedTo=(K2Node_InputKey_4 1B9360FE4B5751A68BC08EB640E3C31F,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>End Object
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_InputKey Name=&quot;K2Node_InputKey_3&quot;
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>   InputKey=P
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>   NodePosX=-3168
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>   NodePosY=544
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>   NodeGuid=6B74A0024792DD2BFDB361B2371D7E4C
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>   CustomProperties Pin (PinId=B16672674E017165EA07ABBEE9C49C47,PinName=&quot;Pressed&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_7 A0B83BA240FCDED5766DC3B6176C8A92,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>   CustomProperties Pin (PinId=CA2AA8AD4047B1228890AB99C9293CD3,PinName=&quot;Released&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>   CustomProperties Pin (PinId=A8E7C24C44F20E2DAC8B628AEC8FCB15,PinName=&quot;Key&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;struct&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=ScriptStruct&#39;&quot;/Script/InputCore.Key&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue=&quot;None&quot;,AutogeneratedDefaultValue=&quot;None&quot;,LinkedTo=(K2Node_CallFunction_7 EFF2138146D9013B77F379A17F05D9FE,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>End Object
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_InputKey Name=&quot;K2Node_InputKey_4&quot;
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>   InputKey=G
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>   NodePosX=-3168
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>   NodePosY=720
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>   NodeGuid=551848D54F5A9FC961DEBF926B4D2B5E
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>   CustomProperties Pin (PinId=D0D50D654D23CC8038B15F863ED91CDF,PinName=&quot;Pressed&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_8 2E62FD77432DD0926D3ABBA39CC23615,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>   CustomProperties Pin (PinId=242F1E42427FD0AFFEF866A3A586E63B,PinName=&quot;Released&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>   CustomProperties Pin (PinId=1B9360FE4B5751A68BC08EB640E3C31F,PinName=&quot;Key&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;struct&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=ScriptStruct&#39;&quot;/Script/InputCore.Key&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue=&quot;None&quot;,AutogeneratedDefaultValue=&quot;None&quot;,LinkedTo=(K2Node_CallFunction_8 D394D39749A800A9741F29855B82629D,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>End Object
+<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>Begin Object Class=/Script/UnrealEd.EdGraphNode_Comment Name=&quot;EdGraphNode_Comment_8&quot;
+<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>   bCommentBubbleVisible_InDetailsPanel=False
+<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>   NodePosX=-3216
+<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>   NodePosY=480
+<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>   NodeWidth=516
+<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>   NodeHeight=404
+<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>   bCommentBubblePinned=False
+<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>   bCommentBubbleVisible=False
+<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>   NodeComment=&quot;Keyboard&quot;
+<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>   NodeGuid=93FC88774CEEBD71CA0307BDA1EF2B93
+<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>End Object
+<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_VariableGet Name=&quot;K2Node_VariableGet_0&quot;
+<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>   VariableReference=(MemberName=&quot;BPC_PhotoMode&quot;,bSelfContext=True)
+<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>   NodePosX=-2592
+<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a>   NodePosY=672
+<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>   NodeGuid=E7DE8B674C975A5DEE1957AB5ADFF35A
+<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>   CustomProperties Pin (PinId=19970D5A4D13CACB8F5863B4B3C104EF,PinName=&quot;BPC_PhotoMode&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_5 84BD1FDD4891553484B514B164974BC5,K2Node_CallFunction_6 46798C284745896D730EAAA74C751B36,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>   CustomProperties Pin (PinId=0DAC7DB847FC67490596088B33F434D4,PinName=&quot;self&quot;,PinFriendlyName=NSLOCTEXT(&quot;K2Node&quot;, &quot;Target&quot;, &quot;Target&quot;),PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Demo/ThirdPersonTemplate/ThirdPersonBP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>End Object
+<a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name=&quot;K2Node_CallFunction_5&quot;
+<a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a>   FunctionReference=(MemberParent=BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,MemberName=&quot;Photo Mode&quot;,MemberGuid=808D14C641A60619AC60CB8DCC4D1586)
+<a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a>   NodePosX=-2368
+<a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a>   NodePosY=528
+<a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a>   NodeGuid=E6F524B64FFC2237C7BEA9A1065544C3
+<a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a>   CustomProperties Pin (PinId=A0B83BA240FCDED5766DC3B6176C8A92,PinName=&quot;execute&quot;,PinToolTip=&quot;\nExec&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_InputKey_1 B16672674E017165EA07ABBEE9C49C47,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a>   CustomProperties Pin (PinId=CED63EDF48BDFF31EF94E1A00F60403A,PinName=&quot;then&quot;,PinToolTip=&quot;\nExec&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a>   CustomProperties Pin (PinId=84BD1FDD4891553484B514B164974BC5,PinName=&quot;self&quot;,PinFriendlyName=NSLOCTEXT(&quot;K2Node&quot;, &quot;Target&quot;, &quot;Target&quot;),PinToolTip=&quot;Target\nBPC Photo Mode Object Reference&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_VariableGet_0 19970D5A4D13CACB8F5863B4B3C104EF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a>   CustomProperties Pin (PinId=EFF2138146D9013B77F379A17F05D9FE,PinName=&quot;Key&quot;,PinToolTip=&quot;Key\nKey Structure&quot;,PinType.PinCategory=&quot;struct&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=ScriptStruct&#39;&quot;/Script/InputCore.Key&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue=&quot;None&quot;,AutogeneratedDefaultValue=&quot;None&quot;,LinkedTo=(K2Node_InputKey_1 A8E7C24C44F20E2DAC8B628AEC8FCB15,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a>End Object
+<a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name=&quot;K2Node_CallFunction_6&quot;
+<a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a>   FunctionReference=(MemberParent=BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,MemberName=&quot;OpenGallery&quot;,MemberGuid=D03FCC1D4182BBFCAAE5C8898EB581C2)
+<a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a>   NodePosX=-2368
+<a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a>   NodePosY=704
+<a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a>   NodeGuid=1921DBB240D4A61E4D9524B3E261F444
+<a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a>   CustomProperties Pin (PinId=2E62FD77432DD0926D3ABBA39CC23615,PinName=&quot;execute&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_InputKey_2 D0D50D654D23CC8038B15F863ED91CDF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a>   CustomProperties Pin (PinId=CDDDFF5D4B28AD1448758285F6A14031,PinName=&quot;then&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a>   CustomProperties Pin (PinId=46798C284745896D730EAAA74C751B36,PinName=&quot;self&quot;,PinFriendlyName=NSLOCTEXT(&quot;K2Node&quot;, &quot;Target&quot;, &quot;Target&quot;),PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_VariableGet_0 19970D5A4D13CACB8F5863B4B3C104EF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a>   CustomProperties Pin (PinId=D394D39749A800A9741F29855B82629D,PinName=&quot;LastKey&quot;,PinType.PinCategory=&quot;struct&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=ScriptStruct&#39;&quot;/Script/InputCore.Key&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue=&quot;None&quot;,AutogeneratedDefaultValue=&quot;None&quot;,LinkedTo=(K2Node_InputKey_2 1B9360FE4B5751A68BC08EB640E3C31F,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a>End Object
+<a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_InputKey Name=&quot;K2Node_InputKey_1&quot;
+<a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a>   InputKey=Gamepad_Special_Right
+<a id="__codelineno-0-88" name="__codelineno-0-88" href="#__codelineno-0-88"></a>   NodePosX=-2592
+<a id="__codelineno-0-89" name="__codelineno-0-89" href="#__codelineno-0-89"></a>   NodePosY=544
+<a id="__codelineno-0-90" name="__codelineno-0-90" href="#__codelineno-0-90"></a>   NodeGuid=5573AA9948C6FED54E71F58AFBA616A8
+<a id="__codelineno-0-91" name="__codelineno-0-91" href="#__codelineno-0-91"></a>   CustomProperties Pin (PinId=B16672674E017165EA07ABBEE9C49C47,PinName=&quot;Pressed&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_5 A0B83BA240FCDED5766DC3B6176C8A92,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-92" name="__codelineno-0-92" href="#__codelineno-0-92"></a>   CustomProperties Pin (PinId=CA2AA8AD4047B1228890AB99C9293CD3,PinName=&quot;Released&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-93" name="__codelineno-0-93" href="#__codelineno-0-93"></a>   CustomProperties Pin (PinId=A8E7C24C44F20E2DAC8B628AEC8FCB15,PinName=&quot;Key&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;struct&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=ScriptStruct&#39;&quot;/Script/InputCore.Key&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue=&quot;None&quot;,AutogeneratedDefaultValue=&quot;None&quot;,LinkedTo=(K2Node_CallFunction_5 EFF2138146D9013B77F379A17F05D9FE,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-94" name="__codelineno-0-94" href="#__codelineno-0-94"></a>End Object
+<a id="__codelineno-0-95" name="__codelineno-0-95" href="#__codelineno-0-95"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_InputKey Name=&quot;K2Node_InputKey_2&quot;
+<a id="__codelineno-0-96" name="__codelineno-0-96" href="#__codelineno-0-96"></a>   InputKey=Gamepad_Special_Left
+<a id="__codelineno-0-97" name="__codelineno-0-97" href="#__codelineno-0-97"></a>   NodePosX=-2592
+<a id="__codelineno-0-98" name="__codelineno-0-98" href="#__codelineno-0-98"></a>   NodePosY=720
+<a id="__codelineno-0-99" name="__codelineno-0-99" href="#__codelineno-0-99"></a>   NodeGuid=77ACBC9B4B2130793CD19F93BE7B7553
+<a id="__codelineno-0-100" name="__codelineno-0-100" href="#__codelineno-0-100"></a>   CustomProperties Pin (PinId=D0D50D654D23CC8038B15F863ED91CDF,PinName=&quot;Pressed&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_6 2E62FD77432DD0926D3ABBA39CC23615,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-101" name="__codelineno-0-101" href="#__codelineno-0-101"></a>   CustomProperties Pin (PinId=242F1E42427FD0AFFEF866A3A586E63B,PinName=&quot;Released&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-102" name="__codelineno-0-102" href="#__codelineno-0-102"></a>   CustomProperties Pin (PinId=1B9360FE4B5751A68BC08EB640E3C31F,PinName=&quot;Key&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;struct&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=ScriptStruct&#39;&quot;/Script/InputCore.Key&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue=&quot;None&quot;,AutogeneratedDefaultValue=&quot;None&quot;,LinkedTo=(K2Node_CallFunction_6 D394D39749A800A9741F29855B82629D,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-0-103" name="__codelineno-0-103" href="#__codelineno-0-103"></a>End Object
+<a id="__codelineno-0-104" name="__codelineno-0-104" href="#__codelineno-0-104"></a>Begin Object Class=/Script/UnrealEd.EdGraphNode_Comment Name=&quot;EdGraphNode_Comment_2&quot;
+<a id="__codelineno-0-105" name="__codelineno-0-105" href="#__codelineno-0-105"></a>   bCommentBubbleVisible_InDetailsPanel=False
+<a id="__codelineno-0-106" name="__codelineno-0-106" href="#__codelineno-0-106"></a>   NodePosX=-2640
+<a id="__codelineno-0-107" name="__codelineno-0-107" href="#__codelineno-0-107"></a>   NodePosY=480
+<a id="__codelineno-0-108" name="__codelineno-0-108" href="#__codelineno-0-108"></a>   NodeWidth=516
+<a id="__codelineno-0-109" name="__codelineno-0-109" href="#__codelineno-0-109"></a>   NodeHeight=404
+<a id="__codelineno-0-110" name="__codelineno-0-110" href="#__codelineno-0-110"></a>   bCommentBubblePinned=False
+<a id="__codelineno-0-111" name="__codelineno-0-111" href="#__codelineno-0-111"></a>   bCommentBubbleVisible=False
+<a id="__codelineno-0-112" name="__codelineno-0-112" href="#__codelineno-0-112"></a>   NodeComment=&quot;Gamepad&quot;
+<a id="__codelineno-0-113" name="__codelineno-0-113" href="#__codelineno-0-113"></a>   NodeGuid=B6E5E47442A3FA94E183D0A58B3DE1A3
+<a id="__codelineno-0-114" name="__codelineno-0-114" href="#__codelineno-0-114"></a>End Object
+</code></pre></div>
+</details>
+<details class="warning">
+<summary>Remember to set the <code>Key</code> parameter on the <code>Photo Mode</code> and <code>Gallery</code> events.</summary>
+<p>Otherwise, the keys icons will not show up after opening the photo mode for the first time.
+<figure markdown>
+    <img alt="Input warning" src="../assets/advancedphotomode-assets/input-warning-1.png" width="900" />
+    <figcaption>How to create input actions</figcaption>
+</figure></p>
+</details>
+<p>And that's all, you can now hit play and use the photo mode! Alternatively, you can use <code>action mappings</code> to setup the input events, as you can see in <a href="https://youtu.be/mdZZVLplxGQ?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak">this video</a>.</p>
+<h3 id="3-calling-the-photo-mode-or-gallery-enhanced-input">3. Calling the photo mode or gallery + Enhanced Input.</h3>
+<p>If you're using the Enhanced Input System, the setup is slightly different. </p>
+<h4 id="input-actions">Input actions</h4>
+<p>First, create one <code>Input Action</code> for each action: <code>IA_Keyboard_PhotoMode</code>, <code>IA_Gamepad_PhotoMode</code>, <code>IA_Keyboard_Gallery</code> and <code>IA_Gamepad_Gallery</code>.</p>
+<figure>
+<p><img alt="Input actions" src="../assets/advancedphotomode-assets/inputactions.png" width="450" />
+  </p>
+<figcaption>Input actions</figcaption>
+</figure>
+<details class="tip">
+<summary>Tip: how to create input actions?</summary>
+<p>To create an input action, right click over your <code>Content Browser</code>, go to <code>Input</code> → <code>Input Action</code>.
+<figure markdown>
+    <img alt="Input actions" src="../assets/advancedphotomode-assets/add_actioninput.png" width="500" />
+    <figcaption>How to create input actions</figcaption>
+</figure></p>
+</details>
+<p>Then, open your <code>Mapping Context</code> used into your pawn/character blueprint and add all these <code>Input Actions</code>.</p>
+<figure>
+<p><img alt="Mapping context" src="../assets/advancedphotomode-assets/imc.png" width="300" />
+  </p>
+<figcaption>Mapping context</figcaption>
+</figure>
+<p>Finally, call these input actions within your pawn/character blueprint combined with the <code>Photo Mode</code> and <code>Open Gallery</code> events, using the <code>BPC Photo Mode</code> reference.</p>
+<figure>
+<p><img alt="Input actions" src="../assets/advancedphotomode-assets/enhanced-input.png" width="800" />
+  </p>
+<figcaption>Input actions</figcaption>
+</figure>
+<details class="warning">
+<summary>Remember to set the <code>Key</code> parameter on the <code>Photo Mode</code> and <code>Gallery</code> events.</summary>
+<p>Otherwise, the keys icons will not show up after opening the photo mode for the first time. In this case, the specific key doesn't matter, as long as it's a keyboard key for keyboard events and a gamepad button for gamepad events. This key is only used to indicate which set of icons will be used.
+<figure markdown>
+    <img alt="Input warning" src="../assets/advancedphotomode-assets/input-warning-2.png" width="900" />
+    <figcaption>How to create input actions</figcaption>
+</figure></p>
+</details>
+<p>Feel free to copy-paste the events above from the clipboard shortcut below.</p>
+<details class="abstract">
+<summary>Copy-paste: input keys + photo mode and gallery events</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Begin Object Class=/Script/InputBlueprintNodes.K2Node_EnhancedInputAction Name=&quot;K2Node_EnhancedInputAction_2&quot;
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>   InputAction=/Script/EnhancedInput.InputAction&#39;&quot;/Game/IA_Gamepad_Gallery.IA_Gamepad_Gallery&quot;&#39;
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>   NodePosX=2574
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>   NodePosY=96
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>   AdvancedPinDisplay=Hidden
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>   NodeGuid=B8FF49384580783835CE5AA2A7E2A6DC
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>   CustomProperties Pin (PinId=099FC0E5413208AA95746F882A8E3A48,PinName=&quot;Triggered&quot;,PinToolTip=&quot;Triggering occurred after one or more processing ticks&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>   CustomProperties Pin (PinId=63E680E64135A3464E3CA7BB5EEBE410,PinName=&quot;Started&quot;,PinToolTip=&quot;An event has occurred that has begun Trigger evaluation. Note: Triggered may also occur this frame.&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>   CustomProperties Pin (PinId=606A308843C0F279A85400BF26497B2E,PinName=&quot;Ongoing&quot;,PinToolTip=&quot;Triggering is still being processed&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>   CustomProperties Pin (PinId=EDFB68624AB85F4800D7A1866D741C1E,PinName=&quot;Canceled&quot;,PinToolTip=&quot;Triggering has been canceled&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>   CustomProperties Pin (PinId=62E3FBFB4C595395602E30B1210F66DA,PinName=&quot;Completed&quot;,PinToolTip=&quot;The trigger state has transitioned from Triggered to None this frame, i.e. Triggering has finished.\nNOTE: Using this event restricts you to one set of triggers for Started/Completed events. You may prefer two actions, each with its own trigger rules.\nTODO: Completed will not fire if any trigger reports Ongoing on the same frame, but both should fire. e.g. Tick 2 of Hold (= Ongoing) + Pressed (= None) combo will raise Ongoing event only.&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_CallFunction_10 31763A394DC997DD3084EE9D4CD2020E,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>   CustomProperties Pin (PinId=9E0D49764F3584DFAC346D8CF94B916E,PinName=&quot;ActionValue&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;bool&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue=&quot;false&quot;,AutogeneratedDefaultValue=&quot;false&quot;,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>   CustomProperties Pin (PinId=DE912851415D9EC1939C3C818A3A3029,PinName=&quot;ElapsedSeconds&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;real&quot;,PinType.PinSubCategory=&quot;double&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=True,bOrphanedPin=False,)
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>   CustomProperties Pin (PinId=9492CDC644C579B6A721B6841882471D,PinName=&quot;TriggeredSeconds&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;real&quot;,PinType.PinSubCategory=&quot;double&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=True,bOrphanedPin=False,)
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>   CustomProperties Pin (PinId=458CE603469614944B2ABD9D9E393011,PinName=&quot;InputAction&quot;,PinToolTip=&quot;Input Action\nInput Action Object Reference\n\nThe input action that caused this event to fire&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/CoreUObject.Class&#39;&quot;/Script/EnhancedInput.InputAction&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue=&quot;IA_GalleryGamepad&quot;,DefaultObject=&quot;/Game/IA_Gamepad_Gallery.IA_Gamepad_Gallery&quot;,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>End Object
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>Begin Object Class=/Script/InputBlueprintNodes.K2Node_EnhancedInputAction Name=&quot;K2Node_EnhancedInputAction_3&quot;
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>   InputAction=/Script/EnhancedInput.InputAction&#39;&quot;/Game/IA_Keyboard_Gallery.IA_Keyboard_Gallery&quot;&#39;
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>   NodePosX=2576
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>   NodePosY=416
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>   AdvancedPinDisplay=Hidden
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>   NodeGuid=4CD8CD924CE87171C3506F97900C123E
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>   CustomProperties Pin (PinId=9D019820459800AED4ADED8D9F4CDF51,PinName=&quot;Triggered&quot;,PinToolTip=&quot;Triggering occurred after one or more processing ticks&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>   CustomProperties Pin (PinId=57B9AC3949C522B14475C6B84FC82762,PinName=&quot;Started&quot;,PinToolTip=&quot;An event has occurred that has begun Trigger evaluation. Note: Triggered may also occur this frame.&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>   CustomProperties Pin (PinId=0C63F9974E9AF5D87E4444A07FA00718,PinName=&quot;Ongoing&quot;,PinToolTip=&quot;Triggering is still being processed&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>   CustomProperties Pin (PinId=B837F6864E4F4002FF3210BF21AE0FBA,PinName=&quot;Canceled&quot;,PinToolTip=&quot;Triggering has been canceled&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>   CustomProperties Pin (PinId=2F834DE24D2FBB8657888299238F4414,PinName=&quot;Completed&quot;,PinToolTip=&quot;The trigger state has transitioned from Triggered to None this frame, i.e. Triggering has finished.\nNOTE: Using this event restricts you to one set of triggers for Started/Completed events. You may prefer two actions, each with its own trigger rules.\nTODO: Completed will not fire if any trigger reports Ongoing on the same frame, but both should fire. e.g. Tick 2 of Hold (= Ongoing) + Pressed (= None) combo will raise Ongoing event only.&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_CallFunction_14 31763A394DC997DD3084EE9D4CD2020E,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>   CustomProperties Pin (PinId=2CC11A3C41E12431495B10BBFED5B693,PinName=&quot;ActionValue&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;bool&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue=&quot;false&quot;,AutogeneratedDefaultValue=&quot;false&quot;,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>   CustomProperties Pin (PinId=A550F2AE4D066274CB925B9751A302B4,PinName=&quot;ElapsedSeconds&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;real&quot;,PinType.PinSubCategory=&quot;double&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=True,bOrphanedPin=False,)
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>   CustomProperties Pin (PinId=D075E74C46CE78544BB860B36225DE3D,PinName=&quot;TriggeredSeconds&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;real&quot;,PinType.PinSubCategory=&quot;double&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=True,bOrphanedPin=False,)
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>   CustomProperties Pin (PinId=47C5DA1142A13FEBA6F7ADAF2A65B861,PinName=&quot;InputAction&quot;,PinToolTip=&quot;Input Action\nInput Action Object Reference\n\nThe input action that caused this event to fire&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/CoreUObject.Class&#39;&quot;/Script/EnhancedInput.InputAction&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue=&quot;IA_GalleryKeyboard&quot;,DefaultObject=&quot;/Game/IA_Keyboard_Gallery.IA_Keyboard_Gallery&quot;,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>End Object
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>Begin Object Class=/Script/InputBlueprintNodes.K2Node_EnhancedInputAction Name=&quot;K2Node_EnhancedInputAction_5&quot;
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>   InputAction=/Script/EnhancedInput.InputAction&#39;&quot;/Game/IA_Gamepad_PhotoMode.IA_Gamepad_PhotoMode&quot;&#39;
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>   NodePosX=1646
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>   NodePosY=96
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>   AdvancedPinDisplay=Hidden
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>   NodeGuid=E0D0352140892DBD741AE2B66ECC2582
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>   CustomProperties Pin (PinId=57E1AE874A4BFEDA33D7B2953E05BEE7,PinName=&quot;Triggered&quot;,PinToolTip=&quot;Triggering occurred after one or more processing ticks&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>   CustomProperties Pin (PinId=BE0E61004CF7AD32E1AC7DA5350BCFD6,PinName=&quot;Started&quot;,PinToolTip=&quot;An event has occurred that has begun Trigger evaluation. Note: Triggered may also occur this frame.&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>   CustomProperties Pin (PinId=C0B80C174543E8C5E11A979024EFEE42,PinName=&quot;Ongoing&quot;,PinToolTip=&quot;Triggering is still being processed&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>   CustomProperties Pin (PinId=139365DB4CFA8F0604AB43820C634F4E,PinName=&quot;Canceled&quot;,PinToolTip=&quot;Triggering has been canceled&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>   CustomProperties Pin (PinId=7E8AD1D84E36EE4BDA6BA2A29DDD0294,PinName=&quot;Completed&quot;,PinToolTip=&quot;The trigger state has transitioned from Triggered to None this frame, i.e. Triggering has finished.\nNOTE: Using this event restricts you to one set of triggers for Started/Completed events. You may prefer two actions, each with its own trigger rules.\nTODO: Completed will not fire if any trigger reports Ongoing on the same frame, but both should fire. e.g. Tick 2 of Hold (= Ongoing) + Pressed (= None) combo will raise Ongoing event only.&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_CallFunction_12 9A918BC8458D9B5F91EB3BB736AA9987,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>   CustomProperties Pin (PinId=9565897F48B3EEC5727C08981B4AE212,PinName=&quot;ActionValue&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;bool&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue=&quot;false&quot;,AutogeneratedDefaultValue=&quot;false&quot;,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>   CustomProperties Pin (PinId=3DC18CC645AA88F67CD521AE8AD29CFC,PinName=&quot;ElapsedSeconds&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;real&quot;,PinType.PinSubCategory=&quot;double&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=True,bOrphanedPin=False,)
+<a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a>   CustomProperties Pin (PinId=4A2DCBDD45E056AAC892E48F43ADF9BE,PinName=&quot;TriggeredSeconds&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;real&quot;,PinType.PinSubCategory=&quot;double&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=True,bOrphanedPin=False,)
+<a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>   CustomProperties Pin (PinId=E5977971412DA0530AB2DAAB5A9BC2E7,PinName=&quot;InputAction&quot;,PinToolTip=&quot;Input Action\nInput Action Object Reference\n\nThe input action that caused this event to fire&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/CoreUObject.Class&#39;&quot;/Script/EnhancedInput.InputAction&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue=&quot;IA_PhotoModeGamepad&quot;,DefaultObject=&quot;/Game/IA_Gamepad_PhotoMode.IA_Gamepad_PhotoMode&quot;,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a>End Object
+<a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a>Begin Object Class=/Script/InputBlueprintNodes.K2Node_EnhancedInputAction Name=&quot;K2Node_EnhancedInputAction_6&quot;
+<a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a>   InputAction=/Script/EnhancedInput.InputAction&#39;&quot;/Game/IA_Keyboard_PhotoMode.IA_Keyboard_PhotoMode&quot;&#39;
+<a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>   NodePosX=1648
+<a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>   NodePosY=416
+<a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>   AdvancedPinDisplay=Hidden
+<a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>   NodeGuid=82BA58AD44C4E18342A514B19F67AE3C
+<a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a>   CustomProperties Pin (PinId=9DEF7D4843323BC6591DCC817AB0653A,PinName=&quot;Triggered&quot;,PinToolTip=&quot;Triggering occurred after one or more processing ticks&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a>   CustomProperties Pin (PinId=5E5EB2964C4DB85CE6C168827FCD06DA,PinName=&quot;Started&quot;,PinToolTip=&quot;An event has occurred that has begun Trigger evaluation. Note: Triggered may also occur this frame.&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a>   CustomProperties Pin (PinId=B96126FC462DBF8621838384BA41CAEB,PinName=&quot;Ongoing&quot;,PinToolTip=&quot;Triggering is still being processed&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a>   CustomProperties Pin (PinId=FFD71EF443A55793ABBBF7BAE868D0C0,PinName=&quot;Canceled&quot;,PinToolTip=&quot;Triggering has been canceled&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a>   CustomProperties Pin (PinId=DB0DCDFC42A552ED901425A4F898FE0C,PinName=&quot;Completed&quot;,PinToolTip=&quot;The trigger state has transitioned from Triggered to None this frame, i.e. Triggering has finished.\nNOTE: Using this event restricts you to one set of triggers for Started/Completed events. You may prefer two actions, each with its own trigger rules.\nTODO: Completed will not fire if any trigger reports Ongoing on the same frame, but both should fire. e.g. Tick 2 of Hold (= Ongoing) + Pressed (= None) combo will raise Ongoing event only.&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_CallFunction_11 9A918BC8458D9B5F91EB3BB736AA9987,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a>   CustomProperties Pin (PinId=3D2BAF4F401CDD6699D209A2DBCFF43E,PinName=&quot;ActionValue&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;bool&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue=&quot;false&quot;,AutogeneratedDefaultValue=&quot;false&quot;,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a>   CustomProperties Pin (PinId=76AA375B4D66EFA2E30E7E99BF73C360,PinName=&quot;ElapsedSeconds&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;real&quot;,PinType.PinSubCategory=&quot;double&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=True,bOrphanedPin=False,)
+<a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a>   CustomProperties Pin (PinId=82E8E3CD4ACC3D3D48F3B98F07C1F09D,PinName=&quot;TriggeredSeconds&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;real&quot;,PinType.PinSubCategory=&quot;double&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=True,bOrphanedPin=False,)
+<a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a>   CustomProperties Pin (PinId=3232CF8448EF895E6298B4810FEEF599,PinName=&quot;InputAction&quot;,PinToolTip=&quot;Input Action\nInput Action Object Reference\n\nThe input action that caused this event to fire&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/CoreUObject.Class&#39;&quot;/Script/EnhancedInput.InputAction&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue=&quot;IA_PhotoModeKeyboard&quot;,DefaultObject=&quot;/Game/IA_Keyboard_PhotoMode.IA_Keyboard_PhotoMode&quot;,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a>End Object
+<a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_VariableGet Name=&quot;K2Node_VariableGet_2&quot;
+<a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a>   VariableReference=(MemberName=&quot;BPC_PhotoMode&quot;,bSelfContext=True)
+<a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a>   NodePosX=2763
+<a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a>   NodePosY=368
+<a id="__codelineno-1-69" name="__codelineno-1-69" href="#__codelineno-1-69"></a>   NodeGuid=B1DCA7F84F289B2E1C66A5A2FA67DA8B
+<a id="__codelineno-1-70" name="__codelineno-1-70" href="#__codelineno-1-70"></a>   CustomProperties Pin (PinId=0E80301B484C5EAFDB45C2A2F29457D6,PinName=&quot;BPC_PhotoMode&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/Engine.BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_CallFunction_10 50F8B1504074898FBDC81B855447C9EA,K2Node_CallFunction_14 50F8B1504074898FBDC81B855447C9EA,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a>   CustomProperties Pin (PinId=E9AA0EE643D4BE297D0BE3A13E9DFDF8,PinName=&quot;self&quot;,PinFriendlyName=NSLOCTEXT(&quot;K2Node&quot;, &quot;Target&quot;, &quot;Target&quot;),PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/Engine.BlueprintGeneratedClass&#39;&quot;/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-72" name="__codelineno-1-72" href="#__codelineno-1-72"></a>End Object
+<a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name=&quot;K2Node_CallFunction_10&quot;
+<a id="__codelineno-1-74" name="__codelineno-1-74" href="#__codelineno-1-74"></a>   FunctionReference=(MemberParent=/Script/Engine.BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,MemberName=&quot;OpenGallery&quot;,MemberGuid=D03FCC1D4182BBFCAAE5C8898EB581C2)
+<a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a>   NodePosX=3006
+<a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a>   NodePosY=208
+<a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a>   NodeGuid=FC0A0B36405B2597D5971B86B5926949
+<a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a>   CustomProperties Pin (PinId=31763A394DC997DD3084EE9D4CD2020E,PinName=&quot;execute&quot;,PinToolTip=&quot;\nExec&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_EnhancedInputAction_2 62E3FBFB4C595395602E30B1210F66DA,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a>   CustomProperties Pin (PinId=00D4C7304802D484CB9D95839C29217F,PinName=&quot;then&quot;,PinToolTip=&quot;\nExec&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a>   CustomProperties Pin (PinId=50F8B1504074898FBDC81B855447C9EA,PinName=&quot;self&quot;,PinFriendlyName=NSLOCTEXT(&quot;K2Node&quot;, &quot;Target&quot;, &quot;Target&quot;),PinToolTip=&quot;Target\nBPC Photo Mode Object Reference&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/Engine.BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_VariableGet_2 0E80301B484C5EAFDB45C2A2F29457D6,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-81" name="__codelineno-1-81" href="#__codelineno-1-81"></a>   CustomProperties Pin (PinId=6493261542220E9C93A2CFA4C281D993,PinName=&quot;LastKey&quot;,PinToolTip=&quot;Last Key\nKey Structure&quot;,PinType.PinCategory=&quot;struct&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/CoreUObject.ScriptStruct&#39;&quot;/Script/InputCore.Key&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue=&quot;Gamepad_Special_Left&quot;,AutogeneratedDefaultValue=&quot;None&quot;,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-82" name="__codelineno-1-82" href="#__codelineno-1-82"></a>End Object
+<a id="__codelineno-1-83" name="__codelineno-1-83" href="#__codelineno-1-83"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name=&quot;K2Node_CallFunction_14&quot;
+<a id="__codelineno-1-84" name="__codelineno-1-84" href="#__codelineno-1-84"></a>   FunctionReference=(MemberParent=/Script/Engine.BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,MemberName=&quot;OpenGallery&quot;,MemberGuid=D03FCC1D4182BBFCAAE5C8898EB581C2)
+<a id="__codelineno-1-85" name="__codelineno-1-85" href="#__codelineno-1-85"></a>   NodePosX=3006
+<a id="__codelineno-1-86" name="__codelineno-1-86" href="#__codelineno-1-86"></a>   NodePosY=528
+<a id="__codelineno-1-87" name="__codelineno-1-87" href="#__codelineno-1-87"></a>   NodeGuid=70D334814FB31261483502B7109859BC
+<a id="__codelineno-1-88" name="__codelineno-1-88" href="#__codelineno-1-88"></a>   CustomProperties Pin (PinId=31763A394DC997DD3084EE9D4CD2020E,PinName=&quot;execute&quot;,PinToolTip=&quot;\nExec&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_EnhancedInputAction_3 2F834DE24D2FBB8657888299238F4414,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-89" name="__codelineno-1-89" href="#__codelineno-1-89"></a>   CustomProperties Pin (PinId=00D4C7304802D484CB9D95839C29217F,PinName=&quot;then&quot;,PinToolTip=&quot;\nExec&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-90" name="__codelineno-1-90" href="#__codelineno-1-90"></a>   CustomProperties Pin (PinId=50F8B1504074898FBDC81B855447C9EA,PinName=&quot;self&quot;,PinFriendlyName=NSLOCTEXT(&quot;K2Node&quot;, &quot;Target&quot;, &quot;Target&quot;),PinToolTip=&quot;Target\nBPC Photo Mode Object Reference&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/Engine.BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_VariableGet_2 0E80301B484C5EAFDB45C2A2F29457D6,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-91" name="__codelineno-1-91" href="#__codelineno-1-91"></a>   CustomProperties Pin (PinId=6493261542220E9C93A2CFA4C281D993,PinName=&quot;LastKey&quot;,PinToolTip=&quot;Last Key\nKey Structure&quot;,PinType.PinCategory=&quot;struct&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/CoreUObject.ScriptStruct&#39;&quot;/Script/InputCore.Key&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue=&quot;Gamepad_Special_Left&quot;,AutogeneratedDefaultValue=&quot;None&quot;,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-92" name="__codelineno-1-92" href="#__codelineno-1-92"></a>End Object
+<a id="__codelineno-1-93" name="__codelineno-1-93" href="#__codelineno-1-93"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_VariableGet Name=&quot;K2Node_VariableGet_3&quot;
+<a id="__codelineno-1-94" name="__codelineno-1-94" href="#__codelineno-1-94"></a>   VariableReference=(MemberName=&quot;BPC_PhotoMode&quot;,bSelfContext=True)
+<a id="__codelineno-1-95" name="__codelineno-1-95" href="#__codelineno-1-95"></a>   NodePosX=1861
+<a id="__codelineno-1-96" name="__codelineno-1-96" href="#__codelineno-1-96"></a>   NodePosY=368
+<a id="__codelineno-1-97" name="__codelineno-1-97" href="#__codelineno-1-97"></a>   NodeGuid=206741714DE0A92C20DA0CB2A5381835
+<a id="__codelineno-1-98" name="__codelineno-1-98" href="#__codelineno-1-98"></a>   CustomProperties Pin (PinId=0E80301B484C5EAFDB45C2A2F29457D6,PinName=&quot;BPC_PhotoMode&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/Engine.BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_CallFunction_12 C6958F6D48AB713421ECB3962CDB2315,K2Node_CallFunction_11 C6958F6D48AB713421ECB3962CDB2315,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-99" name="__codelineno-1-99" href="#__codelineno-1-99"></a>   CustomProperties Pin (PinId=E9AA0EE643D4BE297D0BE3A13E9DFDF8,PinName=&quot;self&quot;,PinFriendlyName=NSLOCTEXT(&quot;K2Node&quot;, &quot;Target&quot;, &quot;Target&quot;),PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/Engine.BlueprintGeneratedClass&#39;&quot;/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-100" name="__codelineno-1-100" href="#__codelineno-1-100"></a>End Object
+<a id="__codelineno-1-101" name="__codelineno-1-101" href="#__codelineno-1-101"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name=&quot;K2Node_CallFunction_12&quot;
+<a id="__codelineno-1-102" name="__codelineno-1-102" href="#__codelineno-1-102"></a>   FunctionReference=(MemberParent=/Script/Engine.BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,MemberName=&quot;Photo Mode&quot;,MemberGuid=808D14C641A60619AC60CB8DCC4D1586)
+<a id="__codelineno-1-103" name="__codelineno-1-103" href="#__codelineno-1-103"></a>   NodePosX=2128
+<a id="__codelineno-1-104" name="__codelineno-1-104" href="#__codelineno-1-104"></a>   NodePosY=208
+<a id="__codelineno-1-105" name="__codelineno-1-105" href="#__codelineno-1-105"></a>   NodeGuid=DBEAB28845C00D958D2AC8A3DCF97DC6
+<a id="__codelineno-1-106" name="__codelineno-1-106" href="#__codelineno-1-106"></a>   CustomProperties Pin (PinId=9A918BC8458D9B5F91EB3BB736AA9987,PinName=&quot;execute&quot;,PinToolTip=&quot;\nExec&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_EnhancedInputAction_5 7E8AD1D84E36EE4BDA6BA2A29DDD0294,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-107" name="__codelineno-1-107" href="#__codelineno-1-107"></a>   CustomProperties Pin (PinId=F9B58AA642569BCBA70335962AC3E6E1,PinName=&quot;then&quot;,PinToolTip=&quot;\nExec&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-108" name="__codelineno-1-108" href="#__codelineno-1-108"></a>   CustomProperties Pin (PinId=C6958F6D48AB713421ECB3962CDB2315,PinName=&quot;self&quot;,PinFriendlyName=NSLOCTEXT(&quot;K2Node&quot;, &quot;Target&quot;, &quot;Target&quot;),PinToolTip=&quot;Target\nBPC Photo Mode Object Reference&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/Engine.BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_VariableGet_3 0E80301B484C5EAFDB45C2A2F29457D6,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-109" name="__codelineno-1-109" href="#__codelineno-1-109"></a>   CustomProperties Pin (PinId=3ED831F145B1ECA01AE46FB8146C233E,PinName=&quot;Key&quot;,PinToolTip=&quot;Key\nKey Structure&quot;,PinType.PinCategory=&quot;struct&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/CoreUObject.ScriptStruct&#39;&quot;/Script/InputCore.Key&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue=&quot;Gamepad_Special_Right&quot;,AutogeneratedDefaultValue=&quot;None&quot;,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-110" name="__codelineno-1-110" href="#__codelineno-1-110"></a>End Object
+<a id="__codelineno-1-111" name="__codelineno-1-111" href="#__codelineno-1-111"></a>Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name=&quot;K2Node_CallFunction_11&quot;
+<a id="__codelineno-1-112" name="__codelineno-1-112" href="#__codelineno-1-112"></a>   FunctionReference=(MemberParent=/Script/Engine.BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,MemberName=&quot;Photo Mode&quot;,MemberGuid=808D14C641A60619AC60CB8DCC4D1586)
+<a id="__codelineno-1-113" name="__codelineno-1-113" href="#__codelineno-1-113"></a>   NodePosX=2128
+<a id="__codelineno-1-114" name="__codelineno-1-114" href="#__codelineno-1-114"></a>   NodePosY=528
+<a id="__codelineno-1-115" name="__codelineno-1-115" href="#__codelineno-1-115"></a>   NodeGuid=EB80EAB84CFE4F93AB8E11B67706495E
+<a id="__codelineno-1-116" name="__codelineno-1-116" href="#__codelineno-1-116"></a>   CustomProperties Pin (PinId=9A918BC8458D9B5F91EB3BB736AA9987,PinName=&quot;execute&quot;,PinToolTip=&quot;\nExec&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_EnhancedInputAction_6 DB0DCDFC42A552ED901425A4F898FE0C,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-117" name="__codelineno-1-117" href="#__codelineno-1-117"></a>   CustomProperties Pin (PinId=F9B58AA642569BCBA70335962AC3E6E1,PinName=&quot;then&quot;,PinToolTip=&quot;\nExec&quot;,Direction=&quot;EGPD_Output&quot;,PinType.PinCategory=&quot;exec&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-118" name="__codelineno-1-118" href="#__codelineno-1-118"></a>   CustomProperties Pin (PinId=C6958F6D48AB713421ECB3962CDB2315,PinName=&quot;self&quot;,PinFriendlyName=NSLOCTEXT(&quot;K2Node&quot;, &quot;Target&quot;, &quot;Target&quot;),PinToolTip=&quot;Target\nBPC Photo Mode Object Reference&quot;,PinType.PinCategory=&quot;object&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/Engine.BlueprintGeneratedClass&#39;&quot;/Game/AdvancedPhotoMode/Blueprints/BPC_PhotoMode.BPC_PhotoMode_C&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_VariableGet_3 0E80301B484C5EAFDB45C2A2F29457D6,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-119" name="__codelineno-1-119" href="#__codelineno-1-119"></a>   CustomProperties Pin (PinId=3ED831F145B1ECA01AE46FB8146C233E,PinName=&quot;Key&quot;,PinToolTip=&quot;Key\nKey Structure&quot;,PinType.PinCategory=&quot;struct&quot;,PinType.PinSubCategory=&quot;&quot;,PinType.PinSubCategoryObject=/Script/CoreUObject.ScriptStruct&#39;&quot;/Script/InputCore.Key&quot;&#39;,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue=&quot;P&quot;,AutogeneratedDefaultValue=&quot;None&quot;,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+<a id="__codelineno-1-120" name="__codelineno-1-120" href="#__codelineno-1-120"></a>End Object
+<a id="__codelineno-1-121" name="__codelineno-1-121" href="#__codelineno-1-121"></a>Begin Object Class=/Script/UnrealEd.EdGraphNode_Comment Name=&quot;EdGraphNode_Comment_10&quot;
+<a id="__codelineno-1-122" name="__codelineno-1-122" href="#__codelineno-1-122"></a>   bCommentBubbleVisible_InDetailsPanel=False
+<a id="__codelineno-1-123" name="__codelineno-1-123" href="#__codelineno-1-123"></a>   NodePosX=1584
+<a id="__codelineno-1-124" name="__codelineno-1-124" href="#__codelineno-1-124"></a>   NodePosY=32
+<a id="__codelineno-1-125" name="__codelineno-1-125" href="#__codelineno-1-125"></a>   NodeWidth=907
+<a id="__codelineno-1-126" name="__codelineno-1-126" href="#__codelineno-1-126"></a>   NodeHeight=687
+<a id="__codelineno-1-127" name="__codelineno-1-127" href="#__codelineno-1-127"></a>   bCommentBubblePinned=False
+<a id="__codelineno-1-128" name="__codelineno-1-128" href="#__codelineno-1-128"></a>   bCommentBubbleVisible=False
+<a id="__codelineno-1-129" name="__codelineno-1-129" href="#__codelineno-1-129"></a>   NodeComment=&quot;Photo Mode&quot;
+<a id="__codelineno-1-130" name="__codelineno-1-130" href="#__codelineno-1-130"></a>   NodeGuid=9301FD0E4A01AD75977B8ABD36F96341
+<a id="__codelineno-1-131" name="__codelineno-1-131" href="#__codelineno-1-131"></a>End Object
+<a id="__codelineno-1-132" name="__codelineno-1-132" href="#__codelineno-1-132"></a>Begin Object Class=/Script/UnrealEd.EdGraphNode_Comment Name=&quot;EdGraphNode_Comment_11&quot;
+<a id="__codelineno-1-133" name="__codelineno-1-133" href="#__codelineno-1-133"></a>   bCommentBubbleVisible_InDetailsPanel=False
+<a id="__codelineno-1-134" name="__codelineno-1-134" href="#__codelineno-1-134"></a>   NodePosX=2512
+<a id="__codelineno-1-135" name="__codelineno-1-135" href="#__codelineno-1-135"></a>   NodePosY=32
+<a id="__codelineno-1-136" name="__codelineno-1-136" href="#__codelineno-1-136"></a>   NodeWidth=848
+<a id="__codelineno-1-137" name="__codelineno-1-137" href="#__codelineno-1-137"></a>   NodeHeight=688
+<a id="__codelineno-1-138" name="__codelineno-1-138" href="#__codelineno-1-138"></a>   bCommentBubblePinned=False
+<a id="__codelineno-1-139" name="__codelineno-1-139" href="#__codelineno-1-139"></a>   bCommentBubbleVisible=False
+<a id="__codelineno-1-140" name="__codelineno-1-140" href="#__codelineno-1-140"></a>   NodeComment=&quot;Gallery&quot;
+<a id="__codelineno-1-141" name="__codelineno-1-141" href="#__codelineno-1-141"></a>   NodeGuid=22A49EA04D75D817B7A23A8A0643A84A
+<a id="__codelineno-1-142" name="__codelineno-1-142" href="#__codelineno-1-142"></a>End Object
+</code></pre></div>
+</details>
+<p>And that's all, you can now hit play and use the photo mode! Alternatively, you can use <code>action mappings</code> to setup the input events, as you can see in <a href="https://youtu.be/mdZZVLplxGQ?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak">this video</a>.</p>
+<h2 id="update-log">Update log</h2>
+<p><strong><code>2023/05:</code> version 5.0 released.</strong></p>
+<details class="info" open="open">
+<summary>5.0 news</summary>
+<ul>
+<li>Redesigned usage mode. Now it's extremely easy to use, with only two steps.</li>
+<li>Works with camera components and cine cameras, automatically identifying which camera you are using.</li>
+<li>Automatically identifies which post-process your camera is immersed in.</li>
+<li>New free camera (now an actor instead of a pawn, removing the need for possession and, therefore, drastically reducing the chance of errors generated in projects that depend on the pawn reference). Another positive consequence is that having an actor instead of possessing another pawn makes it work in multiplayer games.</li>
+<li>Autofocus with double-click. Now it's possible to focus on any point on the screen by double-clicking the mouse. This feature is exclusive for mouse use.</li>
+<li>Better logo positioning. Now the logo positions itself correctly regardless of the screen size.</li>
+<li>Better borders and inclusion of frames.</li>
+<li>Addition of the "Sharpness" slider in place of the "Blue Correction" slider.</li>
+<li>Now all texts in Advanced Photo Mode can be translated using Unreal Engine's standard translation tool.</li>
+<li>Custom motion blur added: now it's possible to use a custom motion blur system (you need to set Custom Depth to "enabled with stencil" in Project Settings and mark "bAllowCustomMotionBlur" as true in the photo mode component). Motion blur may not work properly on nanite meshes.</li>
+<li>Added screenshot method via render target as an alternative to "highresscreenshot". Highresscreenshot is still the default method.</li>
+<li>Sliders redesigned and with new functions.</li>
+</ul>
+</details>
+<p><code>2022/01:</code> version 4.0 released.</p>
+<details class="info">
+<summary>4.0 news</summary>
+<ul>
+<li>EPIC GAMES LIBRARY CHANGES<ul>
+<li>The distribution method has been changed to "Asset Pack." Now, you can import the Advanced Photo Mode directly from your library using the "add to project" button, instead of creating a new project and migrating the content.</li>
+</ul>
+</li>
+<li>VISUAL CHANGES<ul>
+<li>A new visual has been added.</li>
+</ul>
+</li>
+<li>CODE CHANGES<ul>
+<li>An extra option has been added to pause the game in the Photo Mode component variables menu. Now, you can select the pause game method:</li>
+<li>PAUSE GAME USING "SET GAME PAUSED" FUNCTION: This option pauses the game completely. The image may show some small dots in the Unreal Engine 5 if you're testing in the viewport mode. These dots disappear in the packaged game. This is caused by a bug in the Unreal Engine viewport, which will hopefully be fixed soon by the UE team.</li>
+<li>PAUSE GAME USING "GLOBAL TIME DILATION": This option looks a bit better in the viewport, but you'll get a very similar quality in the output photo. This mode doesn't pause background audio but has better compatibility with assets that don't handle paused games (an unusual case).</li>
+<li>Changes have been made to the screenshot+thumbnail code. There is no usage of delay nodes, and the photo and thumbnail are now generated quickly. The camera doesn't move after taking the screenshot.</li>
+<li>A "character rotation" toggle has been added. When enabled, the character will rotate towards the camera direction.</li>
+</ul>
+</li>
+<li>The logo code has been reworked and correctly fits the screen size. We recommend using logos with a size of 256x256. You no longer need to cut one pixel column/row on each side.</li>
+<li>Instead of editing the player's camera, we're now editing the post process volume. Don't worry if your level does not have one or more, as the code can handle these situations.</li>
+<li>The "Aperture" slider has been changed to a "Selector" slider type, which includes the most common camera apertures.</li>
+<li>You can now change the slider values by scrolling the mouse wheel when hovering over the slider or selector.</li>
+<li>An option has been added to focus on the slider when hovering over it. This option is marked as false by default in the Photo Mode component.</li>
+<li>The free camera code has been reworked. It now uses the "spectator character" type and default controls (so Q and E keys allow you to move up and down).</li>
+<li>The option to "rotate around character when reaching the maximum distance" in the Free Camera has been removed. Now, you can choose whether you want a maximum distance or not in the Photo Mode component, and you can choose the maximum distance. The free camera will stop when reaching the maximum distance, but the camera will move if the input was in a direction that reduces this distance.</li>
+<li>Interpolation has been added to the Camera Rotation, FOV, Camera Distance, and camera movement (WASD). This ensures that the movement/value changes are smooth.</li>
+<li>An option has been added to autosize the Photo Mode UI box. You can find it in the Photo Mode component.</li>
+</ul>
+</details>
+<p><code>2021/09:</code> version 3.0 released.</p>
+<p><code>2020/10:</code> version 2.0 released.</p>
+<p><code>2020/08:</code> version 1.0 released.</p>
+<h2 id="questions-and-answers">Questions and answers</h2>
+<details class="question">
+<summary>I'm using the Advanced Locomotion System (ALS/ALSV3/ALSV4). Do you have any tutorial integrating both systems?</summary>
+<p>Yes! You can check <a href="https://www.youtube.com/watch?v=8xkNH03DxDU">this video</a> to integrate your ALS project (with the ALS default camera) with Advanced Photo Mode. If you are not using the default ALS camera, but a spring arm + camera component, follow the default tutorial, <a href="https://youtu.be/mdZZVLplxGQ?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak">this video</a>.</p>
+</details>
+<details class="question">
+<summary>Do the icons in this project have any kind of copyright? And what about the font style?</summary>
+<p>The icons in this project do not have any copyright, they were made by me using the GIMP tool. So if you have the Advanced Photo Mode, feel free to use them in commercial or personal projects, even if you do not use the Advanced Photo Mode directly!</p>
+<p>Regarding the font, it is called "Liberation Sans", and it is a public domain font (you can use for both commercial and personal projects), and you can find it at <a href="https://www.dafont.com/pt/liberation-sans.font">this link</a>.</p>
+</details>
+<details class="question">
+<summary>Does this asset work with ESRPG?</summary>
+<p>Yes, it does. The setup tutorial is the default one, <a href="https://youtu.be/mdZZVLplxGQ?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak">this video</a>.</p>
+</details>
+<details class="question">
+<summary>I'm using UE5 and there are some black dots on the screen while using the photo mode. How can I fix this?</summary>
+<p>Try changing the pause game method to "Use Global Time Dilation", like in <a href="https://youtu.be/vKCUiM70K1Y?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak">this video</a>.</p>
+</details>
+<details class="question">
+<summary>I’m using UE5 and it looks like it lacks definition at the edges (such as no anti aliasing). How can I fix this?</summary>
+<p>That doesn’t happen in the UE4 but it can happen in the UE5 because the variable “screen percentage” was removed in UE5. However, it can happen only in the editor (the image looks great in the packaged game) depending on the AA solution in your project. If you need to use it in the editor and want a better image quality, change the pause game method to "Use Global Time Dilation", like in <a href="https://youtu.be/vKCUiM70K1Y?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak">this video</a>.</p>
+</details>
+<details class="question">
+<summary>I’m using UE5 and its default sky blueprint. When I open the photo mode, the sky looks broken when I move the camera. How can I fix this?</summary>
+<p>Try changing the pause game method to "Use Global Time Dilation", like in <a href="https://youtu.be/vKCUiM70K1Y?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak">this video</a>.</p>
+</details>
+<details class="question">
+<summary>I’m using Ultra Dynamic Sky. When I open the photo mode, the sky looks broken when I move the camera. How can I fix this?</summary>
+<p>Try changing the pause game method to "Use Global Time Dilation", like in <a href="https://youtu.be/vKCUiM70K1Y?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak">this video</a>.</p>
+</details>
+<details class="question">
+<summary>Does this asset work with AMD FSR or DLSS?</summary>
+<p>Yes, it does. Make sure the pause game method is "Use Global Time Dilation" (like in <a href="https://youtu.be/vKCUiM70K1Y?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak">this video</a>), because FSR and DLSS requires temporal data, something that cannot be done with pause game method "set game paused", but can be done with global time dilation by not pausing the game completely.</p>
+</details>
+<details class="question">
+<summary>Does this asset works with pawns?</summary>
+<p>Yes, with V5 you can use this asset with pawns and characters.</p>
+</details>
+<details class="question">
+<summary>I migrated my project from UE4 to UE5 (including the Advanced Photo Mode), and I get a red error trying to open it.</summary>
+<p>Advanced Photo Mode has its own UE5 version, but you don’t need to re-download and start from scratch. <a href="https://youtu.be/YFemQ6Ea0xc">This video</a>, from V4, shows how you can fix it (in V5, you just need to adjust the errors in the photo mode widget).</p>
+</details>
+<details class="question">
+<summary>The custom motion blur is not working on my project.</summary>
+<p>If you're using UE5.1, this version doesn't support custom depth with stencil in nanite meshes, such as the default skeleton mannequin. If you are not using UE5.1, make sure to enable the custom depth field.</p>
+</details>
+<details class="question">
+<summary>Why don't you use the default motion blur in Unreal Engine?</summary>
+<p>The standard motion blur from Unreal, although it works well within the game, unfortunately does not show up in the final photo. That's why the custom motion blur was implemented. It's far from perfect, but it is able to simulate some motion blur in the output photo.</p>
+</details>
+<details class="question">
+<summary>Some sliders doesn't affect my scene, why?</summary>
+<p>Check if there is any post process in your scene that has a priority greater than 9999. If so, lower this value to a smaller one. Alternatively, increase the priority of the post process volume contained in <code>BP_CustomPostProcess</code>.</p>
+</details>
+<details class="question">
+<summary>Do you have more assets?</summary>
+<p>Yes! Take a look <a href="https://www.unrealengine.com/marketplace/en-US/profile/AleeZL">here</a>.</p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.code.annotate", "toc.follow", "content.tooltips"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

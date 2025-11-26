@@ -1,0 +1,4 @@
+| `Function`           | `Description`                                                                                   |
+|----------------------|-------------------------------------------------------------------------------------------------|
+| GetOverrideInfo      | Returns the override information. Called in the BP_LockOnPoint blueprint.                       |
+| SetOverrideReference | Set the "override reference" variable, allowing an override using an existent widget reference. |
