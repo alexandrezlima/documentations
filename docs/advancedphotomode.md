@@ -31,6 +31,10 @@ The Advanced Photo Mode is a highly customizable and easy-to-integrate tool in a
 ## Supported versions
 Version 5.0 was launched for Unreal Engine 4.25 to 5.1+.
 
+
+??? warning  "Unreal Engine 5.5 has a bug in the native high-resolution screenshot function in packaged projects."
+    There is a long thread about it on the UE forum, you can check it here, including a C++ solution: [HighResShot not working in shipping packaging 5.5](https://forums.unrealengine.com/t/highresshot-not-working-in-shipping-packaging-5-5/2138118/24) Advanced Photo Mode has an alternative screenshot method, the Render Target, which you can find [here](https://youtu.be/cxd81Zb8Jxw?list=PLHdESzTufIOTyHk1kE2-DAiQuB0Izktak) -- may not compatible with all systems, but it worth a try.
+
 This new version brings several new features and improvements, including greater ease of integration (plug and play), better logo and border adjustment and code organization. More details at the [{==#update log==}](#update-log) section.
 
 
